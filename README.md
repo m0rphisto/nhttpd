@@ -14,6 +14,6 @@ Tools used in this project:
 
 ---
 Note: Hold ctrl+shift pressed to open the links in a new tab
-- LinkedIn: https:/linkedin.com/in/m0rphisto
+- LinkedIn: https://linkedin.com/in/m0rphisto
 - Homepage: [My Blog (powered by nhttpd)](https://m0rphisto.net/)
 - X: https://x.com/m0rphisto
