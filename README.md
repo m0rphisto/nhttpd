@@ -13,5 +13,7 @@ Tools used in this project:
 - CSS 3
 
 ---
-
-Homepage: [My Blog (powered by nhttpd)](https://m0rphisto.net/) _(hold ctrl+shift pressed to open in new tab)_
+Note: Hold ctrl+shift pressed to open the links in a new tab
+LinkedIn: https:/linkedin.com/in/m0rphisto
+Homepage: [My Blog (powered by nhttpd)](https://m0rphisto.net/)
+X: https://x.com/m0rphisto
