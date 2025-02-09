@@ -1,0 +1,17 @@
+#!/usr/bin/zsh
+################################################################################
+# $Id: update 2024-01-13 01:56:27 +0100 .m0rph $
+################################################################################
+
+date=`date +'%Y%d%m'`
+db=IP2LOCATION-LITE-DB3.BIN
+
+mv $db.zip $db.${date}.zip
+
+rm README_LITE.TXT
+rm LICENSE_LITE.TXT
+rm $db
+
+unzip $db.${date}.zip
+
+exit 0

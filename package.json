@@ -1,0 +1,13 @@
+{
+   "name": "nhttpd",
+   "version": "0.2.0",
+   "description": "nhttpd is an educational project.",
+   "autor": ".m0rph",
+   "email": "m0rphisto.net@gmail.com",
+   "license": "GNU General Public License 3",
+   "type":"commonjs",
+   "dependencies": {
+      "ip2location-nodejs": "^9.6.1",
+      "sprintf-js": "^1.1.3"
+   }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+{HEADER}
+<body>
+   <a id="jumper" href="#main">Jump to the document body.</a>
+   <div id="menu">
+      <h1><a href="/" title="/dev/root">.m0rph's Blog</a></h1>
+{NAVIHTML}
+   </div>
+   <div id="main">
+      <div class="box">
+         <form id="contact" method="post" action="">
+            <h3>Contact:</h3>
+            <p>Do you have any suggestions, questions or just want to get in touch? Please feel free to use this contact form.</p>
+            <p>I will try to give you a response as soon as possible.</p>
+            <table>
+               <tr>
+                  <td class="left"><label for="email"><sup>*</sup>eMail:</label></td>
+                  <td class="right"><input type="email" id="email" name="email" autocomplete="email" required /></td>
+               </tr>
+               <tr>
+                  <td class="left"><label for="name">Name:</label></td>
+                  <td class="right"><input type="text" id="name" name="name" autocomplete="name" /></td>
+               </tr>
+               <tr>
+                  <td class="left"><label for="organization">Organization:</label></td>
+                  <td class="right"><input type="text" id="organization" name="organization" autocomplete="organization" /></td>
+               </tr>
+               <tr>
+                  <td class="left"><label for="title">Position:</label></td>
+                  <td class="right"><input type="text" id="title" name="title" autocomplete="organization-title" /></td>
+               </tr>
+               <tr>
+                  <td class="left top"><label for="message"><sup>*</sup>Message:</label></td>
+                  <td class="right"><textarea id="message" name="message" rows="5" cols="30" required></textarea></td>
+               </tr>
+               <tr>
+                  <td>&nbsp;</td>
+                  <td>
+                     <input class="button btn primary" type="submit" name="submit" value="Submit">
+                     <input class="button btn primary" type="reset" name="reset" value="Reset">
+                  </td>
+               </tr>
+            </table>
+            <input type="hidden" name="site" value="{HOSTNAME}">
+            <input type="hidden" name="valid" value="false">
+         </form>
+      </div>
+   </div>
+{FOOTER}
+</body>
+</html>

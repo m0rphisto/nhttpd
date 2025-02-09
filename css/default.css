@@ -1,0 +1,130 @@
+html, body, h1, h2, h3 {margin: 0px; padding: 0px;}
+body {
+   font-size: calc(12px + .1vw);
+   font-family: Verdana, Arial, Sans-Serif;
+   background-color: rgba(200,200,200,0.05);
+   color: #000;
+}
+.vip-bg {
+   border-top: 1px solid #000;
+   background:linear-gradient(to bottom, #cebb14 27%, #fbdf93 100%);
+}
+#main {
+   width:80%;
+   max-width:1200px;
+   margin:7em auto;
+   display: grid;
+   grid-template-columns: 50% 50%;
+}
+/*
+@media screen and (min-width: 600px) {
+   .box {
+      column-gap: 5px;
+   }
+}
+*/
+.left, .right {
+   max-width:600px;
+   padding:10px;
+}
+.box {
+   margin-bottom: 10px;
+   border: 1px dotted #545454;
+   box-shadow:3px 7px 7px rgba(0,0,0,0.2);
+   /*background-image: url(/img/checked.gif);*/
+   background-color:#fff;
+   border-radius: 5px;
+   padding: 15px;
+}
+#image {
+   padding: 10px;
+}
+#image img {
+   width:100%;
+   max-width:538px;
+   border: 1px solid #000;
+}
+h1 {font-size:calc(22px + .4vw); text-shadow: 1px 1px 1px red}
+h2 {font-size:calc(20px + .4vw)}
+h3 {font-size:calc(18px + .4vw)}
+h4 {font-size:calc(16px + .3vw)}
+h5 {font-size:calc(14px + .2vw)}
+/*
+margin: top right bottom left
+h1 {font-size:calc(20px + .4vw);margin:25px 0px 25px 0px;font-weight:normal; text-shadow: 1px 1px 1px red}
+h2 {font-size:calc(16px + .4vw);margin:20px 0px 20px 0px;font-weight:normal}
+h3 {font-size:calc(15px + .4vw);margin:15px 0px 15px 0px;font-weight:normal}
+h4 {font-size:calc(14px + .3vw);margin:10px 0px 10px 0px;font-weight:normal}
+h5 {font-size:calc(10px + .2vw);margin: 8px 0px  8px 0px;font-weight:normal}
+h6 {font-size:calc(8px + .2vw); margin: 8px 0px  8px 0px;font-weight:normal}
+h1 {font-size: 24px; text-shadow: 1px 1px 1px red}
+h2 {font-size: 21px;}
+h3 {font-size: 16px;}
+*/
+#menu h1 {margin: 14px 0px 25px 0}
+.box h1 {margin: 0px;}
+.box p {
+   text-align:justify;
+}
+.box p, .box ol li {
+   line-height:1.5em;
+}
+.box ol li {
+   padding:3px;
+}
+.box table {
+   margin:0;
+   padding:0;
+   width:100%;
+}
+.box table .left,
+.box table .right {
+   vertical-align:top;
+}
+.box table .right {
+   text-align:right;
+}
+a:link, a:visited {
+   text-decoration:underline;
+   color:#000;
+}
+a:hover, a:active, a:focus {
+   text-decoration:none;
+   color:#f00;
+}
+.box code, a.code {
+   color:rgba(4, 35, 83, 0.9);
+   font-family:'Courier New', Courier, monospace;
+   font-weight:bold;
+}
+a#jumper {
+   top:10px;
+   left:10px;
+   padding:10px;
+   position:absolute;
+   background-color:rgba(28,107,228,0.9);
+   box-shadow:3px 7px 7px rgba(0,0,0,0.2);
+   border: 1px solid #545454;
+   text-decoration:none;
+   border-radius: 5px;
+   font-weight:bold;
+   color:#fff;
+}
+a#jumper:link, a#jumper:visited {
+   z-index: -99;
+   opacity:0;
+}
+a#jumper:focus, a#jumper:active {
+   opacity:100%;
+   z-index: 99;
+}
+#footer {
+   padding: 10px;
+   display:block;
+   text-align:center;
+}
+#footer p {
+   color:#000;
+   font-weight:bold;
+}
+.hidden {display:none}

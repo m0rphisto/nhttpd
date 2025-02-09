@@ -1,0 +1,17 @@
+{
+   "11": "nhttpd.js",
+   "12": "config.js",
+   "13": "package.json",
+   "14": "package-lock.json",
+   "15": "logrotate.js",
+   "16": "geoiplookup.js",
+
+   "21": "/log/",
+   "22": "/lib/",
+   "23": "/json/",
+   "24": "/models/",
+   "25": "/views/",
+   "26": "/controller/",
+   "27": "/geoip/",
+   "28": "/node_modules/"
+}
