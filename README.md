@@ -14,4 +14,4 @@ Tools used in this project:
 
 ---
 
-[My Blog (powered by nhttpd)](https://m0rphisto.net/) _(hold ctrl+shift pressed to open in new tab)_
+Homepage: [My Blog (powered by nhttpd)](https://m0rphisto.net/) _(hold ctrl+shift pressed to open in new tab)_
