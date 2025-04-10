@@ -11,8 +11,8 @@ module.exports = {
 
    PROTO: 'http://',
    HOSTNAME: 'nhttpd.js',
-   HOST: '0.0.0.0',
-   PORT: 8081,
+   HOST: '127.0.0.1',
+   PORT: 80,
 
    DEV:     !!1,   // development status
    DEBUG:   !!1,   // Some debugging flags

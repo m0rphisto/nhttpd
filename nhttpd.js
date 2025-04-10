@@ -1,5 +1,5 @@
 /**
- * $Id: nhttpd.js v0.2 2024-01-01 01:14:28 +0100 .m0rph $
+ * $Id: nhttpd.js v0.3 2025-04-10 10:10:49 +0200 .m0rph $
  * 
  * This is my first Node.js edu project. A little HTTP server with
  * template parser and file access control.
@@ -115,15 +115,23 @@ const httpd = http.createServer((req, res) => {
          const url = path.join(__dirname, redirect(check_index(req.url)));
          fs.readFile(url, (err, data) => {
             if (err) {
+               // Plain file errors
                res
                   .writeHead(404, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'))
                   .end(`${status_codes['404']}`);
                log(1, cfg.ipaddr, `${status_codes['404']} ${req.url}`);
             } else {
-               // We need to send the correct MIME type
+               // We need to send the correct MIME type and have to load a controller module.
                const mime = Template.mime(url);
+               //console.log(req.url)
                if (cfg.DEBUG && cfg.HEADERS) console.log(req.headers)
                if (mime == 'html') {
+                  // At first we have to check if the controller exists !!!
+                  if (! Controller.check(check_index(req.url))) {
+                     // If !!0 was returned, but no data, the controller doesn't exist!
+                     // Error logging already done by Controller.js.
+                     req.url = 'error/404'
+                  }
                   data = Template.parse(data,
                      Controller.get(check_index(req.url)).data()
                   );

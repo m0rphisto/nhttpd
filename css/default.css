@@ -4,6 +4,7 @@ body {
    font-family: Verdana, Arial, Sans-Serif;
    background-color: rgba(200,200,200,0.05);
    color: #000;
+   background-image: url(/img/checked.gif);
 }
 .vip-bg {
    border-top: 1px solid #000;
@@ -15,6 +16,7 @@ body {
    margin:7em auto;
    display: grid;
    grid-template-columns: 50% 50%;
+   /* display: flex; */
 }
 /*
 @media screen and (min-width: 600px) {
@@ -31,7 +33,6 @@ body {
    margin-bottom: 10px;
    border: 1px dotted #545454;
    box-shadow:3px 7px 7px rgba(0,0,0,0.2);
-   /*background-image: url(/img/checked.gif);*/
    background-color:#fff;
    border-radius: 5px;
    padding: 15px;
