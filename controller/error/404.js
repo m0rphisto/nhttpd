@@ -28,8 +28,6 @@ const getdate = (view) => {
  */
 exports.data = () => {
 
-   //const url = cfg.ROOT + 'meta/404.html';
-   
    // First thing to to is building the HTML header setting the meta data
    let view = Load.view('meta/header.html');
    const header = Template.parse(view, {
@@ -47,16 +45,17 @@ exports.data = () => {
       'MENUCSS': 'menu',
       'NAVICSS': Load.view('meta/navi-css.html'),
    });
-   view = Load.view('meta/404.html');
+   view = Load.view('meta/error.html');
    const errmsg = Template.parse(view, {
-      'TIMESTAMP': getdate(path.join(cfg.ROOT, 'views', 'meta', '404.html'))
+      'TIMESTAMP': getdate(path.join(cfg.ROOT, 'views', 'meta', 'error.html'))
    });
 
    return {
       // Finally return replace the template variables and return the document
       'HEADER': header,
       'NAVIHTML': Load.view('meta/menu.html'),
-      'ERROR_MESSAGE': errmsg,
+      'ERROR_MESSAGE': '404 - Document not found.',
+      'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
       'FOOTER': Load.view('meta/footer.html'),
       'FID': cfg.FID,
    }
