@@ -28,7 +28,7 @@ const getdate = (view) => {
  */
 exports.data = () => {
 
-   const url = cfg.ROOT + 'blog/security/burp-suite-tutorial.html';
+   //const url = cfg.ROOT + 'blog/security/burp-suite-tutorial.html';
    
    // First thing to to is building the HTML header setting the meta data
    let view = Load.view('meta/header.html');

@@ -128,8 +128,9 @@ const httpd = http.createServer((req, res) => {
                if (mime == 'html') {
                   // At first we have to check if the controller exists !!!
                   if (! Controller.check(check_index(req.url))) {
-                     // If !!0 was returned, but no data, the controller doesn't exist!
-                     // Error logging already done by Controller.js.
+                     // If !!0 was returned, but no data, the controller doesn't exist
+                     // or any other error occured. Maybe an attack attempt?
+                     log(1, cfg.ipaddr, `${status_codes['404']} ${req.url}`);
                      req.url = 'error/404'
                   }
                   data = Template.parse(data,
@@ -147,7 +148,8 @@ const httpd = http.createServer((req, res) => {
                res
                   .writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, mime))
                   .end(data);
-               log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
+               if (! req.url.includes('error'))
+                  log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
             }
          });
       }
