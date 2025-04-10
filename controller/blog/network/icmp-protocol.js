@@ -28,7 +28,7 @@ const getdate = (view) => {
  */
 exports.data = () => {
 
-   const url = cfg.ROOT + 'blog/network/igmp-protocol.html';
+   //const url = cfg.ROOT + 'blog/network/igmp-protocol.html';
    
    // First thing to to is building the HTML header setting the meta data
    let view = Load.view('meta/header.html');
@@ -47,10 +47,9 @@ exports.data = () => {
       'MENUCSS': 'menu',
       'NAVICSS': Load.view('meta/navi-css.html'),
    });
-   view = Load.view('blog/network/igmp-protocol.html');
+   view = Load.view('blog/network/icmp-protocol.html');
    const article = Template.parse(view, {
-      //'DATE_POSTED': path.join(cfg.ROOT, 'views', 'blog', 'network', 'igmp-protocol.html')
-      'DATE_POSTED': getdate(path.join(cfg.ROOT, 'views', 'blog', 'network', 'igmp-protocol.html'))
+      'TIMESTAMP': getdate(path.join(cfg.ROOT, 'views', 'blog', 'network', 'icmp-protocol.html'))
    });
         //return sprintf('%d-%02d-%02d', date.getFullYear(), date.getMonth() + 1, date.getDate());
         //return sprintf('%02d:%02d:%02d', date.getHours(), date.getMinutes(), date.getSeconds());

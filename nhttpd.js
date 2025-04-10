@@ -123,7 +123,7 @@ const httpd = http.createServer((req, res) => {
             } else {
                // We need to send the correct MIME type and have to load a controller module.
                const mime = Template.mime(url);
-               //console.log(req.url)
+               console.log(req.url)
                if (cfg.DEBUG && cfg.HEADERS) console.log(req.headers)
                if (mime == 'html') {
                   // At first we have to check if the controller exists !!!
@@ -131,7 +131,7 @@ const httpd = http.createServer((req, res) => {
                      // If !!0 was returned, but no data, the controller doesn't exist
                      // or any other error occured. Maybe an attack attempt?
                      log(1, cfg.ipaddr, `${status_codes['404']} ${req.url}`);
-                     req.url = 'error/404'
+                     req.url = '/error/404'
                   }
                   data = Template.parse(data,
                      Controller.get(check_index(req.url)).data()

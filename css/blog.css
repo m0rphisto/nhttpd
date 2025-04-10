@@ -26,7 +26,8 @@ body {
 .left, .right {
    padding:10px;
 }
-.left {max-width:200px;}
+/*.left {max-width:200px;}*/
+.left {width:97%;}
 .right {max-width:1000px;}
 .box {
    margin-bottom: 10px;

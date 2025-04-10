@@ -7,7 +7,7 @@
 module.exports = {
 
    // Defaults ...
-   FID: '$Id: nhttpd v0.2 2024-01-01 01:14:28 +0100 .m0rph $',
+   FID: '$Id: nhttpd v0.3 2025-04-10 17:21:54 +0200 .m0rph $',
 
    PROTO: 'http://',
    HOSTNAME: 'nhttpd.js',
@@ -26,7 +26,7 @@ module.exports = {
    TWITTER_CARD_IMAGE: 'https://m0rphisto.net/img/m0rph.400x400.png',
    TWITTER_CARD_IMAGE_ALT: '.m0rph@work',
 
-   EMAIL_ADDRESS: 'webmaster@m0rphiso.net',
+   EMAIL_ADDRESS: 'webmaster@m0rphisto.net',
 
    BLOG_INDEX_NUM_POSTS: 3
 }

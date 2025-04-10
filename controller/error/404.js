@@ -42,7 +42,6 @@ exports.data = () => {
       // Finally replace the template variables and return the document
       'HEADER': header,
       'NAVIHTML': Load.view('meta/menu.html'),
-      //'NAVIGATION': Load.view('meta/blog-navi.html'),
       'ARTICLE': errmsg,
       'FOOTER': Load.view('meta/footer.html'),
       'FID': cfg.FID,

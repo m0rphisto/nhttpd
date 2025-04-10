@@ -9,7 +9,7 @@ const
 
 
 const ctrltest = () => {
-   return 'document.querySelector("#controller-test").innerHTML = "Social media and FOSS profile."';
+   return 'document.querySelector("#controller-test").innerHTML = "Social media and FOSS profiles."';
 }
 
 /**
