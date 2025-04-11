@@ -4,15 +4,16 @@ body {
    font-family: Verdana, Arial, Sans-Serif;
    background-color: rgba(200,200,200,0.05);
    color: #000;
+   background-image: url(/img/checked.gif);
 }
 .vip-bg {
    border-top: 1px solid #000;
-   background:linear-gradient(to bottom, #cebb14 27%, #fbdf93 100%);
+   background: linear-gradient(to bottom, #cebb14 27%, #fbdf93 100%);
 }
 #main {
-   width:80%;
-   max-width:1200px;
-   margin:7.7em auto;
+   width: 80%;
+   max-width: 1200px;
+   margin: 7.7em auto;
 }
 /*
 @media screen and (min-width: 600px) {
@@ -22,97 +23,97 @@ body {
 }
 */
 .box {
-   width:95%;
+   width: 95%;
    margin: 0 auto;
    border: 1px dotted #545454;
-   box-shadow:3px 7px 7px rgba(0,0,0,0.2);
-   background-color:#fff;
+   box-shadow: 3px 7px 7px rgba(0,0,0,0.2);
+   background-color: #fff;
    border-radius: 5px;
    padding: 15px;
 }
-h1 {font-size:calc(20px + .4vw); text-shadow: 1px 1px 1px red}
-h3 {font-size:calc(15px + .4vw)}
+h1 {font-size: calc(22px + .4vw); text-shadow: 1px 1px 1px red}
+h3 {font-size: calc(15px + .4vw)}
 #menu h1 {margin: 14px 0px 25px 0}
 .box h1 {margin: 0px;}
 .box p {
-   line-height:1.5em;
+   line-height: 1.5em;
 }
 table {
-   margin:0;
-   padding:0;
-   width:90%;
+   margin: 0;
+   padding: 0;
+   width: 90%;
 }
 table .left {
-   text-align:right;
+   text-align: right;
 }
 table .left.top {
-   vertical-align:top;
-   padding-top:10px;
+   vertical-align: top;
+   padding-top: 10px;
 }
 label sup {
-   color:#f00;
+   color: #f00;
 }
 form input,
 form textarea {
-   background-color:rgba(221, 235, 255, 0.9);
+   background-color: rgba(221, 235, 255, 0.9);
    border: 1px solid rgba(28,107,228,0.9);
    border-radius: 5px;
-   padding:10px;
-   width:100%; 
+   padding: 10px;
+   width: 100%; 
 }
 form textarea {
-   height:250px;
+   height: 250px;
 }
 form input:focus,
 form textarea:focus {
-   background-color:#fff;
+   background-color: #fff;
 }
 /*
 form :invalid {
-   background-color:rgba(255, 155, 155, 0.1);
+   background-color: rgba(255, 155, 155, 0.1);
 }
 */
 .button {
-   color:#000;
-   float:left;
-   width:30%;
+   color: #000;
+   float: left;
+   width: 30%;
 }
 a:link, a:visited {
-   text-decoration:underline;
-   color:#000;
+   text-decoration: underline;
+   color: #000;
 }
 a:hover, a:active, a:focus {
-   text-decoration:none;
-   color:#f00;
+   text-decoration: none;
+   color: #f00;
 }
 a#jumper {
-   top:10px;
-   left:10px;
-   padding:10px;
-   position:absolute;
-   background-color:rgba(28,107,228,0.9);
-   box-shadow:3px 7px 7px rgba(0,0,0,0.2);
+   top: 10px;
+   left: 10px;
+   padding: 10px;
+   position: absolute;
+   background-color: rgba(28,107,228,0.9);
+   box-shadow: 3px 7px 7px rgba(0,0,0,0.2);
    border: 1px solid #545454;
-   text-decoration:none;
+   text-decoration: none;
    border-radius: 5px;
-   font-weight:bold;
-   color:#fff;
+   font-weight: bold;
+   color: #fff;
 }
 a#jumper:link, a#jumper:visited {
    z-index: -99;
-   opacity:0;
+   opacity: 0;
 }
 a#jumper:focus, a#jumper:active {
-   opacity:100%;
+   opacity: 100%;
    z-index: 99;
 }
 #footer {
    padding: 10px;
-   display:block;
-   text-align:center;
+   display: block;
+   text-align: center;
 }
 #footer p {
-   color:#000;
-   font-weight:bold;
+   color: #000;
+   font-weight: bold;
 }
-.hidden {display:none}
+.hidden {display: none}

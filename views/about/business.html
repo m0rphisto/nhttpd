@@ -4,15 +4,19 @@
 <body>
    <a id="jumper" href="#main">Jump to the document body.</a>
    <div id="menu">
-      <h1><a href="/" title="/dev/root">Hello Node.js world!</a></h1>
+      <h1><a href="/" title="/dev/root">.m0rph@work</a></h1>
 {NAVIHTML}
    </div>
    <div id="main">
-      <div class="left">
+
+         <div id="image" class="box">
+            <img src="/img/ssh-tux.jpg" alt="Ethical Hacking" />
+         </div>
+
          <div class="box">
             <h3>My first own Business ...</h3>
             <p>
-               In 2006 I funded my first own business developing websites, hosting sites of the clients
+               In 2006 I founded my first own business developing websites, hosting sites of the clients
                on my own dedicated server and managing the root servers of cooporation partners.
             </p>
             <p>
@@ -33,15 +37,16 @@
             <p>
                <code>joomlakom.de</code> was online 2007 ㆒ 2011.
             </p>
+         </div>
+
+         <div class="box">
+            <h3>The Dedicated Servers ...</h3>
             <p>
                Unfortunately the consiousness about network and especially website security was not at this high grade of focus
                as it is today, but my personal focus was. For that reason my business crashed in 2011, because I payed
                more attention on security than the competitors did. Hence this took more time during development and
                logically it was a bit more expensive.
             </p>
-         </div>
-         <div class="box">
-            <h3>The Dedicated Servers ...</h3>
             <p>
                A lot of renters of dedicated or so called <code>VPS</code> systems that do not really know how to manage a <code>Linux</code>
                server, do make use of web based systems such as <a class="code" href="https://www.plesk.com/" target="_blank">Plesk</a>,
@@ -55,15 +60,13 @@
                with the <code>SUID Bit</code> set under an unprivileged user.
             </p>
             <p>
-               A lot of suiss cheese, as we Germans say. Oh my, so many weapons out there! The servers get owned and
+               A lot of suiss cheeses, as we Germans say. Oh my, so many weapons out there! The servers get owned and
                are used for further criminal activity. This is definitely a fact you should take care of.
             </p>
+            <p>
+            </p>
          </div>
-      </div>
-      <div class="right">
-         <div id="image" class="box">
-            <img src="/img/ssh-tux.jpg" alt="Ethical Hacking" />
-         </div>
+
          <div class="box">
             <h3>My Challenge ...</h3>
             <p>
@@ -91,10 +94,9 @@
                </ul>
             </p>
          </div>
-         {BOX_CONTACT_DATA}
-      </div>
    </div>
    <script>{CONTROLLER_TEST}</script>
+{BOX_CONTACT_DATA}
 {FOOTER}
 </body>
 </html>
