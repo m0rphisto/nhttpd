@@ -23,7 +23,7 @@ exports.data = () => {
       'HOSTNAME': cfg.HOSTNAME,
       'META_DESCRIPTION': 'Burp Suite, in the ever-evolving landscape of web security, having the right tools is paramount. Burp Suite, a powerful web application security testing toolkit ...',
       'META_KEYWORDS': 'linux,debian,kali,network,web site security,burp suite,penetration testing,wen application security,vulnerabilities,pentesting',
-      'DEFAULTCSS': 'default',
+      'DEFAULTCSS': 'blog',
 
       'TWITTER_CARD': cfg.TWITTER_CARD,
       'TWITTER_CARD_CREATOR': cfg.TWITTER_CARD_CREATOR,
@@ -33,15 +33,16 @@ exports.data = () => {
       'MENUCSS': 'menu',
       'NAVICSS': Load.view('meta/navi-css.html'),
    });
-   view = Load.view('error/404.html');
+   view = Load.view('meta/box.error.html');
    const errmsg = Template.parse(view, {
-      'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html')
+      'ERROR_MESSAGE': '404 - Document not found'
    });
 
    return {
       // Finally replace the template variables and return the document
       'HEADER': header,
-      'NAVIHTML': Load.view('meta/menu.html'),
+      'MENU': Load.view('meta/menu.html'),
+      'NAVIGATION': Load.view('meta/box.ip-address.html'),
       'ARTICLE': errmsg,
       'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
       'FOOTER': Load.view('meta/footer.html'),

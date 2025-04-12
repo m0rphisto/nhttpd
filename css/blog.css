@@ -55,7 +55,7 @@ body {
 .right h5 {font-size: calc(14px + .2vw);margin:  8px 0px  8px 0px;font-weight:normal}
 .right h6 {font-size: calc(16px + .2vw);margin:  8px 0px  8px 0px;font-weight:normal}
 
-#menu h1 {margin: 14px 0px 25px 0; text-shadow: 1px 1px 1px red}
+#header h1 {margin: 14px 0px 25px 0; text-shadow: 1px 1px 1px red}
 .right h1 {margin: 0px;}
 .right .grid {
    display: flex;

@@ -14,10 +14,11 @@ module.exports = {
    HOST: '127.0.0.1',
    PORT: 80,
 
-   DEV:     !!1,   // development status
-   DEBUG:   !!1,   // Some debugging flags
-   HEADERS: !!0,
-   REQUEST: !!0,
+   DEV:       !!1,   // development status
+   DEBUG:     !!1,   // Some debugging flags
+   HEADERS:   !!0,
+   REQUEST:   !!0,
+   BLOGINDEX: !!0,
    CLIENT_ERRORS: !!1,
 
    ROOT: __dirname,
@@ -29,6 +30,6 @@ module.exports = {
 
    EMAIL_ADDRESS: 'webmaster@m0rphisto.net',
 
-   BLOG_INDEX_NUM_POSTS: 3
+   BLOG_INDEX_NUM_POSTS: 5
 }
 // EOF

@@ -48,18 +48,16 @@ exports.data = () => {
       'MENUCSS': 'menu',
       'NAVICSS': Load.view('meta/navi-css.html'),
    });
-   view = Load.view('blog/network/igmp-protocol.html');
+   view = Load.view('blog/network/7-layer-osi-model.html');
    const article = Template.parse(view, {
-      //'DATE_POSTED': path.join(cfg.ROOT, 'views', 'blog', 'network', 'igmp-protocol.html')
-      'DATE_POSTED': getdate(path.join(cfg.ROOT, 'views', 'blog', 'network', 'igmp-protocol.html'))
+      'DATE_POSTED': getdate(path.join(cfg.ROOT, 'views', 'blog', 'network', '7-layer-osi-model.html'))
    });
-        //return sprintf('%d-%02d-%02d', date.getFullYear(), date.getMonth() + 1, date.getDate());
-        //return sprintf('%02d:%02d:%02d', date.getHours(), date.getMinutes(), date.getSeconds());
 
    return {
       // Finally return replace the template variables and return the document
       'HEADER': header,
-      'NAVIHTML': Load.view('meta/menu.html'),
+      'MENU': Load.view('meta/menu.html'),
+      'NAVIGATION': 'NAVIGATION',
       'ARTICLE': article,
       'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
       'FOOTER': Load.view('meta/footer.html'),

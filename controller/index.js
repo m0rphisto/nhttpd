@@ -41,7 +41,7 @@ exports.data = () => {
    return {
       // Finally return replace the template variables and return the document
       'HEADER': header,
-      'NAVIHTML': Load.view('meta/menu.html'),
+      'MENU': Load.view('meta/menu.html'),
       'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
       //'CONTROLLER_TEST': ctrltest(),
       'FOOTER': Load.view('meta/footer.html'),

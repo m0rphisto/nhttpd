@@ -1,5 +1,5 @@
 /**
- * $Id: index.js 2025-04-12 08:00:55 +0200 .m0rph $
+ * $Id: index.js 2025-04-12 10:43:22 +0200 .m0rph $
  */
 
 const
@@ -10,6 +10,18 @@ const
    Load = require('../../lib/Loader'),
    Template = require('../../lib/Template');
 
+
+/**
+ * Private: Controller checkup. 
+ * @param   {string}  file The blogentriy view which also needs a controller.
+ * @returns {boolean}      true: controller, false: no controller 
+ */
+const hasController = (file) => {
+   const views = `${path.sep}views${path.sep}`
+   file = file.replace(views, `${path.sep}controller${path.sep}`);
+   file = file.replace(/html$/, 'js');
+   return (fs.existsSync(file)) ? !!1 : !!0;
+}
 
 /**
  * Private: Recursive blog entry search. 
@@ -25,6 +37,10 @@ const getFiles = (dir) => {
       if (stat && stat.isDirectory()) {
          // Recurse to subdir
          files = files.concat(getFiles(file));
+      } else if (! hasController(file)) {
+         // While writing a new blog entry, it is possible that the view doesn't
+         // have a controller yet. So we do not need to list it!
+         return;
       } else {
          // (?<!negative-look-behind)
          if (file.match(/(?<!index)\.html$/)) {
@@ -43,7 +59,7 @@ const getFiles = (dir) => {
                section_href: `/blog/${sect}/`,
                section_txt: sect.charAt(0).toUpperCase() + sect.slice(1)
             });
-            //console.log(files);
+            if (cfg.DEBUG && cfg.BLOGINDEX) console.log(files);
          }
       }
    });
@@ -88,7 +104,8 @@ exports.data = () => {
    const template = Load.view('meta/box.blog-article.html');
    const files = getFiles(path.join(cfg.ROOT, 'views', 'blog'));
    files.sort((a, b) => {return b.mtime - a.mtime}); // b - a := sort descending (otherwise a - b)
-   for (let i = 0; i < cfg.BLOG_INDEX_NUM_POSTS; i++) {
+   const max = (files.length < cfg.BLOG_INDEX_NUM_POSTS) ? files.length : cfg.BLOG_INDEX_NUM_POSTS;
+   for (let i = 0; i < max; i++) {
       let box = template;
       const article = getSnippets(Load.view(files[i].file));
       const date = new Date(files[i].mtime);
@@ -116,7 +133,8 @@ exports.data = () => {
    return {
       // Finally return replace the template variables and return the document
       'HEADER': header,
-      'NAVIHTML': Load.view('meta/menu.html'),
+      'MENU': Load.view('meta/menu.html'),
+      'NAVIGATION': 'NAVIGATION',
       'BLOG_ARTICLES': blog_articles,
       'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
       'FOOTER': Load.view('meta/footer.html'),

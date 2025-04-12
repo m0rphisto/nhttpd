@@ -1,47 +1,50 @@
-      <div id="navi">
-         <div class="btn primary">
-            <a href="/" title="/dev/root">Home</a>
+      <div id="menu">
+         <div id="menu-hover">
+            <svg width="4.2em" height="4.2em" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+               <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+            </svg>
          </div>
-         <div class="btn primary has-drop-menu hover-menu">
-            <input type="checkbox" id="button-hover-1" class="drop-menu-input">
-            <label for="button-hover-1" class="menu-label"></label>
-            <a href="/about/whoami" title="/etc/passwd">About</a> <i class="arrow-down"></i>
-            <label for="button-hover-1" class="full-screen"></label>
-            <ul class="drop-menu hover-menu">
-               <li><a href="/about/whoami" title="/usr/bin/whoami">Who I am</a></li>
-               <li><a href="/about/business" title="/var/www/sites_enabled">Business</a></li>
-               <li><a href="/about/contact" title="/usr/bin/mutt">Contact</a></li>
-            </ul>
-         </div>
-         <div class="btn primary has-drop-menu hover-menu">
-            <input type="checkbox" id="button-hover-2" class="drop-menu-input">
-            <label for="button-hover-2" class="menu-label"></label>
-            <a href="/blog/" title="/var/log">Blog</a> <i class="arrow-down"></i>
-            <label for="button-hover-2" class="full-screen"></label>
-            <ul class="drop-menu hover-menu">
-               <li class="sep"></li>
-               <li><a href="/blog/" title="/var/log">&#9733; Landingpage</a></li>
-               <li class="sep"></li>
-               <!--
-               <li><a href="/blog/webdev/" title="/home/work/dev">&#9776; Development</a></li>
-               <li><a href="/blog/webdev/html" title="/home/work/dev/html">&#9866; HTML</a></li>
-               <li><a href="/blog/webdev/css" title="/home/work/dev/css">&#9866; CSS</a></li>
-               <li class="sep"></li>
-               -->
-               <li><a href="/blog/network/" title="/etc/network">&#9776; Network</a></li>
-               <li><a href="/blog/network/icmp-protocol" title="/etc/network/icmp">&#9866; ICMP Protocol</a></li>
-               <li><a href="/blog/network/igmp-protocol" title="/etc/network/igmp">&#9866; IGMP Protocol</a></li>
-               <li class="sep"></li>
-               <li><a href="/blog/security/" title="/var/log/syslog">&#9776; Security</a></li>
-               <li><a href="/blog/security/igmp-snooping" title="/usr/share/doc/igmp-snooping">&#9866; IGMP Snooping</a></li>
-               <li><a href="/blog/security/burp-suite-tutorial" title="/usr/share/doc/burpsuite">&#9866; Burp-Suite Tutorial</a></li>
-               <li class="sep"></li>
-               <!--
-               <li><a href="/blog/git/" title="/home/src/git">&#9776; GitHub</a></li>
-               <li><a href="/blog/git/bitburner" title="/var/www/on/bitburner">&#9866; Bitburner</a></li>
-               <li><a href="/blog/git/nhttpd" title="/usr/local/bin">&#9866; nhttpd.js</a></li>
-               <li class="sep"></li>
-               -->
-            </ul>
+         <div id="menu-dropdown">
+            <div class="menu-section">
+               <ul>
+                  <li>&#9763; About</a></li>
+                  <li class="sep"></li>
+                  <li><a href="/" title="/dev/root">&#9866; Home</a></li>
+                  <li class="sep"></li>
+                  <li><a href="/about/whoami" title="/usr/bin/whoami">&#9866; Who I am</a></li>
+                  <li><a href="/about/business" title="/var/www/sites_enabled">&#9866; Business</a></li>
+                  <li><a href="/about/contact" title="/usr/bin/mutt">&#9866; Contact</a></li>
+                  <li class="sep"></li>
+               </ul>
+            </div>
+            <div class="menu-section">
+               <ul class="menu-blog">
+                  <li>&#9763; Blog</a></li>
+                  <li class="sep"></li>
+                  <li><a href="/blog/" title="/var/log">&#9733; Newest</a></li>
+                  <li class="sep"></li>
+                  <!--
+                  <li><a href="/blog/webdev/" title="/home/work/dev">&#9776; Development</a></li>
+                  <li><a href="/blog/webdev/html" title="/home/work/dev/html">&#9866; HTML</a></li>
+                  <li><a href="/blog/webdev/css" title="/home/work/dev/css">&#9866; CSS</a></li>
+                  <li class="sep"></li>
+                  -->
+                  <li><a href="/blog/network/" title="/etc/network">&#9776; Network</a></li>
+                  <li><a href="/blog/network/7-layer-osi-model" title="/etc/network/osi">&#9866; OSI Model</a></li>
+                  <li><a href="/blog/network/icmp-protocol" title="/etc/network/icmp">&#9866; ICMP Protocol</a></li>
+                  <li><a href="/blog/network/igmp-protocol" title="/etc/network/igmp">&#9866; IGMP Protocol</a></li>
+                  <li class="sep"></li>
+                  <li><a href="/blog/security/" title="/var/log/syslog">&#9776; Security</a></li>
+                  <li><a href="/blog/security/igmp-snooping" title="/usr/share/doc/igmp-snooping">&#9866; IGMP Snooping</a></li>
+                  <li><a href="/blog/security/burp-suite-tutorial" title="/usr/share/doc/burpsuite">&#9866; Burp-Suite Tutorial</a></li>
+                  <li class="sep"></li>
+                  <!--
+                  <li><a href="/blog/git/" title="/home/src/git">&#9776; GitHub</a></li>
+                  <li><a href="/blog/git/bitburner" title="/var/www/on/bitburner">&#9866; Bitburner</a></li>
+                  <li><a href="/blog/git/nhttpd" title="/usr/local/bin">&#9866; nhttpd.js</a></li>
+                  <li class="sep"></li>
+                  -->
+               </ul>
+            </div>
          </div>
       </div>
