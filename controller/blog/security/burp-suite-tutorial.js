@@ -1,5 +1,5 @@
 /**
- * $Id: burp-suite-tutorial.js 2024-01-10 03:37:12 +0100 .m0rph $
+ * $Id: burp-suite-tutorial.js 2025-04-12 08:03:28 +0200 .m0rph $
  */
 
 const
@@ -57,6 +57,7 @@ exports.data = () => {
       'HEADER': header,
       'NAVIHTML': Load.view('meta/menu.html'),
       'ARTICLE': article,
+      'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
       'FOOTER': Load.view('meta/footer.html'),
       'FID': cfg.FID,
    }

@@ -1,5 +1,5 @@
 /**
- * $Id: index.js.js 2024-01-09 07:16:12 +0100 .m0rph $
+ * $Id: index.js 2025-04-12 08:00:55 +0200 .m0rph $
  */
 
 const
@@ -10,10 +10,6 @@ const
    Load = require('../../lib/Loader'),
    Template = require('../../lib/Template');
 
-
-const ctrltest = () => {
-   return 'document.querySelector("#controller-test").innerHTML = "Social media and FOSS profile."';
-}
 
 /**
  * Private: Recursive blog entry search. 
@@ -123,7 +119,6 @@ exports.data = () => {
       'NAVIHTML': Load.view('meta/menu.html'),
       'BLOG_ARTICLES': blog_articles,
       'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
-      'CONTROLLER_TEST': ctrltest(),
       'FOOTER': Load.view('meta/footer.html'),
       'FID': cfg.FID,
    }

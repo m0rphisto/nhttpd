@@ -107,6 +107,15 @@ a#jumper:focus, a#jumper:active {
    opacity: 100%;
    z-index: 99;
 }
+#social ul {
+   margin: 0;
+   padding: .5em;
+   display:flex;
+   list-style-type: none;
+}
+#social ul li {
+   padding: .5em;
+}
 #footer {
    padding: 10px;
    display: block;
@@ -117,3 +126,16 @@ a#jumper:focus, a#jumper:active {
    font-weight: bold;
 }
 .hidden {display: none}
+#geek-code {
+   display: none;
+   position: absolute;
+   background-color: rgba(0,0,0,0.9);
+   box-shadow: 3px 7px 7px rgba(0,0,0,0.5);
+   border: 1px solid #f00;
+   text-decoration: none;
+   border-radius: 5px;
+   padding: 0 15px;
+}
+a#show-code:hover #geek-code {
+   display: inline-block;
+}

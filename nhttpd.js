@@ -123,7 +123,7 @@ const httpd = http.createServer((req, res) => {
             } else {
                // We need to send the correct MIME type and have to load a controller module.
                const mime = Template.mime(url);
-               console.log(req.url)
+               if (cfg.DEBUG && cfg.REQUEST) console.log(req.url)
                if (cfg.DEBUG && cfg.HEADERS) console.log(req.headers)
                if (mime == 'html') {
                   // At first we have to check if the controller exists !!!

@@ -1,5 +1,5 @@
 /**
- * $Id: index.js 2025-04-12 07:59:51 +0200 .m0rph $
+ * $Id: index.js 2025-04-12 08:09:22 +0200 .m0rph $
  */
 
 const
@@ -32,7 +32,6 @@ exports.data = () => {
       'MENUCSS': 'menu',
       'NAVICSS': Load.view('meta/navi-css.html'),
    });
-
 
 
    return {

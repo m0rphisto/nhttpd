@@ -43,6 +43,7 @@ exports.data = () => {
       'HEADER': header,
       'NAVIHTML': Load.view('meta/menu.html'),
       'ARTICLE': errmsg,
+      'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
       'FOOTER': Load.view('meta/footer.html'),
       'FID': cfg.FID,
    }

@@ -17,6 +17,7 @@ module.exports = {
    DEV:     !!1,   // development status
    DEBUG:   !!1,   // Some debugging flags
    HEADERS: !!0,
+   REQUEST: !!0,
    CLIENT_ERRORS: !!1,
 
    ROOT: __dirname,

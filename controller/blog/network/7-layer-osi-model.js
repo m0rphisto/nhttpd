@@ -61,6 +61,7 @@ exports.data = () => {
       'HEADER': header,
       'NAVIHTML': Load.view('meta/menu.html'),
       'ARTICLE': article,
+      'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
       'FOOTER': Load.view('meta/footer.html'),
       'FID': cfg.FID,
    }

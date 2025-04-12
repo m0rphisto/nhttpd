@@ -8,9 +8,9 @@ const
    Template = require('../lib/Template');
 
 
-const ctrltest = () => {
-   return 'document.querySelector("#controller-test").innerHTML = "Social media and FOSS profiles."';
-}
+//const ctrltest = () => {
+   //return 'document.querySelector("#controller-test").innerHTML = "Social media and FOSS profiles."';
+//}
 
 /**
  * Public: Builds the document built, loading views and returning 
@@ -43,7 +43,7 @@ exports.data = () => {
       'HEADER': header,
       'NAVIHTML': Load.view('meta/menu.html'),
       'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
-      'CONTROLLER_TEST': ctrltest(),
+      //'CONTROLLER_TEST': ctrltest(),
       'FOOTER': Load.view('meta/footer.html'),
       'FID': cfg.FID,
    }
