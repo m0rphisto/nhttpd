@@ -1,5 +1,5 @@
 /**
- * $Id: config.js v0.3 2025-01-12 06:43:50 +0100 .m0rph $
+ * $Id: config.js v0.4 2025-01-13 19:00:54 +0200 .m0rph $
  * 
  * This is the nhttpd configuration script.
  */
@@ -7,11 +7,14 @@
 module.exports = {
 
    // Defaults ...
-   FID: '$Id: nhttpd v0.3 2025-04-10 17:21:54 +0200 .m0rph $',
+   FID: '$Id: nhttpd v0.4 2025-04-13 19:00:54 +0200 .m0rph $',
+
+   GID: 1000,  // Unprivilleged runtime group
+   UID: 1000,  // Unprivilleged runtime user
 
    PROTO: 'http://',
    HOSTNAME: 'nhttpd.js',
-   HOST: '127.0.0.1',
+   HOST: '0.0.0.0',
    PORT: 80,
 
    DEV:       !!1,   // development status

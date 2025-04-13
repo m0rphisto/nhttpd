@@ -1,5 +1,5 @@
 /**
- * $Id: nhttpd.js v0.3 2025-04-10 10:10:49 +0200 .m0rph $
+ * $Id: nhttpd.js v0.4 2025-04-13 18:48:40 +0200 .m0rph $
  * 
  * This is my first Node.js edu project. A little HTTP server with
  * template parser and file access control.
@@ -168,6 +168,16 @@ const httpd = http.createServer((req, res) => {
    if (DEBUG && CLIENT_ERRORS) throw err;
 })
 .listen(cfg.PORT, cfg.HOST, () => {
+   // In order to open the privilleged ports 80 or 443 we need root rights,
+   // but later we have to switch to unprivilleged user rights due to
+   // security reasons.
+   try {
+      process.setgid(cfg.GID);
+      process.setuid(cfg.UID);
+   } catch (err) {
+      console.error('Error decreasing user permissions. Exiting !!!');
+      process.exit(1);
+   }
    console.log(cfg.FID);
    console.log(`Server running at ${cfg.PROTO}${cfg.HOSTNAME}:${cfg.PORT}/`);
 });
