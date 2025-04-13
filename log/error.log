@@ -695,3 +695,4 @@
 [2025-04-12 11:36:20] 127.0.0.1 - 404 - Not Found /css/navi.css
 [2025-04-12 16:46:40] 127.0.0.1 - 404 - Not Found /blog/security/igmp-snooping
 [2025-04-13 20:34:32] 192.168.76.23 - 404 - Not Found /blog/security/igmp-snooping
+[2025-04-13 21:49:48] 192.168.76.23 - 404 - Not Found FORBIDDEN /json/RobotsTxt.json
