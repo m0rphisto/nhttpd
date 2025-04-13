@@ -31,7 +31,6 @@ const favicon = fs.readFileSync(path.join(__dirname,'img','favicon.32x32.png'));
 const httpd = http.createServer((req, res) => {
 
    // Get ip address for logging purposes
-   //const ipaddr = req.socket.remoteAddress;
    cfg.ipaddr = req.socket.remoteAddress;
 
 
@@ -50,7 +49,19 @@ const httpd = http.createServer((req, res) => {
          .writeHead(500, header(cfg.HOSTNAME, 'txt'))
          .end('500 - Internal Server Error');
       return;
-   }        
+   }
+
+   const getRobotsTxt = () => {
+      let file = '';
+      const botsjson = Load.json('RobotsTxt.json');
+      for (const block of Object.keys(botsjson)) {
+         for (const key of Object.keys(botsjson[block])) {
+            file += `${key}: ${botsjson[block][key]}\n`;
+         }
+         file += '\n';
+      }
+      return file;
+   }
    
    const forbidden = (url) => {
       // Check for forbidden files.
@@ -63,7 +74,7 @@ const httpd = http.createServer((req, res) => {
 
    const check_index = (url) => {
       // Redirect directory index.
-      regex = /\/$/
+      regex = /\/$/;
       if (regex.test(url)) {
          let urlpath = [];
          urlpath = url.split('/').filter((str) => str !== '');
@@ -109,6 +120,10 @@ const httpd = http.createServer((req, res) => {
       } else if (req.url === '/favicon.ico') {
          // Workaround for the annoying favicon.ico loading.
          res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'png')).end(favicon);
+         log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
+      } else if (req.url === '/robots.txt') {
+         // OK, lets feed those crawlers.
+         res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt')).end(getRobotsTxt());
          log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
       } else {
          // OK, finally deliver the file.
@@ -168,9 +183,8 @@ const httpd = http.createServer((req, res) => {
    if (DEBUG && CLIENT_ERRORS) throw err;
 })
 .listen(cfg.PORT, cfg.HOST, () => {
-   // In order to open the privilleged ports 80 or 443 we need root rights,
-   // but later we have to switch to unprivilleged user rights due to
-   // security reasons.
+   // In order to open the privilleged ports 80 or 443 we need root permissions, but
+   // due to security reasons we later have to switch to an unprivilleged user.
    try {
       process.setgid(cfg.GID);
       process.setuid(cfg.UID);

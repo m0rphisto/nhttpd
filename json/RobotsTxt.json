@@ -1,0 +1,15 @@
+{
+   "block-1": {
+      "User-Agent": "AdsBot-Google",
+      "Disallow": "/"
+   },
+
+   "block-2": {
+      "User-Agent": "*",
+      "Allow": "/"
+   },
+
+   "block-3": {
+      "Sitemap:": "https://m0rphisto.net/sitemap.xml"
+   }
+}
