@@ -696,3 +696,19 @@
 [2025-04-12 16:46:40] 127.0.0.1 - 404 - Not Found /blog/security/igmp-snooping
 [2025-04-13 20:34:32] 192.168.76.23 - 404 - Not Found /blog/security/igmp-snooping
 [2025-04-13 21:49:48] 192.168.76.23 - 404 - Not Found FORBIDDEN /json/RobotsTxt.json
+[2025-04-15 07:37:09] 127.0.0.1 - 404 - Not Found /?q=%27%20OR%20%271%27%3d%271
+[2025-04-15 07:37:09] 127.0.0.1 - 404 - Not Found /?q=1%3b%20DROP%20TABLE%20waftest%20--
+[2025-04-15 07:37:09] 127.0.0.1 - 404 - Not Found /?q=admin%27%20--
+[2025-04-15 07:37:09] 127.0.0.1 - 404 - Not Found /?q=%3cscript%3ealert%28%27xss%27%29%3c%2fscript%3e
+[2025-04-15 07:37:09] 127.0.0.1 - 404 - Not Found /?q=%3cimg%20src%3dx%20onerror%3dalert%28%27xss%27%29%3e
+[2025-04-15 07:37:09] 127.0.0.1 - 404 - Not Found /?q=%3ciframe%20src%3d%22javascript%3aalert%28%27XSS%27%29%22%3e%3c%2fiframe%3e
+[2025-04-15 07:37:09] 127.0.0.1 - 404 - Not Found /?q=..%2f..%2fetc%2fpasswd
+[2025-04-15 07:37:09] 127.0.0.1 - 404 - Not Found /?q=..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd
+[2025-04-15 07:37:09] 127.0.0.1 - 404 - Not Found /?q=%24%28cat%20%2fetc%2fpasswd%29
+[2025-04-15 07:37:09] 127.0.0.1 - 404 - Not Found /?q=%7c%20cat%20%2fetc%2fpasswd
+[2025-04-15 07:37:09] 127.0.0.1 - 404 - Not Found /?q=http%3a%2f%2f169.254.169.254%2flatest%2fmeta-data%2f
+[2025-04-15 07:37:09] 127.0.0.1 - 404 - Not Found /?q=file%3a%2f%2f%2fetc%2fpasswd
+[2025-04-15 07:37:09] 127.0.0.1 - 404 - Not Found /?q=%7b%27%5c%27%3a%27%27%7d
+[2025-04-15 07:37:09] 127.0.0.1 - 404 - Not Found /?q=%7b%22%5c%22%3a%20%22this.password%20%3d%3d%20this.passwordConfirm%22%7d
+[2025-04-15 07:37:09] 127.0.0.1 - 404 - Not Found /?q=php%3a%2f%2ffilter%2fconvert.base64-encode%2fresource%3dindex.php
+[2025-04-16 13:04:54] 192.168.76.23 - 404 - Not Found /blog/security/igmp-snooping

@@ -1,5 +1,5 @@
 /**
- * $Id: burp-suite-tutorial.js 2025-04-12 08:03:28 +0200 .m0rph $
+ * $Id: burp-suite-tutorial.js 2025-04-16 13:05:34 +0200 .m0rph $
  */
 
 const
@@ -12,8 +12,8 @@ const path = require('node:path');
 const fs = require('node:fs');
 
 
-const getdate = (view) => {
-   const date = new Date(fs.statSync(view).mtime);
+const getdate = (mode, view) => {
+   const date = fs.statSync(view)[mode];
    return sprintf(
       '%d-%02d-%02d %02d:%02d:%02d',
          date.getFullYear(), date.getMonth() + 1, date.getDate(),
@@ -49,7 +49,8 @@ exports.data = () => {
    });
    view = Load.view('blog/security/burp-suite-tutorial.html');
    const article = Template.parse(view, {
-      'TIMESTAMP': getdate(path.join(cfg.ROOT, 'views', 'blog', 'security', 'burp-suite-tutorial.html'))
+      'POSTED': getdate('birthtime', path.join(cfg.ROOT, 'views', 'blog', 'security', 'burp-suite-tutorial.html')),
+      'UPDATED': getdate('mtime', path.join(cfg.ROOT, 'views', 'blog', 'security', 'burp-suite-tutorial.html'))
    });
 
    return {

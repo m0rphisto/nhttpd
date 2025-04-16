@@ -1,0 +1,64 @@
+<div class="box">
+
+   <h1 aria-label="header">The Difference Between SSO Passwords and One-Time Passwords Explained</h1>
+   <div class="date">&#9856; Posted: {POSTED}</div>
+   <div class="date">&#9856; Updated: {UPDATED}</div>
+
+   <h3>Mastering Web Security</h3>
+   <p aria-label="text">In the ever-evolving landscape of web security, having the right tools is paramount. Burp Suite, a powerful web application security testing toolkit, stands as an indispensable companion for security professionals, ethical hackers, and developers alike. This tutorial aims to guide you through the basics of Burp Suite, its key features, and how to harness its capabilities to enhance the security of your web applications.</p>
+   <div id="header-image">
+      <img src="/img/burp-suite-tutorial.png" alt="Burp Suite Screenshot (source pentestgeek.org)"/>
+   </div>
+
+   <div class="line"></div>
+
+   <h3> Section 1: Introduction to Burp Suite</h3>
+   <h5> 1.1 What is Burp Suite?</h5>
+Absolutely! Here's the translation of the text about SSO and OTP into American English:
+
+**SSO Passwords and Single Sign-On:**
+
+* **Single Sign-On (SSO)** indeed means "logging in once." It's an authentication method that allows a user to log in with a single set of credentials (username and password, or other authentication methods) to access multiple independent software systems.
+* **SSO passwords** are therefore the passwords used within a Single Sign-On system to authenticate once and then gain access to several applications or services.
+
+**One-Time Passwords (OTP):**
+
+* **One-Time Passwords (OTP)** are dynamic, time-limited passwords that are valid for a single login only. They are often used as an additional security layer (Multi-Factor Authentication) and are typically generated via SMS, email, or through an authenticator app.
+* **SSO generally does *not* use one-time passwords as the primary login method.** The very goal of SSO is to authenticate just *once* with your regular credentials (i.e., the SSO password). However, OTPs can be used *additionally* within an SSO process to enhance security.
+
+**What sense would it make to steal SSO passwords?**
+
+Stealing SSO passwords can be very valuable for attackers because:
+
+* **Access to multiple systems:** A compromised SSO password allows attackers to log in to all applications and services connected to that SSO system. It's a "key to many doors."
+* **Facilitated lateral movement:** Within an organization, attackers who have taken over an SSO account can move more easily through different systems, access sensitive data, and launch further attacks.
+* **High value for cybercriminals:** Stolen SSO credentials can be traded on the dark web and misused for various criminal activities.
+
+**Aren't SSO passwords created "on the fly"?**
+
+* **No, SSO passwords are generally not created "on the fly" (i.e., ad hoc for each login).** They are static passwords that the user (or in some cases, an administrator) sets and that are ideally stored and managed securely.
+* The authentication process for SSO works more like this:
+    1.  The user tries to access an application.
+    2.  The application redirects the user to the SSO identity provider.
+    3.  The user authenticates there with their SSO password (and possibly additional factors like an OTP).
+    4.  Upon successful authentication, the identity provider issues a "ticket" or "token" that the application can validate to grant the user access without them having to log in again.
+
+**The alleged Oracle hack:**
+
+Reports about the alleged hack at Oracle indicate that **encrypted SSO passwords** and other sensitive data like JKS files (Java Keystore) and Enterprise Manager JPS keys were indeed stolen.
+
+Even if the passwords were encrypted, the theft poses a significant risk:
+
+* **Decryption attempts:** Attackers could try to decrypt the passwords through brute-force attacks or other methods, especially if the encryption is weak or if the associated keys were also compromised (as suggested by the theft of the JPS keys).
+* **Exploitation of other compromised data:** The stolen JKS files and keys could allow attackers to decrypt other sensitive configuration files that, for example, contain database access credentials.
+* **Bypassing authentication mechanisms:** With the stolen and potentially decrypted data, attackers might be able to bypass authentication mechanisms and log into various cloud systems unnoticed.
+
+It's important to emphasize that Oracle initially denied the incident, but there are now reports that customers have been informed about the data theft. The exact impact and the nature of the stolen "SSO passwords" (whether they are directly usable hashes or other sensitive authentication information) are still subject to further investigation and information.
+
+I hope this explanation helps you understand the connections better!
+
+**Regarding using the text in your blog:**
+
+**Yes, you absolutely have my permission to use this translated text in your blog.** You are welcome to copy and paste it. If you wish to attribute it, you can simply say it was provided by Gemini, an AI assistant.
+
+Let me know if you have any other questions or need further assistance!

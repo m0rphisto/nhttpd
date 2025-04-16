@@ -1,5 +1,5 @@
 /**
- * $Id: index.js 2025-04-12 10:43:22 +0200 .m0rph $
+ * $Id: index.js 2025-04-16 08:40:34 +0200 .m0rph $
  */
 
 const
@@ -54,7 +54,10 @@ const getFiles = (dir) => {
             //console.log(`file(${file}),\nsect(${sect}),\nurl(${url}),\npost(${post})\n\n`)
             files.push({
                file: post,
-               mtime: stat.mtime.getTime(),
+               //btime: stat.birthtime.getTime(),
+               //mtime: stat.mtime.getTime(),
+               btime: stat.birthtime,
+               mtime: stat.mtime,
                article_url: `/blog/${sect}/${url}`,
                section_href: `/blog/${sect}/`,
                section_txt: sect.charAt(0).toUpperCase() + sect.slice(1)
@@ -100,6 +103,14 @@ exports.data = () => {
       'NAVICSS': Load.view('meta/navi-css.html'),
    });
 
+   const getDate = (date) => {
+      return sprintf(
+         '%d-%02d-%02d %02d:%02d:%02d',
+            date.getFullYear(), date.getMonth() + 1, date.getDate(),
+            date.getHours(), date.getMinutes(), date.getSeconds()
+      );
+   }
+
    let posts = [];
    const template = Load.view('meta/box.blog-article.html');
    const files = getFiles(path.join(cfg.ROOT, 'views', 'blog'));
@@ -108,19 +119,14 @@ exports.data = () => {
    for (let i = 0; i < max; i++) {
       let box = template;
       const article = getSnippets(Load.view(files[i].file));
-      const date = new Date(files[i].mtime);
-      const mtime = sprintf(
-         '%d-%02d-%02d %02d:%02d:%02d',
-            date.getFullYear(), date.getMonth() + 1, date.getDate(),
-            date.getHours(), date.getMinutes(), date.getSeconds()
-      );
       posts[i] = Template.parse(box, {
          'ARTICLE_URL': files[i].article_url,
          'ARTICLE_HEADER': article.header,
          'SECTION_HREF': files[i].section_href,
          'SECTION_TXT': files[i].section_txt,
          'PARAGRAPH': article.text,
-         'TIMESTAMP': mtime
+         'POSTED': getDate(new Date(files[i].btime)),
+         'UPDATED': getDate(new Date(files[i].mtime))
       });
    }
    let post, blog_articles = '';

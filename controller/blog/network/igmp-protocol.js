@@ -1,5 +1,5 @@
 /**
- * $Id: the-igmp-protocol.js 2024-01-08 06:25:17 +0100 .m0rph $
+ * $Id: the-igmp-protocol.js 2025-04-16 12:51:20 +0200 .m0rph $
  */
 
 const
@@ -12,8 +12,8 @@ const path = require('node:path');
 const fs = require('node:fs');
 
 
-const getdate = (view) => {
-   const date = new Date(fs.statSync(view).mtime);
+const getdate = (mode, view) => {
+   const date = fs.statSync(view)[mode];
    return sprintf(
       '%d-%02d-%02d %02d:%02d:%02d',
          date.getFullYear(), date.getMonth() + 1, date.getDate(),
@@ -49,11 +49,9 @@ exports.data = () => {
    });
    view = Load.view('blog/network/igmp-protocol.html');
    const article = Template.parse(view, {
-      //'DATE_POSTED': path.join(cfg.ROOT, 'views', 'blog', 'network', 'igmp-protocol.html')
-      'DATE_POSTED': getdate(path.join(cfg.ROOT, 'views', 'blog', 'network', 'igmp-protocol.html'))
+      'POSTED': getdate('birthtime', path.join(cfg.ROOT, 'views', 'blog', 'network', 'igmp-protocol.html')),
+      'UPDATED': getdate('mtime', path.join(cfg.ROOT, 'views', 'blog', 'network', 'igmp-protocol.html'))
    });
-        //return sprintf('%d-%02d-%02d', date.getFullYear(), date.getMonth() + 1, date.getDate());
-        //return sprintf('%02d:%02d:%02d', date.getHours(), date.getMinutes(), date.getSeconds());
 
    return {
       // Finally return replace the template variables and return the document

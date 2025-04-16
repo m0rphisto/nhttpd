@@ -1,5 +1,5 @@
 /**
- * $Id: 7-layer-osi-model.js 2024-01-09 14:42:36 +0100 .m0rph $
+ * $Id: 7-layer-osi-model.js 2025-04-16 13:06:31 +0200 .m0rph $
  */
 
 const
@@ -12,8 +12,8 @@ const path = require('node:path');
 const fs = require('node:fs');
 
 
-const getdate = (view) => {
-   const date = new Date(fs.statSync(view).mtime);
+const getdate = (mode, view) => {
+   const date = fs.statSync(view)[mode];
    return sprintf(
       '%d-%02d-%02d %02d:%02d:%02d',
          date.getFullYear(), date.getMonth() + 1, date.getDate(),
@@ -50,7 +50,8 @@ exports.data = () => {
    });
    view = Load.view('blog/network/7-layer-osi-model.html');
    const article = Template.parse(view, {
-      'DATE_POSTED': getdate(path.join(cfg.ROOT, 'views', 'blog', 'network', '7-layer-osi-model.html'))
+      'POSTED': getdate('birthtime', path.join(cfg.ROOT, 'views', 'blog', 'network', '7-layer-osi-model.html')),
+      'UPDATED': getdate('mtime', path.join(cfg.ROOT, 'views', 'blog', 'network', '7-layer-osi-model.html'))
    });
 
    return {
