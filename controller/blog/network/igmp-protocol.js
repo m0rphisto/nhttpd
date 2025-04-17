@@ -1,5 +1,5 @@
 /**
- * $Id: the-igmp-protocol.js 2025-04-16 12:51:20 +0200 .m0rph $
+ * $Id: igmp-protocol.js 2025-04-17 21:35:16 +0200 .m0rph $
  */
 
 const
@@ -56,10 +56,7 @@ exports.data = () => {
    return {
       // Finally return replace the template variables and return the document
       'HEADER': header,
-      'MENU': Load.view('meta/menu.html'),
       'ARTICLE': article,
-      'NAVIGATION': 'NAVIGATION',
-      'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
       'FOOTER': Load.view('meta/footer.html'),
       'FID': cfg.FID,
    }

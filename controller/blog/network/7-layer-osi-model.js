@@ -1,5 +1,5 @@
 /**
- * $Id: 7-layer-osi-model.js 2025-04-16 13:06:31 +0200 .m0rph $
+ * $Id: 7-layer-osi-model.js 2025-04-17 21:34:10 +0200 .m0rph $
  */
 
 const
@@ -57,10 +57,7 @@ exports.data = () => {
    return {
       // Finally return replace the template variables and return the document
       'HEADER': header,
-      'MENU': Load.view('meta/menu.html'),
-      'NAVIGATION': 'NAVIGATION',
       'ARTICLE': article,
-      'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
       'FOOTER': Load.view('meta/footer.html'),
       'FID': cfg.FID,
    }

@@ -1,5 +1,5 @@
 /**
- * $Id: contact.js 2024-01-04 03:56:19 +0100 .m0rph $
+ * $Id: contact.js 2025-04-17 21:30:06 +2100 .m0rph $
  * 
  * Contact form controller
  */
@@ -38,8 +38,6 @@ exports.data = () => {
    return {
       // Finally return replace the template variables and return the document
       'HEADER': header,
-      'MENU': Load.view('meta/menu.html'),
-      'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
       'FOOTER': Load.view('meta/footer.html'),
       'HOSTNAME': cfg.HOSTNAME,
       'FID': cfg.FID,

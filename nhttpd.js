@@ -1,9 +1,15 @@
 /**
- * $Id: nhttpd.js v0.4 2025-04-13 18:48:40 +0200 .m0rph $
+ * $Id: nhttpd.js v0.5 2025-04-17 12:42:20 +0200 .m0rph $
  * 
  * This is my first Node.js edu project. A little HTTP server with
  * template parser and file access control.
  */
+
+// At first we have to check if we are root or we cannot open privilleged ports !!!
+if (process.getuid() !== 0) {
+   console.log('\033[31m[!] ERROR: nhttpd must be started as root. Exiting!!!');
+   process.exit();
+}
 
 const
    // Load built-in modules.
@@ -152,8 +158,11 @@ const httpd = http.createServer((req, res) => {
                      Controller.get(check_index(req.url)).data()
                   );
                   data = Template.parse(data, {
-                     // Footer section: These template variables
-                     // have to be replaced in EVERY view.
+                     // Menu, breadcrumbs and footer section:
+                     // These template variables have also to be replaced in EVERY view.
+                     'MENU': Template.menu(Load.view('meta/menu.html')),
+                     'BREADCRUMBS': Template.breadcrumbs(req.url, Load.view('meta/box.breadcrumbs.html')),
+                     'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
                      'IPADDRESS': cfg.ipaddr,
                      'USERAGENT': req.headers['user-agent'],
                      'GEOIPDATA': geoip(['city', 'countryLong'])

@@ -10,18 +10,17 @@ body {
    border-top: 1px solid #000;
    background: linear-gradient(to bottom, #cebb14 27%, #fbdf93 100%);
 }
+#crumbs {
+   width: 80%;
+   max-width: 1155px;
+   margin: 7em auto 0;
+   padding: 15px;
+}
 #main {
    width: 80%;
    max-width: 1200px;
-   margin: 7.7em auto;
+   margin: 0 auto;
 }
-/*
-@media screen and (min-width: 600px) {
-   .box {
-      column-gap: 5px;
-   }
-}
-*/
 .box {
    width: 95%;
    margin: 0 auto;

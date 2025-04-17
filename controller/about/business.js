@@ -1,5 +1,5 @@
 /**
- * $Id: whoami.js.js 2024-01-08 01:16:12 +0100 .m0rph $
+ * $Id: whoami.js.js 2025-04-17 21:29:17 +0200 .m0rph $
  * 
  * About page form controller
  */
@@ -42,9 +42,6 @@ exports.data = () => {
    return {
       // Finally return replace the template variables and return the document
       'HEADER': header,
-      'MENU': Load.view('meta/menu.html'),
-      'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
-      'CONTROLLER_TEST': ctrltest(),
       'FOOTER': Load.view('meta/footer.html'),
       'FID': cfg.FID,
    }

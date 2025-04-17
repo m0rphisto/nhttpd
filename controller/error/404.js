@@ -1,5 +1,5 @@
 /**
- * $Id: 404.js 2025-04-10 12:50:14 +0200 .m0rph $
+ * $Id: 404.js 2025-04-17 21:31:17 +0200 .m0rph $
  */
 
 const
@@ -41,10 +41,8 @@ exports.data = () => {
    return {
       // Finally replace the template variables and return the document
       'HEADER': header,
-      'MENU': Load.view('meta/menu.html'),
-      'NAVIGATION': Load.view('meta/box.ip-address.html'),
+      //'NAVIGATION': Load.view('meta/box.ip-address.html'),
       'ARTICLE': errmsg,
-      'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
       'FOOTER': Load.view('meta/footer.html'),
       'FID': cfg.FID,
    }

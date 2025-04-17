@@ -1,0 +1,41 @@
+{
+   "/blog/": {
+      "title": "/usr/share/doc",
+      "text": "&#9776; Recent Posts"
+   },
+
+   "/blog/network/": {
+      "title": "/etc/network",
+      "text": "&#9776; Network"
+   },
+   "/blog/security/": {
+      "title": "/var/log",
+      "text": "&#9776; Security"
+   },
+
+   "/blog/network/7-layer-osi-model": {
+      "title": "/etc/network/osi",
+      "text": "&#9866; OSI Model"
+   },
+   "/blog/network/icmp-protocol": {
+      "title": "/etc/network/icmp",
+      "text": "&#9866; ICMP Protocol"
+   },
+   "/blog/network/igmp-protocol": {
+      "title": "/etc/network/igmp",
+      "text": "&#9866; IGMP Protocol"
+   },
+
+   "/blog/security/igmp-snooping": {
+      "title": "/var/log/igmp-snooping",
+      "text": "&#9866; IGMP Snooping"
+   },
+   "/blog/security/sso-otp-understanding-onetime-passwords": {
+      "title": "/var/log/oss-otp",
+      "text": "&#9866; SSO vs. One-Time Passwords"
+   },
+   "/blog/security/burp-suite-beginner-tutorial": {
+      "title": "/var/log/burp-suite-beginner-tutorial",
+      "text": "&#9866; Burp-Suite Beginner Tutorial"
+   }
+}

@@ -1,5 +1,5 @@
 /**
- * $Id: sso-otp-understanding-onetime-passwords.js 2025-04-16 14:35:31 +0200 .m0rph $
+ * $Id: sso-otp-understanding-onetime-passwords.js 2025-04-17 21:37:20 +0200 .m0rph $
  */
 
 const
@@ -50,16 +50,14 @@ exports.data = () => {
    view = Load.view('blog/security/sso-otp-understanding-onetime-passwords.html');
    const article = Template.parse(view, {
       'POSTED': getdate('birthtime', path.join(cfg.ROOT, 'views', 'blog', 'security', 'sso-otp-understanding-onetime-passwords.html')),
-      'UPDATED': getdate('mtime', path.join(cfg.ROOT, 'views', 'blog', 'security', 'sso-otp-understanding-onetime-passwords.html'))
+      'UPDATED': getdate('mtime', path.join(cfg.ROOT, 'views', 'blog', 'security', 'sso-otp-understanding-onetime-passwords.html')),
+      'SECTION': `<a href="${cfg.PROTO}${cfg.HOSTNAME}/blog/security">Security</a>`
    });
 
    return {
       // Finally return replace the template variables and return the document
       'HEADER': header,
-      'MENU': Load.view('meta/menu.html'),
-      'NAVIGATION': 'NAVIGATION',
       'ARTICLE': article,
-      'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
       'FOOTER': Load.view('meta/footer.html'),
       'FID': cfg.FID,
    }

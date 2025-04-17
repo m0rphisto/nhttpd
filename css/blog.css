@@ -10,14 +10,20 @@ body {
    border-top: 1px solid #000;
    background: linear-gradient(to bottom, #cebb14 27%, #fbdf93 100%);
 }
+#crumbs {
+   width: 80%;
+   max-width: 1155px;
+   margin: 7em auto 0;
+   padding: 15px;
+}
 #main {
    width: 80%;
    max-width: 1200px;
-   margin: 8em auto;
+   margin: 0em auto;
 }
 #header-image {
    text-align: center;
-   padding: 10px;
+   padding: 10px 10px 20px 10px;
 }
 #header-image img {
    margin: 1em auto;
@@ -26,9 +32,19 @@ body {
    /*height: 720px;*/
    width: 100%;
 }
+.article-image img {
+   width: 90%;
+   margin: 1em auto;
+   padding: 10px 10px 20px 10px;
+   border: 1px solid #000;
+   border-radius: 5px;
+   max-width: 543px;
+}
+.article-image .source::before,
 #header-image .source::before {
    content: 'Source: ';
 }
+.article-image .source,
 #header-image .source {
    display: block;
    text-align: left;
@@ -61,19 +77,28 @@ body {
    margin: 0;
 }
 .box .flex .col-50 {
-   max-width: 540px;
+   max-width: 558px;
    padding: 0 10px 5px 0;
    margin: 0 10px 0 0;
 }
 .box .flex .col-30 {
-   max-width: 32%;
-   padding: 0 10px 10px 0;
+   max-width: 400px;
+   padding: 0 10px 5px 0;
+   margin: 0 10px 0 0;
+   border: 1px dotted #545454;
+}
+.box .section,
+.box .date {
+   line-height: 2.5em;
+   font-size: calc(11px + .1vw);
+   font-weight: bold;
+   color: #262626;
 }
 .box p {
    text-align: justify;
    margin-bottom: 1.5em;
 }
-.box p, .box ol li {
+.box p, .box ol li, .box ul li {
    line-height: 1.5em;
 }
 .box code, .code {
@@ -82,8 +107,8 @@ body {
    font-family: 'Courier New', Courier, monospace;
    font-weight: bold;
 }
-.box ol li {
-   padding: 3px;
+.box ol li, .box ul li {
+   padding: 5px;
 }
 .box table {
    margin: 0;
@@ -93,6 +118,9 @@ body {
 .box > i {
    display: block;
 }
+.box b.br {
+   display: block;
+}
 /*
 .box > b {
    display: block;
@@ -100,17 +128,13 @@ body {
    font-size: 10px;
 }
 */
-.box .section,
-.box .date {
-   font-size: calc(11px + .1vw);
+.box .error h3{
+   color: #f00;
+}
+.box small {
+   padding: 0 0 .5em;
    font-weight: bold;
-   color: #262626;
-}
-.box .date {
-   margin: 10px 0 0 0;
-}
-.box .section {
-   margin: 5px 0 20px;
+   display: block;
 }
 a:link, a:visited {
    text-decoration: underline;
@@ -162,6 +186,8 @@ a#jumper:focus, a#jumper:active {
    margin: 20px 0;
    border-top: 1px solid #000;
 }
+.div { border: 1px solid #cebb14; }
+.divd { border: 1px dotted #cebb14; }
 #social ul {
    margin: 0;
    padding: .5em;

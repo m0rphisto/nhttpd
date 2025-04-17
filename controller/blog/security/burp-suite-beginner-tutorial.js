@@ -1,5 +1,5 @@
 /**
- * $Id: burp-suite-tutorial.js 2025-04-16 13:05:34 +0200 .m0rph $
+ * $Id: burp-suite-beginner-tutorial.js 2025-04-17 21:36:21 +0200 .m0rph $
  */
 
 const
@@ -28,8 +28,6 @@ const getdate = (mode, view) => {
  */
 exports.data = () => {
 
-   //const url = cfg.ROOT + 'blog/security/burp-suite-tutorial.html';
-   
    // First thing to to is building the HTML header setting the meta data
    let view = Load.view('meta/header.html');
    const header = Template.parse(view, {
@@ -47,19 +45,16 @@ exports.data = () => {
       'MENUCSS': 'menu',
       'NAVICSS': Load.view('meta/navi-css.html'),
    });
-   view = Load.view('blog/security/burp-suite-tutorial.html');
+   view = Load.view('blog/security/burp-suite-beginner-tutorial.html');
    const article = Template.parse(view, {
-      'POSTED': getdate('birthtime', path.join(cfg.ROOT, 'views', 'blog', 'security', 'burp-suite-tutorial.html')),
-      'UPDATED': getdate('mtime', path.join(cfg.ROOT, 'views', 'blog', 'security', 'burp-suite-tutorial.html'))
+      'POSTED': getdate('birthtime', path.join(cfg.ROOT, 'views', 'blog', 'security', 'burp-suite-beginner-tutorial.html')),
+      'UPDATED': getdate('mtime', path.join(cfg.ROOT, 'views', 'blog', 'security', 'burp-suite-beginner-tutorial.html'))
    });
 
    return {
       // Finally return replace the template variables and return the document
       'HEADER': header,
-      'MENU': Load.view('meta/menu.html'),
-      'NAVIGATION': 'NAVIGATION',
       'ARTICLE': article,
-      'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
       'FOOTER': Load.view('meta/footer.html'),
       'FID': cfg.FID,
    }
