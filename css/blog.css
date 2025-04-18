@@ -16,6 +16,36 @@ body {
    margin: 7em auto 0;
    padding: 15px;
 }
+.socials {
+   width: 80%;
+   max-width: 1155px;
+   padding: .5em;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+   margin-top: 1em;
+}
+.socials a {
+   display: inline-flex;
+   align-items: center;
+   gap: 6px;
+   padding: 6px 12px;
+   border-radius: 6px;
+   text-decoration: none;
+   font-family: sans-serif;
+   font-size: 0.9em;
+   color: white;
+}
+.socials .share-linkedin { background-color: #0077b5; color: #000 }
+.socials .share-x        { background-color: #000000; color: #fff }
+.socials .share-mastodon { background-color: #6364ff; color: #000 }
+.socials .share-reddit   { background-color: #ff4500; color: #000 }
+.socials svg {
+   width: 1em;
+   height: 1em;
+   fill: white;
+}
+
 #main {
    width: 80%;
    max-width: 1200px;
@@ -210,3 +240,40 @@ a#jumper:focus, a#jumper:active {
 a#show-code:hover #geek-code {
    display: inline-block;
 }
+
+#up-link {
+   position: fixed;
+   bottom: 1.5rem;
+   right: 1.5rem;
+   width: 48px;
+   height: 48px;
+   border-radius: 50%;
+   border: 1px solid #000;
+   background: linear-gradient(to bottom, rgba(28,107,228,0.8) 27%, rgba(168,187,241,0.8) 100%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#up-link:hover {
+   transform: scale(1.1);
+   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+#up-link svg {
+   stroke: black;
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+   #up-link {
+      background: linear-gradient(to bottom, #a99308 27%, #d5bc66 100%);
+   }
+   #up-link svg {
+      stroke: #111;
+   }
+}
+*/

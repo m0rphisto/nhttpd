@@ -1,0 +1,10 @@
+###############################################################################
+# $Id: README 1 2025-04-18 08:49:22 +0200 .m0rph $
+###############################################################################
+This folder is to store messages from the contact form.
+
+It will be periodically checked by a systemd.timer for new messages. The job
+will then send the new messages to the webmaster via eMail and delete them
+afterwards.
+
+#EOF
