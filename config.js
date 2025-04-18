@@ -7,7 +7,7 @@
 module.exports = {
 
    // Defaults ...
-   FID: '$Id: nhttpd.js v0.5 2025-04-17 12:42:20 +0200 .m0rph $',
+   FID: '$Id: nhttpd v0.5 2025-04-17 12:42:20 +0200 .m0rph $',
 
    GID: 1000,  // Unprivilleged runtime group
    UID: 1000,  // Unprivilleged runtime user
