@@ -54,7 +54,7 @@ exports.data = () => {
    return {
       // Finally return replace the template variables and return the document
       'HEADER': header,
-      'ARTICLE': article,
+      'ARTICLE_BOX': article,
       'FOOTER': Load.view('meta/footer.html'),
       'FID': cfg.FID,
    }

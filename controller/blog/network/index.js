@@ -33,11 +33,13 @@ exports.data = () => {
       'NAVICSS': Load.view('meta/navi-css.html'),
    });
 
-
+   // Load network articles.
+   const network_articles = 'LOREM IPSUM';
 
    return {
       // Finally return replace the template variables and return the document
       'HEADER': header,
+      'INDEX_BOXES': network_articles,
       'FOOTER': Load.view('meta/footer.html'),
       'FID': cfg.FID,
    }

@@ -1,5 +1,5 @@
 /**
- * $Id: index.js 2025-04-17 21:33:22 +0200 .m0rph $
+ * $Id: index.js 2025-04-18 19:11:38 +0200 .m0rph $
  */
 
 const
@@ -10,6 +10,8 @@ const
    Load = require('../../lib/Loader'),
    Template = require('../../lib/Template');
 
+ //Load JSON blog information (header images)
+const blogFiles = Load.json('BlogFiles.json');
 
 /**
  * Private: Controller checkup. 
@@ -22,6 +24,7 @@ const hasController = (file) => {
    file = file.replace(/html$/, 'js');
    return (fs.existsSync(file)) ? !!1 : !!0;
 }
+
 
 /**
  * Private: Recursive blog entry search. 
@@ -51,16 +54,17 @@ const getFiles = (dir) => {
             regex_post.exec(file); const post = (RegExp.$1).replaceAll('\\', '/'); // And the Node.js module loader
             regex_sect.exec(file); const sect = RegExp.$1;                         // doesn't care for \ oder / 
             regex_url.exec(file);  const url  = RegExp.$1;
-            //console.log(`file(${file}),\nsect(${sect}),\nurl(${url}),\npost(${post})\n\n`)
+            const article_url = `/blog/${sect}/${url}`;
             files.push({
                file: post,
-               //btime: stat.birthtime.getTime(),
-               //mtime: stat.mtime.getTime(),
                btime: stat.birthtime,
                mtime: stat.mtime,
-               article_url: `/blog/${sect}/${url}`,
+               article_url: article_url,
                section_href: `/blog/${sect}/`,
-               section_txt: sect.charAt(0).toUpperCase() + sect.slice(1)
+               section_txt: sect.charAt(0).toUpperCase() + sect.slice(1),
+               img_src: blogFiles[article_url]['img_src'],
+               img_alt: blogFiles[article_url]['img_alt'],
+               img_source: blogFiles[article_url]['img_source']
             });
             if (cfg.DEBUG && cfg.BLOGINDEX) console.log(files);
          }
@@ -69,6 +73,11 @@ const getFiles = (dir) => {
    return files;
 }
 
+/**
+ * Private: Gets the blog articles title and preface.
+ * @param   {string} post     The content of the blog article
+ * @returns {object} snippets The title and preface
+ */
 const getSnippets = (post) => {
    const snippets = [{header: '', text: ''}];
    /<h1 aria-label="header">(.*?)<\/h1>/.exec(post);
@@ -88,7 +97,7 @@ exports.data = () => {
    // First thing to do is building the HTML header setting the meta data
    let view = Load.view('meta/header.html');
    const header = Template.parse(view, {
-      'HEADER_TITLE': '.m0rph\'s blog :: Landingpage',
+      'HEADER_TITLE': '.m0rph\'s blog :: Recent Posts',
       'HOSTNAME': cfg.HOSTNAME,
       'META_DESCRIPTION': cfg.HOSTNAME + ' is an educational Node.js project and blog, covering topics such as Linux and its administration, zsh scripting, software and website development, JavaScript, Node.js, but also networks and the navigation on the highway of Bits and Bytes.',
       'META_KEYWORDS': 'm0rphisto,.m0rph,linux,debian,kali,blog,wiki,development,webdevelopment,html,css,purecss,javascript,node.js,framework,runtime,json,hacking,exploits,penetration testing,websites',
@@ -124,14 +133,17 @@ exports.data = () => {
          'ARTICLE_HEADER': article.header,
          'SECTION_HREF': files[i].section_href,
          'SECTION_TXT': files[i].section_txt,
+         'IMG_SRC': files[i].img_src,
+         'IMG_ALT': files[i].img_alt,
+         'IMG_SOURCE': files[i].img_source,
          'PARAGRAPH': article.text,
          'POSTED': getDate(new Date(files[i].btime)),
          'UPDATED': getDate(new Date(files[i].mtime))
       });
    }
-   let post, blog_articles = '';
-   while (post = posts.shift()) {
-      blog_articles += `${post}\n`;
+   let posting, recent_articles = '';
+   while (posting = posts.shift()) {
+      recent_articles += `${posting}\n`;
    }
    // No more needed, so free memory.
    files.length = 0;
@@ -139,7 +151,7 @@ exports.data = () => {
    return {
       // Finally return replace the template variables and return the document
       'HEADER': header,
-      'BLOG_ARTICLES': blog_articles,
+      'INDEX_BOXES': recent_articles,
       'FOOTER': Load.view('meta/footer.html'),
       'FID': cfg.FID,
    }
