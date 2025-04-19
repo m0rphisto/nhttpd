@@ -18,7 +18,7 @@ module.exports = {
    PORT: 80,
 
    DEV:       !!1,   // development status
-   DEBUG:     !!1,   // Some debugging flags
+   DEBUG:     !!0,   // Some debugging flags
    HEADERS:   !!0,
    REQUEST:   !!0,
    BLOGINDEX: !!0,

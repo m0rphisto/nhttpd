@@ -1,6 +1,6 @@
 <div class="box">
 
-   <h1 aria-label="header">A Comprehensive Burp Suite Beginners Tutorial</h1>
+   <h1 aria-label="header">A Burp Suite Beginners Tutorial</h1>
    <span class="section">&#9776;&nbsp;Section: {SECTION}</span>&nbsp;|
    <span class="date">&#9856;&nbsp;Posted: {POSTED}</span>&nbsp;|
    <span class="date">&#9856;&nbsp;Updated: {UPDATED}</span>
@@ -8,87 +8,242 @@
 
 
    <div id="header-image">
-      <img src="/img/burp-suite-tutorial.png" alt="Burp Suite Screenshot (source pentestgeek.org)"/>
+      <img src="/img/dall-e.20250418.burp-suite-beginner-tutorial.png" alt="A Burp-Suite Beginners Tutorial"/>
+      <span class="source">DALL-E via ChatGPT - powered by OpenAI</span>
    </div>
 
-   <div class="line"></div>
+   <div class="div"></div>
 
-   <h3>Mastering Web Security</h3>
-   <p aria-label="text">In the ever-evolving landscape of web security, having the right tools is paramount. Burp Suite, a powerful web application security testing toolkit, stands as an indispensable companion for security professionals, ethical hackers, and developers alike. This tutorial aims to guide you through the basics of Burp Suite, its key features, and how to harness its capabilities to enhance the security of your web applications.</p>
+   <h3>👨 Mastering Web Security</h3>
+   <div class="flex">
+      <div class="col-50">
+         <p aria-label="text">In the ever-evolving landscape of web security, having the right tools is essential. Burp Suite is a powerful web application security testing toolkit and stands as an indispensable companion for security professionals, ethical hackers, and developers alike. This beginner friendly tutorial aims to guide you through the basics of Burp Suite, its key features, how to intercept traffic, and harness its capabilities to enhance the security of your web applications.</p>
+      </div>
+      <div class="col-50">
+         <p>Whether you're new to web application security or preparing for your first bug bounty, mastering Burp Suite is a vital step in your journey. More than just a proxy, Burp Suite acts as a Swiss Army knife for ethical hackers, penetration testers, and developers seeking to understand and secure modern web applications. This beginner's guide will walk you through Burp Suite’s magic and help you understand how to test web requests, and explore vulnerabilities – all in a structured and intuitive way.</p>
+      </div>
+   </div>
 
-   <div class="line"></div>
+   <div class="div"></div>
 
-   <h3> Section 1: Introduction to Burp Suite</h3>
-   <h5> 1.1 What is Burp Suite?</h5>
+   <h3>📘 Introduction to Burp Suite</h3>
+   <div class="flex">
+      <div class="col-50">
+         <div class="article-image">
+            <img src="/img/burp-suite-tutorial.png" alt="Burp Suite Community Edition"/>
+            <span class="source">PortSwigger.net</span>
+         </div>
+      </div>
+      <div class="col-50">
+         <h5>❓ What is Burp Suite?</h5>
+         <p>Burp Suite is an integrated platform for web application security testing. It is developed by <a href="https://portswigger.net/" class="code" target="_blank">PortSwigger</a> as a full featured <b>Professional version</b>, with advanced automation, scanning and plugin support, but also as a free <b>Community Edition</b> with limited features. Burp Suite is designed to identify vulnerabilities and potential security issues within web applications. </p>
+         <p>Burp Suite provides a comprehensive set of features for manual and automated testing, intercepting HTTP(S) traffic, and manipulating requests. It is widely used by web security professionals that do scanning for vulnerabilities, and automating repetitive tasks.</p>
+      </div>
+   </div>
 
-   <p>Burp Suite is a web application security testing tool designed to identify vulnerabilities and potential security issues within web applications. Developed by PortSwigger, Burp Suite provides a comprehensive set of features for manual and automated testing, making it an essential tool for anyone involved in web security.</p>
+   <div class="div"></div>
 
-   <h5>1.2 Download and Installation</h5>
+   <h3>💻 Installing Burp Suite</h3>
+   <div class="flex">
+      <div class="col-50">
+         <h5>📥 Download and Installation</h5>
+         <ul>
+            <li>Visit the official Burp Suite website (<a href="https://portswigger.net/burp" target="_blank">https://portswigger.net/burp</a>) to download the tool.</li>
+            <li>Follow the installation instructions based on your operating system.</li>
+            <li>Set up the necessary configurations, including proxy settings for your browser.</li>
+         </ul>
+         <h5>✅ Installation on Kali Linux</h5>
+         <ul>
+            <li>If it is not already installed in the tools collection, install it via APT.</li>
+            <li>Open a terminal window via the keyboard shortcut <code>Ctrl&nbsp;+&nbsp;Alt&nbsp;+&nbsp;t</code> and enter the following command on the Z-Shell.</li>
+            <li><code>kali@kali ~% sudo apt install burpsuite</code></li>
+         </ul>
+      </div>
+      <div class="col-50">
+         <div class="article-image">
+            <img src="/img/burp-suite-beginner-tutorial.kali-menu.png" alt="Burp Suite on Kali Linux"/>
+            <span class="source">m0rphisto.net</span>
+         </div>
+      </div>
+   </div>
 
-   - Visit the official Burp Suite website (https://portswigger.net/burp) to download the tool.
-   - Follow the installation instructions based on your operating system.
-   - Set up the necessary configurations, including proxy settings for your browser.
+   <div class="div"></div>
 
-   <h3> Section 2: Getting Started with Burp Suite</h3>
+   <h3>🗂️ Burp Suite Core Features</h3>
+   <div class="flex">
+      <div class="col-50">
+         <h5>🔍 The Proxy</h5>
+         <p>This is the heart of Burp Suite. It allows you to intercept, inspect, and also modify HTTP/S requests and responses between your browser and the target application.</p>
+         <b class="br">How to Use It:</b>
+         <ul>
+            <li>Toggle interception on/off in "Proxy" &gt; "Intercept".</li>
+            <li>Use "HTTP history" to view past requests.</li>
+            <li>Modify parameters, headers, or cookies in real-time.</li>
+         </ul>
+         <div class="example">
+            <b class"br normal">Use case example:</b>
+            Intercept a login POST request → modify parameters → forward → observe response.
+         </div>
+         <div class="divd"></div>
+         <h5>🔁 The Repeater</h5>
+         <p>Repeater allows you to manually modify and resend individual HTTP requests to observe how the server responds. This is useful for testing different payloads or edge cases.</p>
+         <b class="br">How to Use It:</b>
+         <ul>
+            <li>Right-click any request in Proxy or HTTP history > “Send to Repeater”</li>
+            <li>Modify the request body, headers, or method (GET, POST, etc.)</li>
+            <li>Click "Send" and view the raw response.</li>
+         </ul>
+         <div class="example">
+            <b class"br normal">Use case example:</b>
+            Testing different SQL injection payloads on a search form.
+         </div>
 
-   <h5>2.1 Proxy Configuration</h5>
+      </div>
+      <div class="col-50">
+         <div class="article-image">
+            <img src="/img/burp-suite-beginner-tutorial.tools.png" alt="Burp Suite Tool"/>
+            <span class="source">PortSwigger.net</span>
+         </div>
+      </div>
+   </div>
 
-   - Understand the role of Burp's Proxy tool in intercepting and modifying HTTP/S requests.
-   - Configure your browser to use Burp as a proxy.
-   - Learn to intercept and manipulate requests using Burp Proxy.
+   <div class="flex">
+      <div class="col-50">
+         <div class="article-image">
+            <img src="/img/burp-suite-beginner-tutorial.other-tools.png" alt="Other Burp Suite Tools"/>
+            <span class="source">PortSwigger.net</span>
+         </div>
+      </div>
+      <div class="col-50">
+         <h5>⚠️ Other useful tools</h5>
+         <ul>
+            <li><b>Intruder:</b> Automate attacks such as fuzzing or brute forcing.</li>
+            <li><b>Scanner:</b> (Pro only): Passive/active vulnerability scanner.</li>
+            <li><b>Decoder:</b> Encode/decode Base64, URL, hex, etc.</li>
+            <li><b>Comparer:</b> Diff responses or requests.</li>
+            <li><b>Extender:</b> Add Burp extensions or build your own.</li>
+         </ul>
+         <h5>📜 Site Mapping</h5>
+         <ul>
+            <li>Explore the Target tool to map the structure of a web application.</li>
+            <li>Learn how to use site mapping for a better understanding of the application's functionality.</li>
+         </ul>
+      </div>
+   </div>
 
-   <h5>2.2 Site Mapping</h5>
+   <div class="div"></div>
 
-   - Explore the Target tool to map the structure of a web application.
-   - Learn how to use site mapping for a better understanding of the application's functionality.
+   <h3>🗂️ Getting Started with Burp Suite</h3>
+   <div class="flex">
+      <div class="col-50">
+         <h5>⚙️ Proxy Configuration</h5>
+         <p>In order to get your browser working with Burp and intercept traffic, it acts as a local proxy. The default address is: <b class="code">127.0.0.1:8080</b>.</p>
 
-   <h3>Section 3: Scanning and Analysis</h3>
+         <b class="br">Important considerations:</b>
+         <ul>
+            <li>Understand the role of Burp's Proxy tool in intercepting and modifying HTTP/S requests.</li>
+            <li>Configure your browser to use Burp as a proxy or use the included version of <span class="code">Chromium</b>.</li>
+            <li>Learn to intercept and manipulate requests using Burp Proxy.</li>
+         </ul>
+         <b class="br">Steps to connect:</b>
+         <ol>
+            <li>Launch Burp and go to the "Proxy" &gt; "Options" tab.</li>
+            <li>Confirm the proxy listener is active on port 8080.</li>
+            <li>Configure your browser (e.g., Firefox) to use 127.0.0.1:8080 as the HTTP and HTTPS proxy.</li>
+            <li>Import Burp’s certificate into the browser to prevent SSL errors (via `http://burp` in the browser).</li>
+         </ol>
+      </div>
+      <div class="col-50">
+         <h5>🎯 Practice Targets</h5>
+         <p>Get hands-on by testing against deliberately vulnerable applications, but remember: If you have a running <a href="https://kali.org/" target="_blank" class="code">Kali GNU Linux</a> these plattforms might be already installed <b>or</b> are installable via the APT package manager.</p>
+         <ol>
+            <li>[DVWA] (<a href="https://sourceforge.net/projects/dvwa.mirror/" target="_blank">https://sourceforge.net/projects/dvwa.mirror/</a>)</li>
+            <li>[bWAPP] (<a href="https://sourceforge.net/projects/bwapp/" target="_blank">https://sourceforge.net/projects/bwapp/</a>)</li>
+            <li>[OWASP Juice Shop] (<a href="https://owasp.org/www-project-juice-shop/" target="_blank">https://owasp.org/www-project-juice-shop/</a>)</li>
+            <li>[TryHackMe Labs] (<a href="https://tryhackme.com/room/burpsuiterepeater" target="_blank">https://tryhackme.com/room/burpsuiterepeater</a>)</li>
+            <li>[Hack The Box Labs] (<a href="https://academy.hackthebox.com/course/preview/using-web-proxies" target="_blank">https://academy.hackthebox.com/course/preview/using-web-proxies</a>)</li>
+         </ol>
+         <p>Another way leads you to specifically developed virtual machines running under <a href="https://virtualbox.org/" target=_blank">https://virtualbox.org</a>.
+         <ol>
+            <li>[VulnHub] (<a href="https://vulnhub.com/" target="_blank">https://vulnhub.com/</a>)</li>
+            <li>[TheMatrixVM] (<a href="https://sourceforge.net/projects/thematrixvm/" target="_blank">https://sourceforge.net/projects/thematrixvm/</a>)</li>
 
-   <h5>3.1 Automated Scanning</h5>
+            <li>[WebsecurityDoJo] (<a href="https://sourceforge.net/projects/websecuritydojo/" target="_blank">https://sourceforge.net/projects/websecuritydojo/</a>)</li>
+         </ol>
+      </div>
+   </div>
 
-   - Discover how to use Burp's automated scanning capabilities to identify common vulnerabilities.
-   - Configure scan settings and analyze scan results.
+   <div class="div"></div>
 
-   <h5>3.2 Manual Testing</h5>
+   <div class="flex">
+      <div class="col-50">
+         <h3>🔍 Scanning and Analysis</h3>
+         <h5>Automated Scanning</h5>
+         <ul>
+            <li>Discover how to use Burp's automated scanning capabilities to identify common vulnerabilities.</li>
+            <li>Configure scan settings and analyze scan results.</li>
+         </ul>
+         <h5>Manual Testing</h5>
+         <ul>
+            <li>Dive into manual testing techniques using the Repeater and Intruder tools.</li>
+            <li>Understand how to identify and exploit vulnerabilities through manual testing.</li>
+         </ul>
+      </div>
+      <div class="col-50">
+         <h3>💡 Advanced Features</h3>
+         <h5>Session Handling</h5>
+         <ul>
+            <li>Explore Burp's session handling capabilities to manage authentication and session-based security mechanisms.</li>
+         </ul>
+         <h5>Extensibility</h5>
+         <ul>
+            <li>Learn about Burp Extender and how to leverage extensions for customizing and extending Burp's functionality.</li>
+         </ul>
+      </div>
+   </div>
 
-   - Dive into manual testing techniques using the Repeater and Intruder tools.
-   - Understand how to identify and exploit vulnerabilities through manual testing.
+   <div class="div"></div>
 
-   <h3>Section 4: Advanced Features</h3>
+   <h3>📘 Best Practices and Tips</h3>
+   <div class="flex">
+      <div class="col-50">
+         <h5>⚙️ Configuration Tips</h5>
+         <ul>
+            <li>Optimize Burp Suite configurations for efficiency and accuracy.</li>
+            <li>Explore various settings and customization options.</li>
+            <li>Take notes on what each parameter does.</li>
+            <li>Learn keyboard shortcuts for faster navigation.</li>
+            <li>Use the Burp Suite Documentation &amp; PortSwigger Web Security Academy.</li>
+            <li>Practice regularly – Burp is powerful, but it takes time to master.</li>
+         </ul>
+      </div>
+      <div class="col-50">
+         <h5>👨 Collaborative Work and Security Ethics</h5>
+         <p>As you continue to explore and master Burp Suite, always remember to prioritize ethical hacking practices and responsible disclosure for a safer and more secure digital landscape. Never forget: <i>Breaking into computers or networks is illegal!</i></p>
+         <b class="br"><span style="font-size: 1.5em">🚨</span> Even the attempt is considered a crime.</b>
+         <ul>
+            <li>Understand the reporting features in Burp Suite.</li>
+            <li>Learn how to generate comprehensive reports for stakeholders.</li>
+            <li>Explore collaboration features to share findings and collaborate with team members.</li>
+         </ul>
+      </div>
+   </div>
 
-   <h5>4.1 Session Handling</h5>
+   <div class="div"></div>
 
-   - Explore Burp's session handling capabilities to manage authentication and session-based security mechanisms.
+   <h3>🔚 Wrapping Up</h3>
+   <div class="flex">
+      <div class="col-50">
+         <p>Burp Suite is a versatile and powerful tool that can significantly enhance your web application security testing capabilities. This tutorial provides a foundational understanding of Burp Suite's key features, enabling you to conduct thorough security assessments and contribute to the creation of robust, secure web applications.</p>
+      </div>
+      <div class="col-50">
+         <p>Burp Suite is more than a tool – it's an environment to deeply understand web traffic, test security boundaries, and learn ethical hacking by doing. With practice, the proxy and repeater will become second nature, and you’ll uncover vulnerabilities that would otherwise go unnoticed.</p>
+      </div>
+   </div>
 
-   <h5>4.2 Extensibility</h5>
-
-   - Learn about Burp Extender and how to leverage extensions for customizing and extending Burp's functionality.
-
-   <h3>Section 5: Reporting and Collaboration</h3>
-
-   <h5>5.1 Generating Reports</h5>
-
-   - Understand the reporting features in Burp Suite.
-   - Learn how to generate comprehensive reports for stakeholders.
-
-   <h5>5.2 Collaborative Work</h5>
-
-   - Explore collaboration features to share findings and collaborate with team members.
-
-   <h3>Section 6: Best Practices and Tips</h3>
-
-   <h5> 6.1 Configuration Tips</h5>
-
-   - Optimize Burp Suite configurations for efficiency and accuracy.
-   - Explore various settings and customization options.
-
-   <h5>6.2 Security Ethics</h5>
-
-   - Emphasize ethical practices and responsible disclosure when using Burp Suite.
-
-   <div class="line"></div>
-
-   <h3>Conclusion</h3>
-   <p>Burp Suite is a versatile and powerful tool that can significantly enhance your web application security testing capabilities. This tutorial provides a foundational understanding of Burp Suite's key features, enabling you to conduct thorough security assessments and contribute to the creation of robust, secure web applications. As you continue to explore and master Burp Suite, always remember to prioritize ethical hacking practices and responsible disclosure for a safer and more secure digital landscape.</p>
+   <div class="div"></div>
+   <p>Got it all figured out? You've got the full picture? Alright, let's go - happy hacking!</p>
+   <p><i>Have lot of Fun ...</i></p>
+   <small>.m0rph</small>
 
 </div>

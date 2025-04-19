@@ -42,7 +42,7 @@ exports.data = () => {
       // Finally replace the template variables and return the document
       'HEADER': header,
       //'NAVIGATION': Load.view('meta/box.ip-address.html'),
-      'ARTICLE': errmsg,
+      'ARTICLE_BOX': errmsg,
       'FOOTER': Load.view('meta/footer.html'),
       'FID': cfg.FID,
    }

@@ -1,0 +1,70 @@
+ 🔧 Headings & Struktur
+ 📘 = Guide / Manual / Documentation  
+ 🧰 = Toolkit / Tools  
+ 🧪 = Lab / Testing  
+ 🗂️ = Sections / Categories  
+ 📑 = Reference / Appendix  
+ 🧭 = Navigation  
+ 🧱 = Foundation / Basics  
+ 
+ 👨‍💻 Tutorials & Hands-On
+ 💡 = Idea / Tip  
+ 🛠️ = Hands-On / Practice  
+ 📍 = Step / Focus point  
+ 🔁 = Repeat / Loop  
+ 📤 = Upload / Export  
+ 📥 = Download / Import  
+ ⏳ = Work in progress  
+ 🧠 = Brainstorm / Learn  
+ 📝 = Note / Annotation  
+ 
+ 🔐 Cybersecurity / Hacking
+ 🕵️ = Recon / Investigation  
+ 🎯 = Target  
+ 🔍 = Scan / Inspect  
+ 🔐 = Security / Auth  
+ 💣 = Exploit / Payload  
+ 🛡️ = Defense  
+ 🚨 = Alert / Detection  
+ 📡 = Network / Beacon  
+ 💀 = Malware / Threat  
+ 👣 = Footprint / Trace  
+ 
+ 🧬 Code & Dev
+ 💻 = Code / Terminal  
+ 📜 = Script / Output  
+ 🧾 = Log / Audit  
+ 🔤 = Input  
+ 🔚 = Output / End  
+ ⚙️ = Settings / Config  
+ 🔗 = Link / Reference  
+ 🔧 = Fix / Patch  
+ 
+ ⚠️ Hinweise & Warnungen
+ ⚠️ = Warning  
+ 🚫 = Forbidden  
+ 🛑 = Stop  
+ ✅ = Success / Confirm  
+ ❌ = Error / Fail  
+ ❓ = Question / Doubt  
+ ❗ = Important / Attention  
+ ☠️ = Danger / Illegal  
+
+ 🧙 Style & Bonus
+ 🌐 = Web / Online  
+ 🔎 = Zoom / Inspect deeply  
+ 🧨 = Boom / Critical  
+ 📛 = Badge / Identity  
+ 🎓 = Learn / Training  
+ 🚀 = Launch / Start  
+ ⛓️ = Chain / Binding  
+ 🧊 = Freeze / Isolation  
+ 
+ 🗃️ Blogstruktur & UI-Ideen
+ 📅 = Date / Timeline  
+ 🧾 = Summary  
+ 📈 = Results / Metrics  
+ 🔖 = Bookmark  
+ 🧷 = Pin / Important  
+ 🔄 = Refresh / Update  
+

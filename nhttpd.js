@@ -186,10 +186,10 @@ const httpd = http.createServer((req, res) => {
    } // end if req.method === 'GET'
 })
 .on('clientError', (err, sock) => {
-   sock.end(`{$status_codes['400']}`);
+   sock.end('400 - Bad Request');
    // Handle client errors and log the reason.
    log(1, cfg.ipaddr, `${status_codes['400']} ${err}`);
-   if (DEBUG && CLIENT_ERRORS) throw err;
+   if (cfg.DEBUG && cfg.CLIENT_ERRORS) throw err;
 })
 .listen(cfg.PORT, cfg.HOST, () => {
    // In order to open the privilleged ports 80 or 443 we need root permissions, but

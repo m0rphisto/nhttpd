@@ -65,7 +65,7 @@ body {
 .article-image img {
    width: 90%;
    margin: 1em auto;
-   padding: 10px 10px 20px 10px;
+   padding: .5em;
    border: 1px solid #000;
    border-radius: 5px;
    max-width: 543px;
@@ -82,6 +82,9 @@ body {
    text-align: left;
    font-size: 0.8em;
    color: #afafaf;
+}
+.article-image .source {
+   margin-bottom: .5em
 }
 
 /* margin: top box bottom left */
@@ -150,11 +153,20 @@ body {
    padding: 0;
    width: 100%;
 }
-.box > i {
+.box b.br, .box i.br {
    display: block;
 }
-.box b.br {
+.box .example {
+   padding: 1em;
+   margin: 0 0 1.5em;
+   border: 1px solid #000;
+   background-color: #efefef;
+   font-family: 'Courier New', Courier, monospace;
+}
+.box .example b {
    display: block;
+   font-family: Verdana, Arial, Sans-Serif;
+   padding: 0 0 0.5em;
 }
 /*
 .box > b {
@@ -163,7 +175,7 @@ body {
    font-size: 10px;
 }
 */
-.box .error h3{
+.box.error h3{
    color: #f00;
 }
 .box small {
@@ -221,8 +233,8 @@ a#jumper:focus, a#jumper:active {
    margin: 20px 0;
    border-top: 1px solid #000;
 }
-.div { border: 1px solid #cebb14; }
-.divd { border: 1px dotted #cebb14; }
+.div { border: 1px solid #cebb14; margin: .5em 0; }
+.divd { border: 1px dotted #cebb14; margin: .5em 0; }
 #social ul {
    margin: 0;
    padding: .5em;

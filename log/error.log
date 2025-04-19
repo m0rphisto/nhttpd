@@ -758,3 +758,35 @@
 [2025-04-18 20:51:51] 192.168.76.23 - 404 - Not Found /img/
 [2025-04-18 20:58:12] 192.168.76.23 - 404 - Not Found /img/
 [2025-04-18 20:58:12] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-18 21:00:25] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-18 21:01:53] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-18 21:02:05] 192.168.76.23 - 404 - Not Found /blog/security/igmp-snooping
+[2025-04-18 21:04:35] 192.168.76.23 - 404 - Not Found /blog/security/igmp-snooping
+[2025-04-18 21:05:03] 192.168.76.23 - 404 - Not Found /blog/security/igmp-snooping
+[2025-04-18 21:06:13] 192.168.76.23 - 404 - Not Found /blog/security/igmp-snooping
+[2025-04-18 21:07:11] 192.168.76.23 - 404 - Not Found /blog/security/igmp-snooping
+[2025-04-18 21:07:29] 192.168.76.23 - 404 - Not Found /blog/security/igmp-snooping
+[2025-04-18 21:09:28] 192.168.76.23 - 404 - Not Found /blog/security/igmp-snooping
+[2025-04-18 21:09:52] 192.168.76.23 - 404 - Not Found /blog/security/igmp-snooping
+[2025-04-18 21:11:27] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-18 21:27:58] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-18 21:28:52] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-18 21:28:54] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-18 21:30:26] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-18 21:30:27] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-18 21:30:40] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-18 21:31:09] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-18 21:50:30] 192.168.76.23 - 400 - Bad Request Error [ERR_HTTP_REQUEST_TIMEOUT]: Request timeout
+[2025-04-19 00:53:32] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-19 00:53:44] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-19 00:53:44] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-19 00:54:01] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-19 00:58:06] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-19 00:58:06] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-19 09:11:00] 192.168.76.23 - 400 - Bad Request Error: Parse Error: Invalid header token
+[2025-04-19 09:45:36] undefined - 400 - Bad Request Error: Parse Error: Invalid header token
+[2025-04-19 09:46:11] undefined - 400 - Bad Request Error: Parse Error: Invalid header token
+[2025-04-19 09:46:43] undefined - 400 - Bad Request Error: Parse Error: Invalid header value char
+[2025-04-19 09:46:51] undefined - 400 - Bad Request Error: Parse Error: Invalid method encountered
+[2025-04-19 09:47:28] undefined - 400 - Bad Request Error: Parse Error: Invalid header token
+[2025-04-19 09:48:10] undefined - 400 - Bad Request Error: Parse Error: Invalid header token
