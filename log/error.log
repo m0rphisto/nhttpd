@@ -790,3 +790,15 @@
 [2025-04-19 09:46:51] undefined - 400 - Bad Request Error: Parse Error: Invalid method encountered
 [2025-04-19 09:47:28] undefined - 400 - Bad Request Error: Parse Error: Invalid header token
 [2025-04-19 09:48:10] undefined - 400 - Bad Request Error: Parse Error: Invalid header token
+[2025-04-19 17:20:36] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-19 20:08:29] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-19 22:52:09] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-19 22:52:46] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-20 15:45:20] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-20 16:14:06] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-20 16:26:55] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-20 16:27:11] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-20 17:37:48] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-20 17:38:06] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-20 18:12:59] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-20 18:13:16] 192.168.76.23 - 404 - Not Found /img/

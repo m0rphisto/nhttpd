@@ -75,7 +75,7 @@ exports.data = () => {
    view = Load.view(`${urlpath}/${file}.html`);
    const title = getTitle(view);
    const article = Template.parse(view, {
-      'SECTION': `<a href="${cfg.PROTO}${cfg.HOSTNAME}/${urlpath}">Security</a>`,
+      'SECTION': `<a href="${cfg.PROTO}${cfg.HOSTNAME}/${urlpath}/">Security</a>`,
       'POSTED': getdate('birthtime', path.join(cfg.ROOT, 'views', 'blog', 'security', `${file}.html`)),
       'UPDATED': getdate('mtime', path.join(cfg.ROOT, 'views', 'blog', 'security', `${file}.html`)),
       'SOCIALS': Template.parse(Load.view('meta/box.socials.html'), {

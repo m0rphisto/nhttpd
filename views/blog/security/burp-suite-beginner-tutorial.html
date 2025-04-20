@@ -14,7 +14,7 @@
 
    <div class="div"></div>
 
-   <h3>👨 Mastering Web Security</h3>
+   <h3><span aria-hidden="true">👨</span> Mastering Web Security</h3>
    <div class="flex">
       <div class="col-50">
          <p aria-label="text">In the ever-evolving landscape of web security, having the right tools is essential. Burp Suite is a powerful web application security testing toolkit and stands as an indispensable companion for security professionals, ethical hackers, and developers alike. This beginner friendly tutorial aims to guide you through the basics of Burp Suite, its key features, how to intercept traffic, and harness its capabilities to enhance the security of your web applications.</p>
@@ -26,7 +26,7 @@
 
    <div class="div"></div>
 
-   <h3>📘 Introduction to Burp Suite</h3>
+   <h3><span aria-hidden="true">📘</span> Introduction to Burp Suite</h3>
    <div class="flex">
       <div class="col-50">
          <div class="article-image">
@@ -35,7 +35,7 @@
          </div>
       </div>
       <div class="col-50">
-         <h5>❓ What is Burp Suite?</h5>
+         <h5><span aria-hidden="true">❓</span> What is Burp Suite?</h5>
          <p>Burp Suite is an integrated platform for web application security testing. It is developed by <a href="https://portswigger.net/" class="code" target="_blank">PortSwigger</a> as a full featured <b>Professional version</b>, with advanced automation, scanning and plugin support, but also as a free <b>Community Edition</b> with limited features. Burp Suite is designed to identify vulnerabilities and potential security issues within web applications. </p>
          <p>Burp Suite provides a comprehensive set of features for manual and automated testing, intercepting HTTP(S) traffic, and manipulating requests. It is widely used by web security professionals that do scanning for vulnerabilities, and automating repetitive tasks.</p>
       </div>
@@ -43,16 +43,16 @@
 
    <div class="div"></div>
 
-   <h3>💻 Installing Burp Suite</h3>
+   <h3><span aria-hidden="true">💻</span> Installing Burp Suite</h3>
    <div class="flex">
       <div class="col-50">
-         <h5>📥 Download and Installation</h5>
+         <h5><span aria-hidden="true">📥</span> Download and Installation</h5>
          <ul>
             <li>Visit the official Burp Suite website (<a href="https://portswigger.net/burp" target="_blank">https://portswigger.net/burp</a>) to download the tool.</li>
             <li>Follow the installation instructions based on your operating system.</li>
             <li>Set up the necessary configurations, including proxy settings for your browser.</li>
          </ul>
-         <h5>✅ Installation on Kali Linux</h5>
+         <h5><span aria-hidden="true">✅</span> Installation on Kali Linux</h5>
          <ul>
             <li>If it is not already installed in the tools collection, install it via APT.</li>
             <li>Open a terminal window via the keyboard shortcut <code>Ctrl&nbsp;+&nbsp;Alt&nbsp;+&nbsp;t</code> and enter the following command on the Z-Shell.</li>
@@ -69,10 +69,10 @@
 
    <div class="div"></div>
 
-   <h3>🗂️ Burp Suite Core Features</h3>
+   <h3><span aria-hidden="true">🗂️</span> Burp Suite Core Features</h3>
    <div class="flex">
       <div class="col-50">
-         <h5>🔍 The Proxy</h5>
+         <h5><span aria-hidden="true">🔍</span> The Proxy</h5>
          <p>This is the heart of Burp Suite. It allows you to intercept, inspect, and also modify HTTP/S requests and responses between your browser and the target application.</p>
          <b class="br">How to Use It:</b>
          <ul>
@@ -85,11 +85,11 @@
             Intercept a login POST request → modify parameters → forward → observe response.
          </div>
          <div class="divd"></div>
-         <h5>🔁 The Repeater</h5>
-         <p>Repeater allows you to manually modify and resend individual HTTP requests to observe how the server responds. This is useful for testing different payloads or edge cases.</p>
+         <h5><span aria-hidden="true">🔁</span> The Repeater</h5>
+         <p>Repeater allows you to manually modify and resend individual HTTP requests to observe how the server sequentially responds. This is useful for testing different payloads or edge cases.</p>
          <b class="br">How to Use It:</b>
          <ul>
-            <li>Right-click any request in Proxy or HTTP history > “Send to Repeater”</li>
+            <li>Right-click any request in Proxy or HTTP history &gt; “Send to Repeater”</li>
             <li>Modify the request body, headers, or method (GET, POST, etc.)</li>
             <li>Click "Send" and view the raw response.</li>
          </ul>
@@ -115,15 +115,15 @@
          </div>
       </div>
       <div class="col-50">
-         <h5>⚠️ Other useful tools</h5>
+         <h5><span aria-hidden="true">⚠️</span> Other useful tools</h5>
          <ul>
             <li><b>Intruder:</b> Automate attacks such as fuzzing or brute forcing.</li>
-            <li><b>Scanner:</b> (Pro only): Passive/active vulnerability scanner.</li>
-            <li><b>Decoder:</b> Encode/decode Base64, URL, hex, etc.</li>
+            <li><b>Scanner:</b> Passive/active vulnerability scanner (pro version only)</li>
+            <li><b>Decoder:</b> Encode/decode base64, URL, hex, etc.</li>
             <li><b>Comparer:</b> Diff responses or requests.</li>
             <li><b>Extender:</b> Add Burp extensions or build your own.</li>
          </ul>
-         <h5>📜 Site Mapping</h5>
+         <h5><span aria-hidden="true">📜</span> Site Mapping</h5>
          <ul>
             <li>Explore the Target tool to map the structure of a web application.</li>
             <li>Learn how to use site mapping for a better understanding of the application's functionality.</li>
@@ -133,11 +133,11 @@
 
    <div class="div"></div>
 
-   <h3>🗂️ Getting Started with Burp Suite</h3>
+   <h3><span aria-hidden="true">🗂️</span> Getting Started with Burp Suite</h3>
    <div class="flex">
       <div class="col-50">
-         <h5>⚙️ Proxy Configuration</h5>
-         <p>In order to get your browser working with Burp and intercept traffic, it acts as a local proxy. The default address is: <b class="code">127.0.0.1:8080</b>.</p>
+         <h5><span aria-hidden="true">⚙️</span> Proxy Configuration</h5>
+         <p>In order to get your browser working with Burp and intercept traffic, it acts as a local proxy at the <code>loopback interface</code> on the default proxy port. Default address is: <b class="code">127.0.0.1:8080</b>.</p>
 
          <b class="br">Important considerations:</b>
          <ul>
@@ -154,22 +154,22 @@
          </ol>
       </div>
       <div class="col-50">
-         <h5>🎯 Practice Targets</h5>
-         <p>Get hands-on by testing against deliberately vulnerable applications, but remember: If you have a running <a href="https://kali.org/" target="_blank" class="code">Kali GNU Linux</a> these plattforms might be already installed <b>or</b> are installable via the APT package manager.</p>
-         <ol>
+         <h5><span aria-hidden="true">🎯</span> Practice Targets</h5>
+         <p>Get hands-on by testing against deliberately vulnerable applications, but remember: If you have a running <a href="https://kali.org/" target="_blank" class="code">Kali GNU Linux</a> these plattforms might be already installed <b>or</b> are installable via <code>apt</code>, the advanced package manager.</p>
+         <ul>
             <li>[DVWA] (<a href="https://sourceforge.net/projects/dvwa.mirror/" target="_blank">https://sourceforge.net/projects/dvwa.mirror/</a>)</li>
             <li>[bWAPP] (<a href="https://sourceforge.net/projects/bwapp/" target="_blank">https://sourceforge.net/projects/bwapp/</a>)</li>
             <li>[OWASP Juice Shop] (<a href="https://owasp.org/www-project-juice-shop/" target="_blank">https://owasp.org/www-project-juice-shop/</a>)</li>
             <li>[TryHackMe Labs] (<a href="https://tryhackme.com/room/burpsuiterepeater" target="_blank">https://tryhackme.com/room/burpsuiterepeater</a>)</li>
             <li>[Hack The Box Labs] (<a href="https://academy.hackthebox.com/course/preview/using-web-proxies" target="_blank">https://academy.hackthebox.com/course/preview/using-web-proxies</a>)</li>
-         </ol>
-         <p>Another way leads you to specifically developed virtual machines running under <a href="https://virtualbox.org/" target=_blank">https://virtualbox.org</a>.
-         <ol>
+         </ul>
+         <p>Another way leads you to specifically developed virtual machines running under <a href="https://virtualbox.org/" target=_blank" class="code">VirtualBox</a>. A very good application giving the possibility to simulate complete network structures.
+         <ul>
             <li>[VulnHub] (<a href="https://vulnhub.com/" target="_blank">https://vulnhub.com/</a>)</li>
             <li>[TheMatrixVM] (<a href="https://sourceforge.net/projects/thematrixvm/" target="_blank">https://sourceforge.net/projects/thematrixvm/</a>)</li>
 
             <li>[WebsecurityDoJo] (<a href="https://sourceforge.net/projects/websecuritydojo/" target="_blank">https://sourceforge.net/projects/websecuritydojo/</a>)</li>
-         </ol>
+         </ul>
       </div>
    </div>
 
@@ -177,7 +177,7 @@
 
    <div class="flex">
       <div class="col-50">
-         <h3>🔍 Scanning and Analysis</h3>
+         <h3><span aria-hidden="true">🔍</span> Scanning and Analysis</h3>
          <h5>Automated Scanning</h5>
          <ul>
             <li>Discover how to use Burp's automated scanning capabilities to identify common vulnerabilities.</li>
@@ -190,7 +190,7 @@
          </ul>
       </div>
       <div class="col-50">
-         <h3>💡 Advanced Features</h3>
+         <h3><span aria-hidden="true">💡</span> Advanced Features</h3>
          <h5>Session Handling</h5>
          <ul>
             <li>Explore Burp's session handling capabilities to manage authentication and session-based security mechanisms.</li>
@@ -204,10 +204,10 @@
 
    <div class="div"></div>
 
-   <h3>📘 Best Practices and Tips</h3>
+   <h3><span aria-hidden="true">📘</span> Best Practices and Tips</h3>
    <div class="flex">
       <div class="col-50">
-         <h5>⚙️ Configuration Tips</h5>
+         <h5><span aria-hidden="true">⚙️</span> Configuration Tips</h5>
          <ul>
             <li>Optimize Burp Suite configurations for efficiency and accuracy.</li>
             <li>Explore various settings and customization options.</li>
@@ -218,9 +218,9 @@
          </ul>
       </div>
       <div class="col-50">
-         <h5>👨 Collaborative Work and Security Ethics</h5>
+         <h5><span aria-hidden="true">👨</span> Collaborative Work and Security Ethics</h5>
          <p>As you continue to explore and master Burp Suite, always remember to prioritize ethical hacking practices and responsible disclosure for a safer and more secure digital landscape. Never forget: <i>Breaking into computers or networks is illegal!</i></p>
-         <b class="br"><span style="font-size: 1.5em">🚨</span> Even the attempt is considered a crime.</b>
+         <b class="br"><span style="font-size: 1.5em" aria-hidden="true">🚨</span> Even the attempt is considered a crime.</b>
          <ul>
             <li>Understand the reporting features in Burp Suite.</li>
             <li>Learn how to generate comprehensive reports for stakeholders.</li>
@@ -231,7 +231,7 @@
 
    <div class="div"></div>
 
-   <h3>🔚 Wrapping Up</h3>
+   <h3><span aria-hidden="true">🔚</span> Wrapping Up</h3>
    <div class="flex">
       <div class="col-50">
          <p>Burp Suite is a versatile and powerful tool that can significantly enhance your web application security testing capabilities. This tutorial provides a foundational understanding of Burp Suite's key features, enabling you to conduct thorough security assessments and contribute to the creation of robust, secure web applications.</p>

@@ -39,7 +39,6 @@ const getTitle = (post) => {
    const title = RegExp.$1;
    const regex = /\s/g;
    return (RegExp.$1).replaceAll(regex, '%20');
-   //return title.replaceAll(regex, '%20');
 }
 
 /**
@@ -75,7 +74,7 @@ exports.data = () => {
    view = Load.view('blog/security/burp-suite-beginner-tutorial.html');
    const title = getTitle(view);
    const article = Template.parse(view, {
-      'SECTION': `<a href="${cfg.PROTO}${cfg.HOSTNAME}/${urlpath}">Security</a>`,
+      'SECTION': `<a href="${cfg.PROTO}${cfg.HOSTNAME}/${urlpath}/">Security</a>`,
       'POSTED': getdate('birthtime', path.join(cfg.ROOT, 'views', 'blog', 'security', 'burp-suite-beginner-tutorial.html')),
       'UPDATED': getdate('mtime', path.join(cfg.ROOT, 'views', 'blog', 'security', 'burp-suite-beginner-tutorial.html')),
       'SOCIALS': Template.parse(Load.view('meta/box.socials.html'), {
