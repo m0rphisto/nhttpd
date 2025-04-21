@@ -2,6 +2,8 @@
  * $Id: burp-suite-beginner-tutorial.js 2025-04-18 21:45:21 +0200 .m0rph $
  */
 
+'use strict';
+
 const
    cfg  = require('../../../config'),
    Load = require('../../../lib/Loader'),

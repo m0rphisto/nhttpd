@@ -1,13 +1,17 @@
 /**
- * $Id: nhttpd.js v0.5 2025-04-17 12:42:20 +0200 .m0rph $
+ * $Id: nhttpd.js v0.6 2025-04-21 12:52:39 +0200 .m0rph $
  * 
  * This is my first Node.js edu project. A little HTTP server with
  * template parser and file access control.
  */
 
+// Since we work: CommonJS, we have to set this! EVERYWHERE !!!
+'use strict';
+
+
 // At first we have to check if we are root or we cannot open privilleged ports !!!
 if (process.getuid() !== 0) {
-   console.log('\033[31m[!] ERROR: nhttpd must be started as root. Exiting!!!');
+   console.log('\x1b[31m[!] ERROR: nhttpd must be started as root. Exiting!!!');
    process.exit();
 }
 
@@ -31,6 +35,16 @@ const
 const status_codes = Load.json('HTTPStatusCodes.json'); 
 const forbidden_files = Load.json('ForbiddenFiles.json');
 const favicon = fs.readFileSync(path.join(__dirname,'img','favicon.32x32.png'));
+
+
+// Then we handle uncaught exceptions and log them. 
+process.on('uncaughtException', (err) => {
+   log(1, cfg.ipaddr, `Uncaught Exception: ${err.stack || err.message}`); 
+});
+process.on('unhandledRejection', (err) => {
+   log(1, cfg.ipaddr, `Unhandled Rejection at: ${promise} - reason ${reason}`); 
+});
+
 
 
 // Build server (request, response)
@@ -80,7 +94,7 @@ const httpd = http.createServer((req, res) => {
 
    const check_index = (url) => {
       // Redirect directory index.
-      regex = /\/$/;
+      const regex = /\/$/;
       if (regex.test(url)) {
          let urlpath = [];
          urlpath = url.split('/').filter((str) => str !== '');
@@ -187,9 +201,8 @@ const httpd = http.createServer((req, res) => {
 })
 .on('clientError', (err, sock) => {
    sock.end('400 - Bad Request');
-   // Handle client errors and log the reason.
-   log(1, cfg.ipaddr, `${status_codes['400']} ${err}`);
-   if (cfg.DEBUG && cfg.CLIENT_ERRORS) throw err;
+   // Get ip address for logging purposes and handle client errors.
+   log(1, sock.remoteAddress, `${status_codes['400']} ${err}`);
 })
 .listen(cfg.PORT, cfg.HOST, () => {
    // In order to open the privilleged ports 80 or 443 we need root permissions, but

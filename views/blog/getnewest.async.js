@@ -5,6 +5,8 @@
  * ... 3402 Jan  7 23:12 ./security/igmp-snooping.html
  */
 
+'use strict';
+
 const path = require('node:path');
 const fs   = require('node:fs');
 

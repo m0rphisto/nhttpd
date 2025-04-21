@@ -2,6 +2,8 @@
  * $Id: form-validate.js v0.1 2024-01-03 19:52:24 +0100 .m0rph $
  */
 (() => {
+   'use strict';
+
    window.addEventListener('DOMContentLoaded', (e) => {
       const contactForm = document.querySelector('#contact');
       const form = {

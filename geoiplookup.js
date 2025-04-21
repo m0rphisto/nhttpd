@@ -4,6 +4,8 @@
  * This is a little local test script.
  */
 
+'use strict';
+
 const {IP2Location} = require('ip2location-nodejs');
 
 let ip2location = new IP2Location();

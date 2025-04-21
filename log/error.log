@@ -816,3 +816,35 @@
 [2025-04-20 22:34:46] 192.168.76.23 - 404 - Not Found /img/
 [2025-04-20 22:34:46] 192.168.76.23 - 404 - Not Found /img/
 [2025-04-20 22:35:20] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-20 23:01:34] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-20 23:02:40] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-20 23:02:44] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-21 14:00:08] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-21 14:04:07] 192.168.76.23 - 404 - Not Found /blog/security/igmp-snooping
+[2025-04-21 14:21:49] 192.168.76.23 - 404 - Not Found /img/
+[2025-04-21 14:22:17] 192.168.76.23 - 404 - Not Found /blog/security/igmp-snooping
+[2025-04-21 14:25:49] NO IP - Uncaught Exception: ReferenceError: poop is not defined
+    at Object.<anonymous> (/var/www/nhttpd/nhttpd.js:48:1)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
+    at node:internal/main/run_main_module:28:49
+[2025-04-21 14:27:37] NO IP - 400 - Bad Request Error: Parse Error: Expected HTTP/
+[2025-04-21 14:32:37] NO IP - Uncaught Exception: ReferenceError: req is not defined
+    at Server.<anonymous> (/var/www/nhttpd/nhttpd.js:204:17)
+    at Server.emit (node:events:517:28)
+    at Socket.socketOnError (node:_http_server:872:20)
+    at onParserExecuteCommon (node:_http_server:904:19)
+    at onParserExecute (node:_http_server:825:3)
+[2025-04-21 14:33:36] 192.168.76.23 - Uncaught Exception: ReferenceError: req is not defined
+    at Server.<anonymous> (/var/www/nhttpd/nhttpd.js:204:17)
+    at Server.emit (node:events:517:28)
+    at Socket.socketOnError (node:_http_server:872:20)
+    at onRequestTimeout (node:_http_server:815:17)
+    at Server.checkConnections (node:_http_server:628:7)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[2025-04-21 14:36:57] 192.168.76.23 - 400 - Bad Request Error: Parse Error: Unexpected start char in url
+[2025-04-21 14:38:15] 192.168.76.23 - 400 - Bad Request Error: Parse Error: Invalid header token

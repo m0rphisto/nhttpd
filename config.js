@@ -1,8 +1,10 @@
 /**
- * $Id: config.js v0.4 2025-01-13 19:00:54 +0200 .m0rph $
+ * $Id: config.js 2025-04-21 14:13:01 +0200 .m0rph $
  * 
  * This is the nhttpd configuration script.
  */
+
+'use strict';
 
 module.exports = {
 
@@ -22,7 +24,7 @@ module.exports = {
    HEADERS:   !!0,
    REQUEST:   !!0,
    BLOGINDEX: !!0,
-   CLIENT_ERRORS: !!1,
+   CLIENT_ERRORS: !!0,
 
    ROOT: __dirname,
 
@@ -33,6 +35,8 @@ module.exports = {
 
    EMAIL_ADDRESS: 'webmaster@m0rphisto.net',
 
-   BLOG_INDEX_NUM_POSTS: 5
+   BLOG_INDEX_NUM_POSTS: 5,
+
+   ipaddr: 'NO IP' // client IP address
 }
 // EOF

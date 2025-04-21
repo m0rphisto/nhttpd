@@ -2,6 +2,8 @@
  * $Id: 404.js 2025-04-17 21:31:17 +0200 .m0rph $
  */
 
+'use strict';
+
 const
    cfg  = require('../../config'),
    Load = require('../../lib/Loader'),

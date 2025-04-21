@@ -2,6 +2,8 @@
  * $Id: 7-layer-osi-model.js 2025-04-17 21:34:10 +0200 .m0rph $
  */
 
+'use strict';
+
 const
    cfg  = require('../../../config'),
    Load = require('../../../lib/Loader'),

@@ -2,6 +2,8 @@
  * $Id: index.js 2025-04-18 19:36:53 +0200 .m0rph $
  */
 
+'use strict';
+
 const
    fs = require('node:fs'),
    path = require('node:path'),

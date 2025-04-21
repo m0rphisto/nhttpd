@@ -4,6 +4,8 @@
  * About page form controller
  */
 
+'use strict';
+
 const
    cfg  = require('../../config'),
    Load = require('../../lib/Loader'),

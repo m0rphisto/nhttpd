@@ -2,6 +2,8 @@
  * $Id: icmp-protocol.js 2025-04-20 16:12:44 +0200 .m0rph $
  */
 
+'use strict';
+
 const
    cfg  = require('../../../config'),
    Load = require('../../../lib/Loader'),

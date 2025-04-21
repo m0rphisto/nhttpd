@@ -2,6 +2,8 @@
  * $Id: sso-otp-understanding-onetime-passwords.js 2025-04-18 11:23:40 +0200 .m0rph $
  */
 
+'use strict';
+
 const
    cfg  = require('../../../config'),
    Load = require('../../../lib/Loader'),

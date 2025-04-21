@@ -2,6 +2,8 @@
  * $Id: index.js v0.3 2025-04-17 21:26:48 +0200 .m0rph $
  */
 
+'use strict';
+
 const
    cfg  = require('../config'),
    Load = require('../lib/Loader'),
