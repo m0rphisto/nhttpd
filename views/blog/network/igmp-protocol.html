@@ -2,7 +2,7 @@
 
    <h1 aria-label="header">The Power of Multicast Communication</h1> 
    <span class="section">&#9776;&nbsp;Section: {SECTION}</span>&nbsp;|
-   <span class="date">&#9856; Posted: {POSTED}</span>
+   <span class="date">&#9856; Posted: {POSTED}</span>&nbsp;|
    <span class="date">&#9856; Updated: {UPDATED}</span>
 {SOCIALS}
 
@@ -13,115 +13,83 @@
 
    <div class="div"></div>
 
-   <h3>A Deep Dive into the IGMP Protocol</h3>
-   <p aria-label="text">In the vast ecosystem of computer networking, where information must be efficiently disseminated to multiple recipients, multicast communication takes center stage. At the heart of this seamless communication lies the Internet Group Management Protocol (IGMP). This article explores the intricacies of IGMP, shedding light on its functions, significance, and how it facilitates the efficient transmission of data to multiple hosts.</p>
-   <div id="header-image">
-      <img src="/img/igmp-basic-architecture.png" alt="IGMP Basic Architecture"/>
+   <h3><span aria-hidden="true">👨</span> A Deep Dive into the IGMP Protocol</h3>
+   <div class="flex">
+      <div class="col-50">
+         <p aria-label="text">In the world of computer networking, where information must be efficiently sent to multiple recipients, multicast communication takes center stage. At the heart of this seamless communication lies the Internet Group Management Protocol (IGMP). This article explores the intricacies of IGMP, shedding light on its functions, significance, and how it facilitates the efficient transmission of data to multiple hosts.</p>
+      </div>
+      <div class="col-50">
+         <p>Multicast communication is a one-to-many or many-to-many communication paradigm where data is sent from one source to multiple destinations simultaneously. Unlike unicast (one-to-one) and broadcast (one-to-all) communication, multicast optimizes bandwidth usage by delivering data only to devices <i>interested in receiving it</i>.</p>
+      </div>
    </div>
-   <p>
-      Multicast communication is a one-to-many or many-to-many communication paradigm where data is sent
-      from one source to multiple destinations simultaneously. Unlike unicast (one-to-one) and broadcast
-      (one-to-all) communication, multicast optimizes bandwidth usage by delivering data only to devices
-      interested in receiving it.
-   </p>
 
-   <div class="line"></div>
+   <div class="div"></div>
 
-   <h3>Understanding Multicast Communication</h3>
-   <h5>Enter IGMP: The Enabler of Multicast</h5>
-   <p>
-      IGMP is the protocol that enables hosts to communicate their interest in joining or leaving multicast
-      groups to neighboring routers. This communication is vital for routers to understand which hosts are
-      part of specific multicast groups and efficiently forward multicast traffic only to those 
-      interested devices.
-   </p>
+   <h3><span aria-hidden="true">💡</span> Understanding Multicast Communication</h3>
+   <div class="flex">
+      <div class="col-50">
+         <div class="article-image">
+            <img src="/img/igmp-basic-architecture.png" alt="IGMP Basic Architecture"/>
+            <span class="source">en.wikipedia.org</span>
+         </div>
+         <p>IGMP is the protocol that enables hosts to communicate their interest in joining or leaving multicast groups to neighboring routers. This communication is vital for routers to understand which hosts are part of specific multicast groups and efficiently forward multicast traffic only to those interested devices. The IGMP protocol is implemented on hosts and routers.</p>
+         <p>IGMP is only used on <b>IPv4</b> networks. On <b>IPv6</b> networks the multicast management is done by <code>Multicast Listener Discovery (MLD)</code> which is a part of <b>ICMPv6</b>. IGMP uses <b>bare IP encapsulation</b>.</p>
+      </div>
+      <div class="col-50">
+         <h5><span aria-hidden="true">⚙️</span> How it works</h5>
+         <p>A host on the network periodically sends out subscription queries. One single router per subnet does perform this querying function, but also some multilayer switches include an IGMP capability to allow their IGMP snooping features in order to work in the absence of an IGMP-capable router.</p>
+         <div class="divd"></div>
+         <h5><span aria-hidden="true">📜</span> Protocol Versions</h5>
+         <p><b class="br">&#9900; IGMPv1</b> The initial version of IGMP, it allowed hosts to report group memberships, but lacked the ability for routers to confirm group memberships actively.</p>
+         <p><b class="br">&#9900; IGMPv2</b>Introduced explicit Leave messages, enabling hosts to explicitly notify routers when they wish to leave a multicast group.</p>
+         <p><b class="br">&#9900; IGMPv3</b>The latest version, IGMPv3, adds support for source-specific multicast, allowing hosts to specify the sources from which they want to receive multicast traffic.</p>
+      </div>
+   </div>
 
-   <h5>Key Concepts</h5>
-   <div class="grid">
+   <div class="div"></div>
+
+   <h3><span aria-hidden="true">🔑</span> IGMP Key Concepts</h3>
+   <div class="flex">
       <div class="col-30">
-         <b>&#9900; Membership Reports</b>
-         Hosts use IGMP Membership Reports to inform routers about their interest in receiving
-         multicast traffic for specific groups. These reports are crucial for routers to
-         maintain accurate membership information.
+         <p><b class="br">Membership Reports:</b>Hosts use IGMP Membership Reports to inform routers about their interest in receiving multicast traffic for specific groups. These reports are crucial for routers to maintain accurate membership information.</p>
       </div>
       <div class="col-30">
-         <b>&#9900; Query Messages</b>
-         Routers periodically send IGMP Query messages to all hosts on the network. Hosts respond
-         with Membership Reports, allowing routers to update their multicast group membership
-         information.
+         <p><b class="br">Query Messages:</b>Routers periodically send IGMP Query messages to all hosts on the network. Hosts respond with Membership Reports, allowing routers to update their multicast group membership information.</p>
       </div>
       <div class="col-30">
-         <b>&#9900; Leave Messages</b>
-         When a host is no longer interested in a particular multicast group, it sends an IGMP Leave
-         message to the router. This helps routers update their membership tables accordingly.
+         <p><b class="br">Leave Messages:</b>When a host is no longer interested in a particular multicast group, it sends an IGMP Leave message to the router. This helps routers update their membership tables accordingly.</p>
       </div>
    </div>
    
+   <div class="div"></div>
    
-   <h5>Protocol Versions</h5>
-   <div class="grid">
-      <div class="col-30">
-         <b>&#9900; IGMPv1</b>
-         The initial version of IGMP, it allowed hosts to report group memberships,
-         but lacked the ability for routers to confirm group memberships actively.
+   <h3><span aria-hidden="true">❗</span> Significance of IGMP in Network Efficiency</h3>
+   <div class="flex">
+      <div class="col-50">
+         <p><b class="br">Bandwidth Optimization</b>IGMP ensures that multicast traffic is directed only to hosts interested in receiving it, preventing unnecessary flooding of the entire network and conserving bandwidth.</p>
+         <p><b class="br">Scalability</b>As networks grow larger, the importance of efficient multicast communication becomes even more pronounced. IGMP facilitates the scaling of networks by managing multicast group memberships intelligently.</p>
       </div>
-      <div class="col-30">
-         <b>&#9900; IGMPv2</b>
-         Introduced explicit Leave messages, enabling hosts to explicitly notify routers
-         when they wish to leave a multicast group.
-      </div>
-      <div class="col-30">
-         <b>&#9900; IGMPv3</b>
-         The latest version, IGMPv3, adds support for source-specific multicast, 
-         allowing hosts to specify the sources from which they want to receive
-         multicast traffic.
+      <div class="col-50">
+         <p><b class="br">Security Concerns</b>As with any protocol, IGMP is not immune to potential security vulnerabilities. Network administrators must be vigilant in implementing measures to secure IGMP communication.</p>
+         <p><b class="br">IGMP Snooping</b> <a href="/blog/security/igmp-snooping" title="/var/log/igmp-snooping">IGMP Snooping</a> is a feature commonly used in switches to intelligently manage multicast traffic, enhancing overall network efficiency and security.</p>
       </div>
    </div>
    
-   <div class="line"></div>
+   <div class="div"></div>
    
-   <h3>Significance of IGMP in Network Efficiency</h3>
-   <div class="grid">
+   <h3><span aria-hidden="true">🎯</span> Conclusion</h3>
+   <div class="flex">
       <div class="col-50">
-         <b>&#9900; Bandwidth Optimization</b>
-         IGMP ensures that multicast traffic is directed only to hosts interested in receiving it,
-         preventing unnecessary flooding of the entire network and conserving bandwidth.
+         <p>In the realm of computer networking, where data dissemination is a critical aspect, the IGMP protocol emerges as a key enabler of efficient multicast communication. As networks continue to evolve, the role of IGMP in optimizing bandwidth, improving scalability, and enhancing overall network efficiency becomes increasingly prominent.</p>
       </div>
       <div class="col-50">
-         <b>&#9900; Scalability</b>
-         As networks grow larger, the importance of efficient multicast communication becomes
-         even more pronounced. IGMP facilitates the scaling of networks by managing multicast
-         group memberships intelligently.
-      </div>
-   </div>
-   <br/>
-   <div class="grid">
-      <div class="col-50">
-         <b>&#9900; Security Concerns</b>
-         As with any protocol, IGMP is not immune to potential security vulnerabilities.
-         Network administrators must be vigilant in implementing measures to secure
-         IGMP communication.
-      </div>
-      <div class="col-50">
-         <b>&#9900; IGMP Snooping</b>
-         IGMP Snooping is a feature commonly used in switches to intelligently manage
-         multicast traffic, enhancing overall network efficiency and security.
+         <p><b>But:</b> Understanding IGMP is paramount for network administrators seeking to harness the power of multicast communication in today's interconnected world. As we can see, while IGMP is a useful protocol, it can also be terribly misused.</p>
       </div>
    </div>
    
-   <div class="line"></div>
-   
-   <h3>Conclusion</h3>
-   <p>
-      In the realm of computer networking, where data dissemination is a critical aspect,
-      the IGMP protocol emerges as a key enabler of efficient multicast communication.
-      As networks continue to evolve, the role of IGMP in optimizing bandwidth, improving scalability,
-      and enhancing overall network efficiency becomes increasingly prominent. Understanding IGMP
-      is paramount for network administrators seeking to harness the power of multicast communication
-      in today's interconnected world.
-   </p>
-   
-   <i>Have a lot of Fun ...</i>
-   <b>.m0rph</b>
+   <div class="div"></div>
+   <p>Got some light into the dark? I hope this article could help a little bit.</p>
+   <p><i>Have lot of Fun ...</i></p>
+   <small>.m0rph</small>
 
 </div>

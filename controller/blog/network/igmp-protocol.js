@@ -1,5 +1,5 @@
 /**
- * $Id: igmp-protocol.js 2025-04-20 15:36:56 +0200 .m0rph $
+ * $Id: igmp-protocol.js 2025-04-22 15:27:56 +0200 .m0rph $
  */
 
 'use strict';
@@ -52,7 +52,7 @@ const getTitle = (post) => {
 exports.data = () => {
 
    const
-      [urlpath, file] = ['blog/security', 'burp-suite-beginner-tutorial'],
+      [urlpath, file] = ['blog/network', 'burp-suite-beginner-tutorial'],
       text = 'Worth%20a%20Read:';
    const
       url = `${cfg.PROTO}${cfg.HOSTNAME}/${urlpath}/${file}`;
