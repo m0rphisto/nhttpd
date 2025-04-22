@@ -28,6 +28,11 @@ for file ('access' 'error') {
    chown 1000:1000 "${logpath}/${file}.log"
 }
 
+# After log rotation restart service, cause otherwise it will still be
+# bound to the old file descriptor. ;-)
+systemctl restart nhttpd-dev.service
+
+
 # Find temporary files and delete them.
 print -l -- "[$logdate] Deleting tempfiles in lib, controller, views, json."
 find $rootpath/views -type f -name '*.js' -print -delete
