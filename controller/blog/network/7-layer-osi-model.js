@@ -5,9 +5,9 @@
 'use strict';
 
 const
-   cfg  = require('../../../config'),
-   Load = require('../../../lib/Loader'),
-   Template = require('../../../lib/Template');
+   cfg  = require('@lib/Config'),
+   Load = require('@lib/Loader'),
+   Template = require('@lib/Template');
 
 const { sprintf } = require('sprintf-js');
 const path = require('node:path');
@@ -80,7 +80,7 @@ exports.data = () => {
    const article = Template.parse(view, {
       'SECTION': `<a href="${cfg.PROTO}${cfg.HOSTNAME}/${urlpath}/">Network</a>`,
       'POSTED': getdate('birthtime', path.join(cfg.ROOT, 'views', 'blog', 'network', '7-layer-osi-model.html')),
-      'UPDATED': getdate('mtime', path.join(cfg.ROOT, 'views', 'blog', 'network', '7-layer-osi-model.html'))
+      'UPDATED': getdate('mtime', path.join(cfg.ROOT, 'views', 'blog', 'network', '7-layer-osi-model.html')),
       'SOCIALS': Template.parse(Load.view('meta/box.socials.html'), {
          'SHARE_LINKEDIN': `url=${url}`,
          'SHARE_X': `url=${url}&text=${text}%20${title}`,

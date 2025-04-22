@@ -1,7 +1,0 @@
-# /etc/systemd/system/nhttpd.service
-[Service]
-ExecStart=/usr/bin/node /var/www/nhttpd/nhttpd.js
-StandardOutput=append:/var/log/nhttpd.log
-StandardError=append:/var/log/nhttpd.log
-Restart=on-failure
-

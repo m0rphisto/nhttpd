@@ -1,0 +1,41 @@
+#!/usr/bin/zsh
+################################################################################
+# $Id: nhttpd-dev.cleanup 2025-04-21 23:33:02 +0200 .m0rph $
+################################################################################
+# Description:
+#    This service script does a little tempfile cleanup, respectively logfile
+#    rotation. Otherwise they maybe grow into GB sizes. :-D
+#
+# Note:
+#    We could be using the system's logrotation service, but just like an
+#    old-school coder we do it on our own. ;-)
+################################################################################
+# Set file permission mask
+umask 0027
+
+me=${0##*/}
+# Initialize variables
+rootpath='/var/www/nhttpd'
+logpath="$rootpath/log"
+logdate=$(date +'%Y-%m-%d %H:%M:%S') # day of logfile creation
+rdate=$(date +'%Y%m%d') # day of log rotation (file timestamp)
+
+# Rotate nhttpd logfiles.
+for file ('access' 'error') {
+   print -l -- "[$logdate] Rotating logfile ${logpath}/${file}.log"
+   mv "${logpath}/${file}.log" "${logpath}/${file}.${rdate}.log"
+   echo "[$me] Logfile created ${logdate}." > "${logpath}/${file}.log"
+   chown 1000:1000 "${logpath}/${file}.log"
+}
+
+# Find temporary files and delete them.
+print -l -- "[$logdate] Deleting tempfiles in lib, controller, views, json."
+find $rootpath/views -type f -name '*.js' -print -delete
+find $rootpath/json -type f ! -name '*.json' -print -delete
+find $rootpath/{lib,controller} -type f ! -name '*.js' -print -delete
+
+################################################################################
+# Exit without any issues
+exit 0
+
+# EOF

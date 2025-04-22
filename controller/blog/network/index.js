@@ -8,9 +8,9 @@ const
    fs = require('node:fs'),
    path = require('node:path'),
    {sprintf} = require('sprintf-js'),
-   cfg  = require('../../../config'),
-   Load = require('../../../lib/Loader'),
-   Template = require('../../../lib/Template');
+   cfg  = require('@lib/Config'),
+   Load = require('@lib/Loader'),
+   Template = require('@lib/Template');
 
  //Load JSON blog information (header images)
 const blogFiles = Load.json('BlogFiles.json');

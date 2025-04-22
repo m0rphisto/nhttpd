@@ -1,0 +1,17 @@
+# /etc/systemd/system/nhttpd.service (live server)
+[Unit]
+Description=Production webserver nhttpd.js
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /var/www/nhttpd/nhttpd.js
+WorkingDirectory=/var/www/nhttpd
+Restart=on-failure
+Environment=NODE_ENV=production
+Environment=NODE_OPTIONS=--tarce-warnings
+StandardOutput=append:/var/log/nhttpd.log
+StandardError=append:/var/log/nhttpd.log
+ExecStop=/bin/kill -s SIGINT $MAINPID
+
+[Install]
+WantedBy=multi-user.target

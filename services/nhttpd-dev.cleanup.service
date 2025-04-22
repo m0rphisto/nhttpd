@@ -1,0 +1,9 @@
+# /etc/systemd/system/nhttpd-dev.cleanup.service
+[Unit]
+Description=DevCleanup Job for nhttpd
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/zsh /var/www/nhttpd/services/nhttpd-dev.cleanup
+StandardOutput=append:/var/log/nhttpd.log
+StandardError=append:/var/log/nhttpd.log

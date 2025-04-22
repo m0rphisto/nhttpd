@@ -1,5 +1,5 @@
 /**
- * $Id: nhttpd.js v0.6 2025-04-21 12:52:39 +0200 .m0rph $
+ * $Id: nhttpd.js v0.6 2025-04-22 02:26:21 +0200 .m0rph $
  * 
  * This is my first Node.js edu project. A little HTTP server with
  * template parser and file access control.
@@ -21,20 +21,22 @@ const
    path = require('node:path'),
    fs   = require('node:fs');
 
+require('module-alias/register');
+
+// Load nhttpd modules
 const
-   // Load nhttpd modules
-   cfg  = require('./config'),
-   {log} = require('./lib/Logger'),
-   {header} = require('./lib/Headers'),
-   Load = require('./lib/Loader'),
-   Controller = require('./lib/Controller'),
-   Template = require('./lib/Template'),
-   Geoip = require('./lib/GeoipLookup');
+   cfg        = require('@lib/Config'),
+   {log}      = require('@lib/Logger'),
+   {header}   = require('@lib/Headers'),
+   Load       = require('@lib/Loader'),
+   Controller = require('@lib/Controller'),
+   Template   = require('@lib/Template'),
+   Geoip      = require('@lib/GeoipLookup');
 
 // Load HTTP Status Codes and forbidden files list...
-const status_codes = Load.json('HTTPStatusCodes.json'); 
+const status_codes    = Load.json('HTTPStatusCodes.json'); 
 const forbidden_files = Load.json('ForbiddenFiles.json');
-const favicon = fs.readFileSync(path.join(__dirname,'img','favicon.32x32.png'));
+const favicon         = fs.readFileSync(path.join(__dirname, 'img','favicon.32x32.png'));
 
 
 // Then we handle uncaught exceptions and log them. 
@@ -210,6 +212,7 @@ const httpd = http.createServer((req, res) => {
    try {
       process.setgid(cfg.GID);
       process.setuid(cfg.UID);
+      console.log(`Privileges dropped to UID: ${process.getuid()}, GID: ${process.getgid()}`);
    } catch (err) {
       console.error('Error decreasing user permissions. Exiting !!!');
       process.exit(1);

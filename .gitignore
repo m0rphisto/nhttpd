@@ -1,2 +1,5 @@
+access.*.log
+error.*.log
+*.bak
 *.swp
 httpstest.js

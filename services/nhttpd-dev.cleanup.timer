@@ -1,0 +1,14 @@
+# /etc/systemd/system/nhttpd-dev.cleanup.timer (dev server [local VM])
+# Handle timer:
+#  systemctl daemon-reexec
+#  systemctl enable --now nhttpd-dev.cleanup.timer
+
+[Unit]
+Decription=Periodic development server cleanup
+
+[Timer]
+OnCalendar=*-*-* 06:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

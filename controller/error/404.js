@@ -5,9 +5,9 @@
 'use strict';
 
 const
-   cfg  = require('../../config'),
-   Load = require('../../lib/Loader'),
-   Template = require('../../lib/Template');
+   cfg  = require('@lib/Config'),
+   Load = require('@lib/Loader'),
+   Template = require('@lib/Template');
 
 
 
