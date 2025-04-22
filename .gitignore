@@ -1,5 +1,4 @@
-access.*.log
-error.*.log
+*.log
 *.bak
 *.swp
 httpstest.js

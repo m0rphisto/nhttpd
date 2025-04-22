@@ -23,22 +23,22 @@
    },
 
    "/blog/network/7-layer-osi-model": {
-      "img_src": "/img/",
-      "img_alt": "",
+      "img_src": "/img/dall-e.20250422.a-guide-to-the-7-layer-osi-model.png",
+      "img_alt": "A Guide to the 7-Layer OSI Model",
       "img_source": "DALL-E via ChatGPT - powered by OpenAI",
       "title": "/etc/network/osi",
       "text": "&#9866; OSI Model"
    },
    "/blog/network/icmp-protocol": {
-      "img_src": "/img/dall-e.20250420.exploring-the-icmp-protocol.png",
+      "img_src": "/img/dall-e.20250420.exploring-the-icmp-protocol.1.png",
       "img_alt": "Exploring the ICMP Protocol",
       "img_source": "DALL-E via ChatGPT - powered by OpenAI",
       "title": "/etc/network/icmp",
       "text": "&#9866; ICMP Protocol"
    },
    "/blog/network/igmp-protocol": {
-      "img_src": "/img/",
-      "img_alt": "",
+      "img_src": "/img/dall-e.20250422.the-power-of-multicast-communication.png",
+      "img_alt": "The Power of Multicast Communication",
       "img_source": "DALL-E via ChatGPT - powered by OpenAI",
       "title": "/etc/network/igmp",
       "text": "&#9866; IGMP Protocol"
