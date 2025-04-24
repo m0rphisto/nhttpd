@@ -1,7 +1,244 @@
-[nhttpd-dev.cleanup] Logfile created 2025-04-22 06:00:00.
-[2025-04-22 11:52:10] 192.168.76.23 - 404 - Not Found /img/
-[2025-04-22 11:57:57] 192.168.76.23 - 404 - Not Found /img/
-[2025-04-22 11:58:17] 192.168.76.23 - 404 - Not Found /img/
-[2025-04-22 12:07:32] 192.168.76.23 - 404 - Not Found /img/dall-e.20250422.a-guide-to-the-7-layer-osi-model.png
-[2025-04-22 12:36:59] 192.168.76.23 - 404 - Not Found /img/dall-e.20250422.a-guide-to-the-7-layer-osi-model.png
-[2025-04-22 15:10:31] 192.168.76.23 - 404 - Not Found /blog/security/igmp-snooping
+[nhttpd-dev.cleanup] Logfile created 2025-04-23 06:00:00.
+[2025-04-23 16:27:36] 192.168.76.23 - Uncaught Exception: ReferenceError: chkInput is not defined
+    at Server.<anonymous> (/var/www/nhttpd/nhttpd.js:63:4)
+    at Server.emit (node:events:517:28)
+    at parserOnIncoming (node:_http_server:1123:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[2025-04-23 16:29:42] 192.168.76.23 - Uncaught Exception: ReferenceError: chkInput is not defined
+    at Server.<anonymous> (/var/www/nhttpd/nhttpd.js:63:4)
+    at Server.emit (node:events:517:28)
+    at parserOnIncoming (node:_http_server:1123:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[2025-04-23 17:07:20] 192.168.76.23 - Uncaught Exception: ReferenceError: chkInput is not defined
+    at Server.<anonymous> (/var/www/nhttpd/nhttpd.js:63:4)
+    at Server.emit (node:events:517:28)
+    at parserOnIncoming (node:_http_server:1123:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[2025-04-23 17:08:40] 192.168.76.23 - 500 - Internal Server Error: ReferenceError: forbidden is not defined
+[2025-04-23 17:08:40] 192.168.76.23 - 500 - Internal Server Error: ReferenceError: forbidden is not defined
+[2025-04-23 17:12:15] 192.168.76.23 - 500 - Internal Server Error: ReferenceError: forbidden is not defined
+[2025-04-23 17:12:15] 192.168.76.23 - 500 - Internal Server Error: ReferenceError: forbidden is not defined
+[2025-04-23 17:12:46] 192.168.76.23 - 500 - Internal Server Error: ReferenceError: forbidden is not defined
+[2025-04-23 17:12:46] 192.168.76.23 - 500 - Internal Server Error: ReferenceError: forbidden is not defined
+[2025-04-23 17:32:10] 192.168.76.23 - 500 - Internal Server Error: ReferenceError: forbidden is not defined
+[2025-04-23 17:32:10] 192.168.76.23 - 500 - Internal Server Error: ReferenceError: forbidden is not defined
+[2025-04-23 17:36:52] 192.168.76.23 - 404 - Not Found /etc/passwd
+[2025-04-23 17:39:07] 192.168.76.23 - 404 - Not Found FORBIDDEN /about/whoami/.../.../.../.../etc/passwd
+[2025-04-23 17:43:46] 192.168.76.23 - 404 - Not Found FORBIDDEN /nhttpd.js
+[2025-04-23 17:45:53] 192.168.76.23 - 500 - Internal Server Error: ReferenceError: req is not defined
+[2025-04-23 17:48:28] 192.168.76.23 - 500 - Internal Server Error:xxx ReferenceError: req is not defined
+[2025-04-23 17:48:28] 192.168.76.23 - 500 - Internal Server Error:xxx ReferenceError: req is not defined
+[2025-04-23 17:49:14] 192.168.76.23 - 500 - Internal Server Error: ReferenceError: req is not defined
+[2025-04-23 17:49:14] 192.168.76.23 - 500 - Internal Server Error: ReferenceError: req is not defined
+[2025-04-23 17:50:51] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 17:50:51] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 17:50:51] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 17:50:51] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 17:50:51] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 17:50:51] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 17:50:51] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 17:50:52] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/favicon.32x32.png
+[2025-04-23 17:50:52] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/favicon.16x16.png
+[2025-04-23 17:59:03] 192.168.76.23 - 500 - Internal Server Error: ReferenceError: allowedPaths is not defined
+[2025-04-23 17:59:03] 192.168.76.23 - 500 - Internal Server Error: ReferenceError: allowedPaths is not defined
+[2025-04-23 18:00:04] 192.168.76.23 - 404 - Not Found FORBIDDEN /
+[2025-04-23 18:00:04] 192.168.76.23 - 404 - Not Found FORBIDDEN /favicon.ico
+[2025-04-23 18:03:58] 192.168.76.23 - 404 - Not Found FORBIDDEN /
+[2025-04-23 18:04:11] 192.168.76.23 - 404 - Not Found FORBIDDEN /
+[2025-04-23 18:04:13] 192.168.76.23 - 404 - Not Found FORBIDDEN /
+[2025-04-23 18:04:14] 192.168.76.23 - 404 - Not Found FORBIDDEN /
+[2025-04-23 18:06:12] 192.168.76.23 - 500 - Internal Server Error: TypeError: url.test is not a function
+[2025-04-23 18:08:28] 192.168.76.23 - 500 - Internal Server Error: TypeError: url.test is not a function
+[2025-04-23 18:08:44] 192.168.76.23 - 500 - Internal Server Error: TypeError: forbiddenFiles[key].test is not a function
+[2025-04-23 18:13:03] 192.168.76.23 - 404 - Not Found FORBIDDEN /
+[2025-04-23 18:13:07] 192.168.76.23 - 404 - Not Found FORBIDDEN /
+[2025-04-23 18:13:11] 192.168.76.23 - 404 - Not Found FORBIDDEN /
+[2025-04-23 18:17:54] 192.168.76.23 - 404 - Not Found FORBIDDEN /
+[2025-04-23 18:21:33] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 18:21:33] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 18:21:33] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 18:21:33] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 18:21:33] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 18:21:33] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 18:21:33] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 18:26:53] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 18:26:53] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 18:26:53] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 18:26:53] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 18:26:53] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 18:26:53] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 18:26:53] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 18:27:44] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 18:27:44] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 18:27:44] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 18:27:44] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 18:27:44] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 18:27:44] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 18:27:44] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 18:28:27] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 18:28:27] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 18:28:27] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 18:28:27] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 18:28:27] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 18:28:27] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 18:28:27] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 18:28:40] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 18:28:40] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 18:28:40] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 18:28:40] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 18:28:40] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 18:28:40] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 18:28:40] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 18:29:36] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 18:29:36] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 18:29:36] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 18:29:36] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 18:29:36] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 18:29:36] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 18:29:36] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 18:59:17] 192.168.76.23 - 404 - Not Found FORBIDDEN /
+[2025-04-23 19:00:00] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 19:00:00] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 19:00:00] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 19:00:00] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 19:00:00] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 19:00:00] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 19:00:00] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 19:01:00] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 19:01:00] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 19:01:00] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 19:01:00] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 19:01:00] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 19:01:00] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 19:01:00] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 19:02:20] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 19:02:20] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 19:02:20] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 19:02:20] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 19:02:20] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 19:02:20] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 19:02:20] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 19:12:08] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 19:12:08] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 19:12:08] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 19:12:08] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 19:12:08] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 19:12:08] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 19:12:08] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 19:14:13] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 19:14:13] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 19:14:13] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 19:14:13] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 19:14:13] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 19:14:13] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 19:14:13] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 19:14:27] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 19:14:27] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 19:14:27] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 19:14:27] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 19:14:27] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 19:14:27] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 19:14:27] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 19:22:37] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 19:22:37] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 19:22:37] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 19:22:37] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 19:22:37] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 19:22:37] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 19:22:37] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 19:29:16] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 19:29:16] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 19:29:16] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 19:29:16] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 19:29:16] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 19:29:16] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 19:29:16] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 19:31:26] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 19:31:26] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 19:31:26] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 19:31:26] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 19:31:26] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 19:31:26] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 19:31:26] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 19:39:31] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 19:39:31] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 19:39:31] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 19:39:31] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 19:39:31] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 19:39:31] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 19:39:31] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 19:44:33] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 19:44:33] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 19:44:33] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 19:44:33] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 19:44:33] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 19:44:33] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 19:44:33] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 19:46:09] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 19:46:09] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 19:46:09] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 19:46:09] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 19:46:09] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 19:46:09] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 19:46:09] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 19:47:41] 192.168.76.23 - 404 - Not Found FORBIDDEN /
+[2025-04-23 19:50:09] 192.168.76.23 - 404 - Not Found FORBIDDEN /
+[2025-04-23 19:50:55] 192.168.76.23 - 404 - Not Found FORBIDDEN /
+[2025-04-23 19:51:29] 192.168.76.23 - 404 - Not Found FORBIDDEN /
+[2025-04-23 19:54:33] 192.168.76.23 - 404 - Not Found FORBIDDEN /
+[2025-04-23 19:55:25] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/default.css
+[2025-04-23 19:55:25] 192.168.76.23 - 404 - Not Found FORBIDDEN /css/menu.css
+[2025-04-23 19:55:26] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/tux-talking.jpg
+[2025-04-23 19:55:26] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/m0rph.400x400.jpg
+[2025-04-23 19:55:26] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/github.png
+[2025-04-23 19:55:26] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/linkedin.png
+[2025-04-23 19:55:26] 192.168.76.23 - 404 - Not Found FORBIDDEN /img/twitter-x.png
+[2025-04-23 21:23:22] 192.168.76.23 - 500 - Internal Server Error: ReferenceError: AllowedPaths is not defined
+[2025-04-23 21:24:45] 192.168.76.23 - 500 - Internal Server Error: ReferenceError: AllowedPaths is not defined
+[2025-04-23 21:28:53] 192.168.76.23 - 404 - Not Found /blog/security/igmp-snooping
+[2025-04-23 22:12:52] 192.168.76.23 - 404 - Not Found FORBIDDEN /blog/network/7-layer-osi-model?x=\x00\x0d\x0a
+[2025-04-23 22:23:31] 192.168.76.23 - 500 - Internal Server Error: TypeError: url is not a constructor
+[2025-04-23 22:24:49] 192.168.76.23 - 500 - Internal Server Error: TypeError: url is not a constructor
+[2025-04-23 22:32:13] 192.168.76.23 - 500 - Internal Server Error: TypeError: parsedURL is not iterable
+[2025-04-23 22:41:05] 192.168.76.23 - 500 - Internal Server Error: TypeError: Cannot convert object to primitive value
+[2025-04-23 23:52:57] 127.0.0.1 - 404 - Not Found FORBIDDEN /about/whoami#%00%0a%0d
+[2025-04-24 00:01:42] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid header value char
+[2025-04-24 00:04:46] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid header value char
+[2025-04-24 00:05:20] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid header value char
+[2025-04-24 00:06:31] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid header value char
+[2025-04-24 00:07:46] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid header value char
+[2025-04-24 00:09:59] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid char in url query
+[2025-04-24 00:12:42] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid char in url query
+[2025-04-24 00:14:09] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid char in url query
+[2025-04-24 00:16:27] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid char in url query
+[2025-04-24 00:16:37] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid char in url query
+[2025-04-24 00:17:10] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid char in url query
+[2025-04-24 00:19:10] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid char in url fragment start
+[2025-04-24 00:21:22] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid char in url fragment start
+[2025-04-24 00:23:32] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid char in url fragment start
+[2025-04-24 00:24:13] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid char in url path
+[2025-04-24 00:41:02] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid header value char
+[2025-04-24 01:01:11] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid header value char
+[2025-04-24 01:01:47] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid header value char
+[2025-04-24 01:03:44] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid header value char
+[2025-04-24 01:04:12] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid header value char
+[2025-04-24 01:04:22] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid header value char
+[2025-04-24 01:04:34] 127.0.0.1 - 400 - Bad Request Error: Parse Error: Invalid header value char
+[2025-04-24 01:07:21] 127.0.0.1 - 400 - Bad Request --{Error: Parse Error: Invalid header value char}--
+[2025-04-24 01:09:03] 127.0.0.1 - 400 - Bad Request --{Error: Parse Error: Invalid header value char}--
+[2025-04-24 01:09:49] 127.0.0.1 - 400 - Bad Request --{Error: Parse Error: Invalid header value char}--
+[2025-04-24 01:10:05] 127.0.0.1 - 400 - Bad Request --{Error: Parse Error: Invalid header value char}--
+[2025-04-24 01:10:24] 127.0.0.1 - 400 - Bad Request --{Error: Parse Error: Invalid header value char}--
+[2025-04-24 01:10:51] 127.0.0.1 - 404 - Not Found FORBIDDEN /about/business?email=.m0rph@m0rphisto.net
+[2025-04-24 01:13:18] 127.0.0.1 - 400 - Bad Request --{Error: Parse Error: Invalid header value char}--
+[2025-04-24 01:13:58] 127.0.0.1 - 400 - Bad Request --{Error: Parse Error: Invalid header value char}--
+[2025-04-24 01:14:14] 127.0.0.1 - 404 - Not Found FORBIDDEN /about/business?email=.m0rph@m0rphisto.net
+[2025-04-24 01:14:47] 127.0.0.1 - 400 - Bad Request --{Error: Parse Error: Invalid header value char}--
+[2025-04-24 01:18:13] 127.0.0.1 - 400 - Bad Request --{Error: Parse Error: Invalid header value char}--
+[2025-04-24 01:20:05] 127.0.0.1 - 400 - Bad Request --{Error: Parse Error: Invalid header value char}--
+[2025-04-24 01:27:40] 127.0.0.1 - 400 - Bad Request --{Error: Parse Error: Invalid header value char}--
+[2025-04-24 01:32:43] 127.0.0.1 - 404 - Not Found FORBIDDEN /about/business?email=.m0rph@m0rphisto.net
+[2025-04-24 01:43:24] 127.0.0.1 - 400 - Bad Request --{Error: Parse Error: Invalid header value char}--
+[2025-04-24 01:52:18] 127.0.0.1 - 400 - Bad Request --{Error: Parse Error: Invalid header value char}--
+[2025-04-24 01:58:26] 127.0.0.1 - 404 - Not Found FORBIDDEN /about/business%3Femail%3D%3Cscript%3Ealert%281%29%3C%2Fscipt%3E
+[2025-04-24 01:59:14] 127.0.0.1 - 404 - Not Found FORBIDDEN /about/business%253Femail%253D%253Cscript%253Ealert%25281%2529%253C%252Fscipt%253E

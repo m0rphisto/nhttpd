@@ -13,5 +13,6 @@
    "25": "/views/",
    "26": "/controller/",
    "27": "/geoip/",
-   "28": "/node_modules/"
+   "28": "/node_modules/",
+   "29": "/.git/"
 }
