@@ -65,12 +65,12 @@ const httpd = http.createServer((req, res) => {
       // is not allowed to be async, respectively return a promise!
       // Via .then(...) we can catch that.
 
-      if (! valid) return; // Sanitizer returned !!0, so an we do nothing here !!!
+      if (! valid) return; // Sanitizer returned !!0, so we do nothing here !!!
    
       if (! status_codes) {
          // ... no HTTP Satus Codes list, then we have to quit.
          log(1, 'ERROR', 'Could not load HTTP Status Codes.');
-         res.writeHead(500, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'))
+         res.writeHead(500, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
          res.end('500 - Internal Server Error');
          return;
       }        
@@ -79,6 +79,7 @@ const httpd = http.createServer((req, res) => {
          let file = '';
          const botsjson = Load.json('RobotsTxt.json');
          for (const block of Object.keys(botsjson)) {
+            // Todo: work with .map(([key, value]) => { .... }
             for (const key of Object.keys(botsjson[block])) {
                file += `${key}: ${botsjson[block][key]}\n`;
             }
@@ -143,14 +144,14 @@ const httpd = http.createServer((req, res) => {
             fs.readFile(url, (err, data) => {
                if (err) {
                   // Plain file errors
-                  res.writeHead(404, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'))
+                  res.writeHead(404, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
                   res.end(`${status_codes['404']}`);
                   log(1, cfg.ipaddr, `${status_codes['404']} ${req.url}`);
                } else {
                   // We need to send the correct MIME type and have to load a controller module.
                   const mime = Template.mime(url);
-                  if (cfg.DEBUG && cfg.REQUEST) console.log(req.url)
-                  if (cfg.DEBUG && cfg.HEADERS) console.log(req.headers)
+                  if (cfg.DEBUG && cfg.REQUEST) console.log(req.url);
+                  if (cfg.DEBUG && cfg.HEADERS) console.log(req.headers);
                   if (mime == 'html') {
                      // At first we have to check if the controller exists !!!
                      if (! Controller.check(check_index(req.url))) {
@@ -174,7 +175,7 @@ const httpd = http.createServer((req, res) => {
                      });
                      data = Template.finalize(data);
                   }
-                  res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, mime))
+                  res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, mime));
                   res.end(data);
                   if (! req.url.includes('error'))
                      log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
