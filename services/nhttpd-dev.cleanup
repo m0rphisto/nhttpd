@@ -1,9 +1,9 @@
 #!/usr/bin/zsh
 ################################################################################
-# $Id: nhttpd-dev.cleanup 2025-04-21 23:33:02 +0200 .m0rph $
+# $Id: nhttpd-dev.cleanup 2 2025-04-25 03:39:12 +0200 .m0rph $
 ################################################################################
 # Description:
-#    This service script does a little tempfile cleanup, respectively logfile
+#    This service script does a little tempfile cleanup, respectively file
 #    rotation. Otherwise they maybe grow into GB sizes. :-D
 #
 # Note:
@@ -17,8 +17,10 @@ me=${0##*/}
 # Initialize variables
 rootpath='/var/www/nhttpd'
 logpath="$rootpath/log"
+colpath="$rootpath/collections"
 logdate=$(date +'%Y-%m-%d %H:%M:%S') # day of logfile creation
 rdate=$(date +'%Y%m%d') # day of log rotation (file timestamp)
+
 
 # Rotate nhttpd logfiles.
 for file ('access' 'error') {
@@ -26,6 +28,13 @@ for file ('access' 'error') {
    mv "${logpath}/${file}.log" "${logpath}/${file}.${rdate}.log"
    echo "[$me] Logfile created ${logdate}." > "${logpath}/${file}.log"
    chown 1000:1000 "${logpath}/${file}.log"
+}
+# Rotate nhttpd collections.
+for file ($(ls $colpath | grep -P "[^0-9]+\.txt$")) {
+   print -l -- "[$logdate] Rotating collection file ${colpath}/${file}.log"
+   mv "${colpath}/${file}.log" "${colpath}/${file}.${rdate}.log"
+   echo "[$me] Collection file created ${logdate}." > "${colpath}/${file}.log"
+   chown 1000:1000 "${colpath}/${file}.log"
 }
 
 # After log rotation restart service, cause otherwise it will still be
@@ -35,6 +44,7 @@ systemctl restart nhttpd-dev.service
 
 # Find temporary files and delete them.
 print -l -- "[$logdate] Deleting tempfiles in lib, controller, views, json."
+find $rootpath -type f -name '*.tmp' -print -delete
 find $rootpath/views -type f -name '*.js' -print -delete
 find $rootpath/json -type f ! -name '*.json' -print -delete
 find $rootpath/{lib,controller} -type f ! -name '*.js' -print -delete

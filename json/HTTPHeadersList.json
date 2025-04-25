@@ -1,0 +1,19 @@
+[
+   "^Accept",
+   "^Accep-Language",
+   "^Accept-Encoding",
+   "^Connection",
+   "^Content-Type",
+   "^Content-Length",
+   "^Cookie",
+   "^Host",
+   "^Origin",
+   "^Referer",
+   "^Sec-Fetch-*",
+   "^Upgrade-Insecure-Requests",
+   "^User-Agent",
+
+   "^Cache-Control",
+   "^DNT",
+   "^TE"
+]

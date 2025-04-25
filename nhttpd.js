@@ -184,6 +184,7 @@ const httpd = http.createServer((req, res) => {
          }
       } // end if req.method === 'GET'
 
+   // end: chkInput(req, res).then(valid => {
    }).catch(err => {
       res.writeHead(500, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
       res.end(`${status_codes['500']}`);
