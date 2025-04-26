@@ -1,618 +1,1042 @@
-[nhttpd-dev.cleanup] Logfile created 2025-04-25 06:00:00.
-[2025-04-25 20:03:04] 192.168.76.23 - 404 - Not Found FORBIDDEN /favicon.ico
-[2025-04-26 00:52:36] 192.168.76.23 - ERROR Could not save contact form - Error: ENOENT: no such file or directory, open '/var/www/nhttpd/contact/inquiry.20250425-225236.192.168.76.23.txt'
-[2025-04-26 01:08:21] 192.168.76.23 - 500 - Internal Server Error: -=[ReferenceError: inputs is not defined]=-
-[2025-04-26 01:36:30] 192.168.76.23 - 404 - Not Found /blog/security/igmp-snooping
-[2025-04-26 02:01:40] 192.168.76.23 - 500 - Internal Server Error: -=[ReferenceError: sprintf is not defined]=-
-[2025-04-26 02:31:40] 192.168.76.23 - 500 - Internal Server Error: -=[TypeError: Assignment to constant variable.]=-
-[2025-04-26 02:32:57] 192.168.76.23 - 500 - Internal Server Error: -=[TypeError: Assignment to constant variable.]=-
-[2025-04-26 02:38:07] 192.168.76.23 - 500 - Internal Server Error: -=[ReferenceError: suspicious is not defined]=-
-[2025-04-26 02:38:56] 192.168.76.23 - 500 - Internal Server Error: -=[ReferenceError: suspicious is not defined]=-
-[2025-04-26 03:34:28] NO IP - Uncaught Exception: TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
-    at Object.openSync (node:fs:588:10)
-    at Object.readFileSync (node:fs:464:35)
-    at Object.<anonymous> (/var/www/nhttpd/nhttpd.js:54:12)
-    at Module._compile (node:internal/modules/cjs/loader:1356:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
-    at Module.load (node:internal/modules/cjs/loader:1197:32)
-    at Module._load (node:internal/modules/cjs/loader:1013:12)
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
-    at node:internal/main/run_main_module:28:49
-[2025-04-26 03:35:34] NO IP - Uncaught Exception: TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
-    at Object.openSync (node:fs:588:10)
-    at Object.readFileSync (node:fs:464:35)
-    at Object.<anonymous> (/var/www/nhttpd/nhttpd.js:54:12)
-    at Module._compile (node:internal/modules/cjs/loader:1356:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
-    at Module.load (node:internal/modules/cjs/loader:1197:32)
-    at Module._load (node:internal/modules/cjs/loader:1013:12)
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
-    at node:internal/main/run_main_module:28:49
-[2025-04-26 03:46:22] NO IP - Uncaught Exception: Error: ENOENT: no such file or directory, open '/etc/ssl/private/m0rphisto.net.key'
-    at Object.openSync (node:fs:596:3)
-    at Object.readFileSync (node:fs:464:35)
-    at Object.<anonymous> (/var/www/nhttpd/nhttpd.js:54:12)
-    at Module._compile (node:internal/modules/cjs/loader:1356:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
-    at Module.load (node:internal/modules/cjs/loader:1197:32)
-    at Module._load (node:internal/modules/cjs/loader:1013:12)
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
-    at node:internal/main/run_main_module:28:49
-[2025-04-26 04:24:40] NO IP - Uncaught Exception: Error: ENOENT: no such file or directory, open '/etc/ssl/private/m0rphisto.net.key'
-    at Object.openSync (node:fs:596:3)
-    at Object.readFileSync (node:fs:464:35)
-    at Object.<anonymous> (/var/www/nhttpd/nhttpd.js:54:12)
-    at Module._compile (node:internal/modules/cjs/loader:1356:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
-    at Module.load (node:internal/modules/cjs/loader:1197:32)
-    at Module._load (node:internal/modules/cjs/loader:1013:12)
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
-    at node:internal/main/run_main_module:28:49
-[2025-04-26 04:29:02] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:29:17] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:29:17] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:29:17] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:29:17] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:29:17] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:29:17] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:29:17] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:29:17] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:29:17] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:29:17] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:29:17] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:29:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:36:37] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:36:43] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:36:43] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:36:43] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:36:43] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:36:44] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:36:44] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:36:44] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:36:44] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:36:44] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:36:44] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:36:44] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:36:44] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:36:44] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:36:44] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:36:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:04] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:04] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:04] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:04] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:04] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:04] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:04] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:04] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:04] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:04] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:04] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:40] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:40] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:40] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:40] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:40] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:40] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:40] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:40] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:40] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:40] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:46] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:46] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:46] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:46] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:46] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:46] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:46] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:46] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:46] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:46] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:46] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:49] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:49] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:49] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:49] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:49] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:49] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:49] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:49] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:49] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:49] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:39:49] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:39:49] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:33] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:33] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:33] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:33] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:33] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:33] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:33] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:33] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:33] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:33] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:52] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:52] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:52] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:52] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:52] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:52] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:52] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:52] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:52] 192.168.76.23 - 400 - Bad Request --{Error: 00C8B2A2327F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:41:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:42:15] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:42:15] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:42:15] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:42:15] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:42:15] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:42:15] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:42:15] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:42:15] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:42:15] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:42:15] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:42:15] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:42:19] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:42:19] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:42:19] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:42:19] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:42:20] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:42:20] 192.168.76.23 - 404 - Not Found FORBIDDEN /favicon.ico
-[2025-04-26 04:52:47] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:47] 192.168.76.23 - 404 - Not Found /blog/security/igmp-snooping
-[2025-04-26 04:52:47] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:47] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:47] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:47] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:47] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:47] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:47] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:47] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:47] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:47] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:52] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:52] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:52] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:52] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:52] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:52] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:52] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:52] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:52] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:52] 192.168.76.23 - 400 - Bad Request --{Error: 0008D3703A7F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
-}--
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
-[2025-04-26 04:52:52] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[nhttpd-dev.cleanup] Logfile created 2025-04-26 06:00:00.
+[2025-04-26 06:01:06] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:01:06] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:01:06] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:01:06] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:01:17] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:01:17] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:01:17] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:01:17] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:01:17] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:01:17] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:01:17] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:01:17] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:01:17] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:01:17] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:01:17] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:04:10] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:04:10] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:04:10] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:04:10] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:08:53] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:08:53] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:08:53] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:08:53] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:08:53] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:08:53] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:08:53] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:08:53] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:08:53] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:08:53] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:08:53] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:08:53] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:08:53] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:08:53] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:08:53] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:08:53] 192.168.76.23 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:08:53] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:10:29] 127.0.0.1 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000412:SSL routines:ssl3_read_bytes:sslv3 alert bad certificate:../ssl/record/rec_layer_s3.c:1605:SSL alert number 42
+}--
+[2025-04-26 06:10:29] 127.0.0.1 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000412:SSL routines:ssl3_read_bytes:sslv3 alert bad certificate:../ssl/record/rec_layer_s3.c:1605:SSL alert number 42
+}--
+[2025-04-26 06:10:29] 127.0.0.1 - 400 - Bad Request --{Error: 00B81657B07F0000:error:0A000412:SSL routines:ssl3_read_bytes:sslv3 alert bad certificate:../ssl/record/rec_layer_s3.c:1605:SSL alert number 42
+}--
+[2025-04-26 06:10:38] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:10:38] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:10:38] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:10:38] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:10:38] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:10:38] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:10:38] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:10:38] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:10:39] 127.0.0.1 - BLOCKED priority - u=4, i
+[2025-04-26 06:10:39] 127.0.0.1 - BLOCKED priority - u=4, i
+[2025-04-26 06:10:39] 127.0.0.1 - BLOCKED priority - u=6
+[2025-04-26 06:11:06] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:11:07] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:11:07] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:11:07] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:11:07] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:11:07] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:11:07] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:11:07] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:11:07] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:11:07] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:11:07] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:11:07] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:11:07] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:11:07] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:11:07] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:11:07] 127.0.0.1 - BLOCKED priority - u=6
+[2025-04-26 06:15:33] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:15:33] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:15:33] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:15:33] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:15:33] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:15:33] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:15:33] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:15:33] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:15:33] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:15:33] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:15:33] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:15:33] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:15:35] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:15:35] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:15:35] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:15:35] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:15:35] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:15:35] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:15:35] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:15:35] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:15:35] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:15:35] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:15:35] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:15:35] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:30:58] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:30:58] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:30:58] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:30:58] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:30:58] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:30:58] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:30:58] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:30:58] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:30:58] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:30:58] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:30:58] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:30:58] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:30:58] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:30:58] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:30:58] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:30:58] undefined - 400 - Bad Request --{Error: socket hang up}--
+[2025-04-26 06:31:01] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:31:01] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:31:01] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:31:01] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:31:01] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:31:01] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:31:01] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:31:01] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:31:01] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:31:01] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:31:01] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:14] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:33:14] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:33:14] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:33:14] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:33:14] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:14] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:14] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:14] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:14] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:14] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:14] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:14] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:19] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:33:19] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:33:19] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:33:19] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:33:19] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:19] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:19] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:19] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:19] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:19] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:19] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:19] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:19] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:20] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:20] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:23] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:33:23] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:33:23] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:33:23] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:33:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:23] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:33:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:33:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:35:01] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:35:01] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:35:01] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:35:01] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:35:01] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:35:01] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:35:01] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:35:01] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:35:01] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:35:01] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:35:01] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:35:01] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:35:01] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:35:05] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:35:05] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:35:05] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:35:05] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:35:05] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:35:05] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:35:05] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:35:05] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:35:05] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:35:05] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:35:05] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:35:05] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED pragma - no-cache
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED pragma - no-cache
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED pragma - no-cache
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED pragma - no-cache
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED pragma - no-cache
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED pragma - no-cache
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED pragma - no-cache
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED pragma - no-cache
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED pragma - no-cache
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED pragma - no-cache
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED pragma - no-cache
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED pragma - no-cache
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED pragma - no-cache
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED priority - u=4, i
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED pragma - no-cache
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED priority - u=4, i
+[2025-04-26 06:35:22] 127.0.0.1 - BLOCKED pragma - no-cache
+[2025-04-26 06:36:10] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:36:10] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:36:10] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:36:10] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:36:10] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:36:10] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:36:10] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:36:10] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:36:10] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:36:10] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:36:10] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:36:10] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:36:10] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:36:12] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:36:12] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:36:12] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:36:12] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:36:12] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:36:12] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:36:12] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:36:12] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:36:12] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:36:12] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:36:12] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:37:02] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:37:02] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:37:02] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:37:02] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:37:02] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:37:02] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:37:02] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:37:02] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:37:02] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:37:03] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:37:03] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:41:53] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:41:53] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:41:53] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:41:53] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:41:53] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:41:53] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:41:53] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:41:53] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:41:53] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:41:53] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:41:53] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:41:53] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:41:53] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:41:53] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:41:53] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:41:59] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:42:00] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:42:00] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:42:00] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:42:00] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:42:00] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:42:00] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:42:00] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:42:00] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:42:00] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:42:00] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:49:51] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:49:51] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:49:51] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:49:51] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:49:51] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:49:51] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:49:51] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:49:51] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:49:51] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:49:51] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:50:34] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:50:34] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:50:34] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:50:34] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 06:50:34] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:50:34] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:50:34] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:50:34] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:50:34] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:50:34] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:21] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:52:21] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:52:21] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:52:21] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:21] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:21] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:21] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:21] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:21] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:21] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:32] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:32] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:32] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:32] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:32] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:32] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:32] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:32] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:33] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:33] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:33] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:33] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:33] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:33] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:33] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:33] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:33] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:33] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:33] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:33] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:38] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:38] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:38] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:38] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:38] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:38] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:38] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:38] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:38] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:38] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:38] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:38] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:48] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:48] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:48] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:48] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:48] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:48] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:48] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:48] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:48] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:48] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:48] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 06:52:48] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 06:52:57] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:52:57] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:52:57] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:52:57] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:52:57] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:57] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:57] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:57] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:57] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:57] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:57] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:57] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:57] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:57] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:52:57] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:54:28] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 06:54:28] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:54:28] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:54:28] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 06:54:28] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:54:28] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:54:28] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:54:28] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:54:28] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:54:28] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 06:54:28] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:14] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:14] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:14] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:14] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:14] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:14] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:14] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:14] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:14] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:14] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:14] 192.168.76.23 - 400 - Bad Request --{Error: 00B8EB20D07F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:14] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:19] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 07:00:19] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:19] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:19] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:19] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:19] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:19] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:19] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:19] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:19] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:19] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:22] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 07:00:22] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:22] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:22] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:22] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:22] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:22] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:22] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:22] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:22] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:22] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:24] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 07:00:24] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:24] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:24] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:24] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:24] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:24] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:24] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:24] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:24] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:24] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:33] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 07:00:33] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:33] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:33] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:00:33] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:33] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:33] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:33] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:33] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:33] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:33] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:00:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8D4F9A37F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8D4F9A37F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8D4F9A37F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8D4F9A37F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8D4F9A37F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8D4F9A37F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8D4F9A37F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8D4F9A37F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8D4F9A37F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8D4F9A37F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:00:44] 192.168.76.23 - 400 - Bad Request --{Error: 00B8D4F9A37F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:00:44] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:03:09] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 07:03:09] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:03:09] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:03:09] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:03:09] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:03:09] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:03:09] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:03:09] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:03:09] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:03:09] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:03:09] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:04:40] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 07:04:40] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:04:40] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:04:40] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:04:40] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:04:40] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:04:40] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:04:40] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:04:40] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:04:40] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:04:40] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:03] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 07:05:03] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:05:03] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:05:03] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:05:03] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:03] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:03] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:03] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:03] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:03] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:03] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:04] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 07:05:04] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:05:04] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:05:04] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:05:04] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:04] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:04] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:04] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:04] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:05] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:05] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:35] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 07:05:35] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:05:35] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:05:35] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:05:35] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:35] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:35] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:35] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:35] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:35] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:35] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:59] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 07:05:59] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:05:59] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:05:59] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:05:59] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:59] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:59] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:59] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:59] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:59] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:05:59] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:06:18] 192.168.76.23 - 400 - Bad Request --{Error: 00D8D114087F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:06:18] 192.168.76.23 - 400 - Bad Request --{Error: 00D8D114087F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:06:18] 192.168.76.23 - 400 - Bad Request --{Error: 00D8D114087F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:06:18] 192.168.76.23 - 400 - Bad Request --{Error: 00D8D114087F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:06:18] 192.168.76.23 - 400 - Bad Request --{Error: 00D8D114087F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:06:18] 192.168.76.23 - 400 - Bad Request --{Error: 00D8D114087F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:06:18] 192.168.76.23 - 400 - Bad Request --{Error: 00D8D114087F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:06:18] 192.168.76.23 - 400 - Bad Request --{Error: 00D8D114087F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:06:18] 192.168.76.23 - 400 - Bad Request --{Error: 00D8D114087F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:06:18] 192.168.76.23 - 400 - Bad Request --{Error: 00D8D114087F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:06:18] 192.168.76.23 - 400 - Bad Request --{Error: 00D8D114087F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:06:18] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:07:27] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 07:07:27] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:07:27] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:07:27] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:07:27] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:07:27] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:07:27] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:07:27] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:07:27] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:07:27] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:07:27] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:07:40] 192.168.76.23 - 400 - Bad Request --{Error: 00A8F258B97F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:07:40] 192.168.76.23 - 400 - Bad Request --{Error: 00A8F258B97F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:07:40] 192.168.76.23 - 400 - Bad Request --{Error: 00A8F258B97F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:07:40] 192.168.76.23 - 400 - Bad Request --{Error: 00A8F258B97F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:07:40] 192.168.76.23 - 400 - Bad Request --{Error: 00A8F258B97F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:07:40] 192.168.76.23 - 400 - Bad Request --{Error: 00A8F258B97F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:07:40] 192.168.76.23 - 400 - Bad Request --{Error: 00A8F258B97F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:07:40] 192.168.76.23 - 400 - Bad Request --{Error: 00A8F258B97F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:07:40] 192.168.76.23 - 400 - Bad Request --{Error: 00A8F258B97F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:07:40] 192.168.76.23 - 400 - Bad Request --{Error: 00A8F258B97F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:07:40] 192.168.76.23 - 400 - Bad Request --{Error: 00A8F258B97F0000:error:0A000416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../ssl/record/rec_layer_s3.c:1605:SSL alert number 46
+}--
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-platform - "Windows"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua - "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+[2025-04-26 07:07:40] 192.168.76.23 - BLOCKED sec-ch-ua-mobile - ?0
+[2025-04-26 07:08:20] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 07:08:20] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:08:20] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:08:20] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:08:20] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:08:20] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:08:20] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:08:20] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:08:20] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:08:20] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:08:20] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:08:20] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:08:20] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:08:23] 127.0.0.1 - BLOCKED priority - u=0, i
+[2025-04-26 07:08:23] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:08:23] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:08:23] 127.0.0.1 - BLOCKED priority - u=2
+[2025-04-26 07:08:23] 127.0.0.1 - BLOCKED priority - u=5, i
+[2025-04-26 07:08:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:08:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:08:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:08:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:08:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:08:23] 127.0.0.1 - BLOCKED priority - u=5
+[2025-04-26 07:08:23] 127.0.0.1 - BLOCKED priority - u=5

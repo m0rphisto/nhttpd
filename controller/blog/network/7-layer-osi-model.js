@@ -52,7 +52,7 @@ const getTitle = (post) => {
 exports.data = () => {
 
    const
-      [urlpath, file] = ['blog/security', 'burp-suite-beginner-tutorial'],
+      [urlpath, file] = ['blog/network', '7-layer-osi-model'],
       text = 'Worth%20a%20Read:';
    const
       url = `${cfg.PROTO}${cfg.HOSTNAME}/${urlpath}/${file}`;
@@ -60,12 +60,16 @@ exports.data = () => {
    // First thing to to is building the HTML header setting the meta data
    let view = Load.view('meta/header.html');
    const header = Template.parse(view, {
-      'HEADER_TITLE': 'IGMP Protocol',
+      'HEADER_TITLE': 'ISO/OSI Model',
       'HOSTNAME': cfg.HOSTNAME,
       'META_DESCRIPTION': 'A Comprehensive Guide to the 7-Layer OSI Model. The OSI (Open Systems Interconnection) model stands as a foundational framework that facilitates seamless communication between devices and systems.',
       'META_KEYWORDS': 'linux,debian,kali,network,protocol,iso,7 layer,physical layer,data Link layer,network layer,transport layer,session layer,presentation layer,application layer,',
-
       'DEFAULTCSS': 'blog',
+
+      'HEADER_OG_URL': url,
+      'HEADER_OG_IMAGE': '/img/dall-e.20250422.a-guide-to-the-7-layer-osi-model.png',
+      'HEADER_OG_IMAGE_ALT': 'A Guide to the 7-Layer OSI Model',
+      'HEADER_OG_TYPE': 'article',
 
       'TWITTER_CARD': cfg.TWITTER_CARD,
       'TWITTER_CARD_CREATOR': cfg.TWITTER_CARD_CREATOR,

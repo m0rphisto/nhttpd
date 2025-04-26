@@ -99,7 +99,7 @@ a:hover, a:active, a:focus {
 }
 .box code, a.code {
    color: rgba(4, 35, 83, 0.9);
-   font-size: calc(14px + .1vw);
+   font-size: calc(12px + .1vw);
    font-family: 'Courier New', Courier, monospace;
    font-weight: bold;
 }

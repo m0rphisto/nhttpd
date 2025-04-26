@@ -1,5 +1,5 @@
 /**
- * $Id: burp-suite-beginner-tutorial.js 2025-04-18 21:45:21 +0200 .m0rph $
+ * $Id: burp-suite-beginner-tutorial.js 2025-04-26 06:08:08 +0200 .m0rph $
  */
 
 'use strict';
@@ -59,11 +59,16 @@ exports.data = () => {
    // First thing to to is building the HTML header setting the meta data
    let view = Load.view('meta/header.html');
    const header = Template.parse(view, {
-      'HEADER_TITLE': 'IGMP Protocol',
+      'HEADER_TITLE': 'A Burp Suite Beginners Tutorial',
       'HOSTNAME': cfg.HOSTNAME,
-      'META_DESCRIPTION': 'Burp Suite, in the ever-evolving landscape of web security, having the right tools is paramount. Burp Suite, a powerful web application security testing toolkit ...',
+      'META_DESCRIPTION': 'In the ever-evolving landscape of web security, having the right tools is essential. Burp Suite is a powerful web application security testing toolkit and stands as an indispensable companion for security professionals, ethical hackers, and developers alike.',
       'META_KEYWORDS': 'linux,debian,kali,network,web site security,burp suite,penetration testing,wen application security,vulnerabilities,pentesting',
       'DEFAULTCSS': 'blog',
+
+      'HEADER_OG_URL': url,
+      'HEADER_OG_IMAGE': '/img/dall-e.20250418.burp-suite-beginner-tutorial.png',
+      'HEADER_OG_IMAGE_ALT': 'A Burp Suite Beginners Tutorial',
+      'HEADER_OG_TYPE': 'article',
 
       'TWITTER_CARD': cfg.TWITTER_CARD,
       'TWITTER_CARD_CREATOR': cfg.TWITTER_CARD_CREATOR,

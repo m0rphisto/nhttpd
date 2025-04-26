@@ -105,6 +105,11 @@ exports.data = () => {
       'META_KEYWORDS': 'm0rphisto,.m0rph,linux,debian,kali,blog,wiki,development,webdevelopment,html,css,purecss,javascript,node.js,framework,runtime,json,hacking,exploits,penetration testing,websites',
       'DEFAULTCSS': 'blog',
 
+      'HEADER_OG_URL': `${cfg.PROTO}${cfg.HOSTNAME}/blog/security/`,
+      'HEADER_OG_IMAGE': '/img/tux-talking.jpg',
+      'HEADER_OG_IMAGE_ALT': 'Excuse me, do you have a moment to talk about Linux?',
+      'HEADER_OG_TYPE': 'website',
+
       'TWITTER_CARD': cfg.TWITTER_CARD,
       'TWITTER_CARD_CREATOR': cfg.TWITTER_CARD_CREATOR,
       'TWITTER_CARD_IMAGE': cfg.TWITTER_CARD_IMAGE,

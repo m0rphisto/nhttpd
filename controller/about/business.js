@@ -28,8 +28,15 @@ exports.data = () => {
    const header = Template.parse(view, {
       'HEADER_TITLE': 'My first own business ...',
       'HOSTNAME': cfg.HOSTNAME,
-      'META_DESCRIPTION': cfg.HOSTNAME + ' is an educational Node.js project and blog, covering topics such as Linux and its administration, zsh scripting, software and website development, JavaScript, Node.js, but also networks and the navigation on the highway of Bits and Bytes.',
+      'META_DESCRIPTION':  'In 2006 I founded my first business, developing websites, hosting them on my dedicated server, auditing and managing partner and customer\'s servers.'.
       'META_KEYWORDS': 'm0rphisto,.m0rph,linux,debian,kali,blog,wiki,development,webdevelopment,html,css,purecss,javascript,node.js,framework,runtime,json,hacking,exploits,penetration testing,websites,root,dedicated,servers,VPS,administration,php,mysql,perl,postgresql,joomla,modules,plugins,extensions,ninjaforge,plesk,cpanel,openssh,suid',
+
+      'HEADER_OG_URL': `${cfg.PROTO}${cfg.HOSTNAME}/`,
+      'HEADER_TITLE': 'My first own business ...',
+      'META_DESCRIPTION': 'In 2006 I founded my first business, developing websites, hosting them on my dedicated server, auditing and managing partner and customer\'s servers.'.
+      'HEADER_OG_IMAGE': '/img/ssh-tux.jpg',
+      'HEADER_OG_IMAGE_ALT': 'Server sided...',
+      'HEADER_OG_TYPE': 'website',
 
       'TWITTER_CARD': cfg.TWITTER_CARD,
       'TWITTER_CARD_CREATOR': cfg.TWITTER_CARD_CREATOR,

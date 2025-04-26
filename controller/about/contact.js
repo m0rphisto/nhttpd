@@ -1,5 +1,5 @@
 /**
- * $Id: contact.js 2025-04-17 21:30:06 +2100 .m0rph $
+ * $Id: contact.js 2025-04-26 06:05:21 +2100 .m0rph $
  * 
  * Contact form controller
  */
@@ -26,6 +26,13 @@ exports.data = () => {
       'HOSTNAME': cfg.HOSTNAME,
       'META_DESCRIPTION': cfg.HOSTNAME + ' is an educational Node.js project and blog, covering topics such as Linux and its administration, zsh scripting, software and website development, JavaScript, Node.js, but also networks and the navigation on the highway of Bits and Bytes.',
       'META_KEYWORDS': 'm0rphisto,.m0rph,linux,debian,kali,blog,wiki,development,webdevelopment,html,css,purecss,javascript,node.js,framework,runtime,json,hacking,exploits,penetration testing,websites',
+
+      'HEADER_OG_URL': `${cfg.PROTO}${cfg.HOSTNAME}/`,
+      'HEADER_TITLE': 'Wanna get in touch?',
+      'META_DESCRIPTION': cfg.HOSTNAME + ' is an educational Node.js project and blog, covering topics such as Linux and its administration, zsh scripting, software and website development, JavaScript, Node.js, but also networks and the navigation on the highway of Bits and Bytes.',
+      'HEADER_OG_IMAGE': '/img/tux-talking.jpg',
+      'HEADER_OG_IMAGE_ALT': 'Excuse me, do you have a moment to talk about Linux?',
+      'HEADER_OG_TYPE': 'website',
 
       'TWITTER_CARD': cfg.TWITTER_CARD,
       'TWITTER_CARD_CREATOR': cfg.TWITTER_CARD_CREATOR,

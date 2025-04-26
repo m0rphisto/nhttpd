@@ -52,7 +52,7 @@ const getTitle = (post) => {
 exports.data = () => {
 
    const
-      [urlpath, file] = ['blog/network', 'burp-suite-beginner-tutorial'],
+      [urlpath, file] = ['blog/network', 'igmp-protocol'],
       text = 'Worth%20a%20Read:';
    const
       url = `${cfg.PROTO}${cfg.HOSTNAME}/${urlpath}/${file}`;
@@ -65,6 +65,11 @@ exports.data = () => {
       'META_DESCRIPTION': 'The IGMP protocol enables the one-to-many or many-to-many communication on the network. Data is sent from one source to multiple destinations simultanously.',
       'META_KEYWORDS': 'linux,debian,kali,network,protocol,igmp,multicast communication,optimize bandwidth,membership reports,query messages,leave messages,multicast traffic,scalability',
       'DEFAULTCSS': 'blog',
+
+      'HEADER_OG_URL': url,
+      'HEADER_OG_IMAGE': '/img/dall-e.20250422.the-power-of-multicast-communication.png',
+      'HEADER_OG_IMAGE_ALT': 'The Power of Multicast Communication',
+      'HEADER_OG_TYPE': 'article',
 
       'TWITTER_CARD': cfg.TWITTER_CARD,
       'TWITTER_CARD_CREATOR': cfg.TWITTER_CARD_CREATOR,

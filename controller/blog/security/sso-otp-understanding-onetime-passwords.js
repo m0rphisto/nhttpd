@@ -1,5 +1,5 @@
 /**
- * $Id: sso-otp-understanding-onetime-passwords.js 2025-04-18 11:23:40 +0200 .m0rph $
+ * $Id: sso-otp-understanding-onetime-passwords.js 2025-04-26 06:14:54 +0200 .m0rph $
  */
 
 'use strict';
@@ -60,11 +60,16 @@ exports.data = () => {
    // First thing to to is building the HTML header setting the meta data
    let view = Load.view('meta/header.html');
    const header = Template.parse(view, {
-      'HEADER_TITLE': 'IGMP Protocol',
+      'HEADER_TITLE': 'Understanding SSO/OTP',
       'HOSTNAME': cfg.HOSTNAME,
-      'META_DESCRIPTION': 'Burp Suite, in the ever-evolving landscape of web security, having the right tools is paramount. Burp Suite, a powerful web application security testing toolkit ...',
+      'META_DESCRIPTION': 'In today\'s digital world, secure access to online services is more important than ever. With countless apps, platforms, and systems requiring authentication, it\'s easy to get overwhelmed by the various methods used to protect our identities.',
       'META_KEYWORDS': 'linux,debian,kali,network,web site security,burp suite,penetration testing,wen application security,vulnerabilities,pentesting',
       'DEFAULTCSS': 'blog',
+
+      'HEADER_OG_URL': url,
+      'HEADER_OG_IMAGE': '/img/dall-e.20250416.sso-otp-understanding-onetime-passwords.png',
+      'HEADER_OG_IMAGE_ALT': 'SSO/OTP - Understanding One-Time Passwords',
+      'HEADER_OG_TYPE': 'article',
 
       'TWITTER_CARD': cfg.TWITTER_CARD,
       'TWITTER_CARD_CREATOR': cfg.TWITTER_CARD_CREATOR,
