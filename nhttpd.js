@@ -127,62 +127,62 @@ const httpd = http.createServer((req, res) => {
          return data.join(', ');
       }
    
-      if (req.method === 'GET') {
-         if (req.url === '/favicon.ico') {
-            // Workaround for the annoying favicon.ico loading.
-            res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'png'));
-            res.end(favicon);
-            log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
-         } else if (req.url === '/robots.txt') {
-            // OK, lets feed those crawlers.
-            res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
-            res.end(getRobotsTxt());
-            log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
-         } else {
-            // OK, finally deliver the file.
-            const url = path.join(__dirname, redirect(check_index(req.url)));
-            fs.readFile(url, (err, data) => {
-               if (err) {
-                  // Plain file errors
-                  res.writeHead(404, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
-                  res.end(`${status_codes['404']}`);
-                  log(1, cfg.ipaddr, `${status_codes['404']} ${req.url}`);
-               } else {
-                  // We need to send the correct MIME type and have to load a controller module.
-                  const mime = Template.mime(url);
-                  if (cfg.DEBUG && cfg.REQUEST) console.log(req.url);
-                  if (cfg.DEBUG && cfg.HEADERS) console.log(req.headers);
-                  if (mime == 'html') {
-                     // At first we have to check if the controller exists !!!
-                     if (! Controller.check(check_index(req.url))) {
-                        // If !!0 was returned, but no data, the controller doesn't exist
-                        // or any other error occured. Maybe an attack attempt?
-                        log(1, cfg.ipaddr, `${status_codes['404']} ${req.url}`);
-                        req.url = '/error/404'
-                     }
-                     data = Template.parse(data,
-                        Controller.get(check_index(req.url)).data()
-                     );
-                     data = Template.parse(data, {
-                        // Menu, breadcrumbs and footer section:
-                        // These template variables have also to be replaced in EVERY view.
-                        'MENU': Template.menu(Load.view('meta/menu.html')),
-                        'BREADCRUMBS': Template.breadcrumbs(req.url, Load.view('meta/box.breadcrumbs.html')),
-                        'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
-                        'IPADDRESS': cfg.ipaddr,
-                        'USERAGENT': req.headers['user-agent'],
-                        'GEOIPDATA': geoip(['city', 'countryLong'])
-                     });
-                     data = Template.finalize(data);
+      if (req.url === '/favicon.ico') {
+         // Workaround for the annoying favicon.ico loading.
+         res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'png'));
+         res.end(favicon);
+         log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
+      } else if (req.url === '/robots.txt') {
+         // OK, lets feed those crawlers.
+         res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
+         res.end(getRobotsTxt());
+         log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
+      } else {
+         // OK, finally deliver the file.
+         const url = path.join(__dirname, redirect(check_index(req.url)));
+         fs.readFile(url, (err, data) => {
+            if (err) {
+               // Plain file errors
+               res.writeHead(404, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
+               res.end(`${status_codes['404']}`);
+               log(1, cfg.ipaddr, `${status_codes['404']} ${req.url}`);
+            } else {
+               // We need to send the correct MIME type and have to load a controller module.
+               const mime = Template.mime(url);
+               if (cfg.DEBUG && cfg.REQUEST) console.log(req.url);
+               if (cfg.DEBUG && cfg.HEADERS) console.log(req.headers);
+               if (mime == 'html') {
+                  // At first we have to check if the controller exists !!!
+                  if (! Controller.check(check_index(req.url))) {
+                     // If !!0 was returned, but no data, the controller doesn't exist
+                     // or any other error occured. Maybe an attack attempt?
+                     log(1, cfg.ipaddr, `${status_codes['404']} ${req.url}`);
+                     req.url = '/error/404'
                   }
-                  res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, mime));
-                  res.end(data);
-                  if (! req.url.includes('error'))
-                     log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
+                  data = Template.parse(data,
+                     Controller.get(check_index(req.url)).data()
+                  );
+                  data = Template.parse(data, {
+                     // Menu, breadcrumbs and footer section:
+                     // These template variables have also to be replaced in EVERY view.
+                     'MENU': Template.menu(Load.view('meta/menu.html')),
+                     'BREADCRUMBS': Template.breadcrumbs(req.url, Load.view('meta/box.breadcrumbs.html')),
+                     'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
+                     'IPADDRESS': cfg.ipaddr,
+                     'USERAGENT': req.headers['user-agent'],
+                     'GEOIPDATA': geoip(['city', 'countryLong'])
+                  });
+                  data = Template.finalize(data);
                }
-            });
-         }
-      } // end if req.method === 'GET'
+               res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, mime));
+               res.end(data);
+               if (! req.url.includes('error'))
+                  log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
+            }
+         }); // end: fs.readFile(url, (err, data) => {
+      } // end: if (req.url === '/favicon.ico') {
+        //      } else if (req.url === '/robots.txt') {
+        //      } else {
 
    // end: chkInput(req, res).then(valid => {
    }).catch(err => {

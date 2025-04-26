@@ -36,10 +36,24 @@ exports.data = () => {
       'MENUCSS':  'menu'
    });
 
+   let response = 'I will try to give you a response as soon as possible.';
+   if (Object.hasOwn(cfg.postData, 'txt')) {
+      // Whoop, whoop: The contact form has beed used. We have to respond!
+      if (cfg.postData.code === '500') {
+         response = `<b style="color: #f00">ERROR:</b> ${cfg.postData.txt}`;
+      } else {
+         response = cfg.postData.txt;
+      }
+
+      // And from here on, we do not need this data anymore,
+      // so we reset the property.
+      cfg.postData = {};
+   }
 
    return {
       // Finally return replace the template variables and return the document
       'HEADER': header,
+      'RESPONSE': response,
       'FOOTER': Load.view('meta/footer.html'),
       'HOSTNAME': cfg.HOSTNAME,
       'FID': cfg.FID,
