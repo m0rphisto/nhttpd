@@ -1,5 +1,5 @@
 /**
- * $Id: nhttpd.js v0.7 2025-04-22 22:34:09 +0200 .m0rph $
+ * $Id: nhttpd.js v0.8 2025-04-26 03:41:18 +0200 .m0rph $
  * 
  * This is my first Node.js edu project. A little HTTP server with
  * template parser and file access control.
@@ -17,9 +17,9 @@ if (process.getuid() !== 0) {
 
 const
    // Load built-in modules.
-   http = require('node:http'),
-   path = require('node:path'),
-   fs   = require('node:fs');
+   https = require('node:https'),
+   path  = require('node:path'),
+   fs    = require('node:fs');
 
 require('module-alias/register');
 
@@ -48,9 +48,14 @@ process.on('unhandledRejection', (err) => {
 });
 
 
+// TLS/SSL certificate settings
+const options = {
+   key: fs.readFileSync(cfg.TLSKEY),
+   cert: fs.readFileSync(cfg.TLSCERT)
+}
 
 // Build server (request, response)
-const httpd = http.createServer((req, res) => {
+const httpd = https.createServer(options, (req, res) => {
 
    // And due to the scopes we have to define it here again,
    // because this so called callback-hell has its OWN scope !!!
