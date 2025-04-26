@@ -10,6 +10,7 @@
    "^Origin",
    "^Referer",
    "^Sec-Fetch-*",
+   "^Sec-CH-UA-*",
    "^Upgrade-Insecure-Requests",
    "^User-Agent",
 

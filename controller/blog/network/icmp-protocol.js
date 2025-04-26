@@ -72,8 +72,8 @@ exports.data = () => {
 
       'TWITTER_CARD': cfg.TWITTER_CARD,
       'TWITTER_CARD_CREATOR': cfg.TWITTER_CARD_CREATOR,
-      'TWITTER_CARD_IMAGE': cfg.TWITTER_CARD_IMAGE,
-      'TWITTER_CARD_IMAGE_ALT': cfg.TWITTER_CARD_IMAGE_ALT,
+      'TWITTER_CARD_IMAGE': '/img/dall-e.20250420.exploring-the-icmp-protocol.1.png',
+      'TWITTER_CARD_IMAGE_ALT': 'Exploring the ICMP Protocol',
 
       'MENUCSS': 'menu',
       'NAVICSS': Load.view('meta/navi-css.html'),

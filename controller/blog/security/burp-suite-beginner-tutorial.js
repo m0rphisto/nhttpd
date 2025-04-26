@@ -72,8 +72,8 @@ exports.data = () => {
 
       'TWITTER_CARD': cfg.TWITTER_CARD,
       'TWITTER_CARD_CREATOR': cfg.TWITTER_CARD_CREATOR,
-      'TWITTER_CARD_IMAGE': cfg.TWITTER_CARD_IMAGE,
-      'TWITTER_CARD_IMAGE_ALT': cfg.TWITTER_CARD_IMAGE_ALT,
+      'TWITTER_CARD_IMAGE': '/img/dall-e.20250418.burp-suite-beginner-tutorial.png',
+      'TWITTER_CARD_IMAGE_ALT': 'A Burp Suite Beginners Tutorial',
 
       'MENUCSS': 'menu',
       'NAVICSS': Load.view('meta/navi-css.html'),

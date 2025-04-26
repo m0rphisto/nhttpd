@@ -1,5 +1,5 @@
 /**
- * $Id: nhttpd.js v0.8 2025-04-26 03:41:18 +0200 .m0rph $
+ * $Id: nhttpd.js v0.9 2025-04-26 11:19:28 +0200 .m0rph $
  * 
  * This is my first Node.js edu project. A little HTTP server with
  * template parser and file access control.
@@ -51,7 +51,10 @@ process.on('unhandledRejection', (err) => {
 // TLS/SSL certificate settings
 const options = {
    key: fs.readFileSync(cfg.TLSKEY),
-   cert: fs.readFileSync(cfg.TLSCERT)
+   cert: fs.readFileSync(cfg.TLSCERT),
+   ciphers: cfg.CIPHERS,
+   minVersion: cfg.MINVERSION,
+   maxVersion: cfg.MAXVERSION
 }
 
 // Build server (request, response)
@@ -91,6 +94,16 @@ const httpd = https.createServer(options, (req, res) => {
             file += '\n';
          }
          return file;
+      }
+      const getWellKnownSecurityTxt = () => {
+         let file = '';
+         Object.entries(Load.json('WellKnownSecurityTxt.json')).map(([key, value]) => {
+            // At the moment we have no policy and no jobs :-)
+         console.log(`[DEBUG] key: ${key}, value: ${value}`);
+            if (key == 'Policy' || key == 'Hiring') return;
+            file += `${key}: ${value}\n`;
+         });
+         return `${file}\n`;
       }
       
       const check_index = (url) => {
@@ -141,6 +154,10 @@ const httpd = https.createServer(options, (req, res) => {
          // OK, lets feed those crawlers.
          res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
          res.end(getRobotsTxt());
+         log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
+      } else if (req.url === '/.well-known/security.txt') {
+         res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
+         res.end(getWellKnownSecurityTxt());
          log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
       } else {
          // OK, finally deliver the file.
@@ -193,7 +210,7 @@ const httpd = https.createServer(options, (req, res) => {
    }).catch(err => {
       res.writeHead(500, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
       res.end(`${status_codes['500']}`);
-      log(1, cfg.ipaddr, `${status_codes['500']}: -=[${err}]=-`);
+      log(1, cfg.ipaddr, `${status_codes['500']}: ${req.url} -=[${err}]=-`);
    });
 })
 .on('clientError', (err, sock) => {

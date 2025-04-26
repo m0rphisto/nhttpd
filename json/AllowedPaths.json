@@ -1,5 +1,7 @@
 [
    "^\\/$",
+   "^\\/robots\\.txt$",
+   "^\\/\\.well-known\\/security\\.txt$",
    "^\\/img\\/.*",
    "^\\/css\\/.*",
    "^\\/about\\/.*",

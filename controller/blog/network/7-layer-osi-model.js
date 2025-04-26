@@ -73,8 +73,8 @@ exports.data = () => {
 
       'TWITTER_CARD': cfg.TWITTER_CARD,
       'TWITTER_CARD_CREATOR': cfg.TWITTER_CARD_CREATOR,
-      'TWITTER_CARD_IMAGE': cfg.TWITTER_CARD_IMAGE,
-      'TWITTER_CARD_IMAGE_ALT': cfg.TWITTER_CARD_IMAGE_ALT,
+      'TWITTER_CARD_IMAGE': '/img/dall-e.20250422.a-guide-to-the-7-layer-osi-model.png',
+      'TWITTER_CARD_IMAGE_ALT': 'A Guide to the 7-Layer OSI Model',
 
       'MENUCSS': 'menu',
       'NAVICSS': Load.view('meta/navi-css.html'),
