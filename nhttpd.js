@@ -155,6 +155,11 @@ const httpd = https.createServer(options, (req, res) => {
          res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
          res.end(getRobotsTxt());
          log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
+      } else if (req.url === '/feed.xml') {
+         // Here wee feed feed reader.
+         res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
+         res.end(Load.xml('rss-feed-2.0.xml'));
+         log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
       } else if (req.url === '/.well-known/security.txt') {
          res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
          res.end(getWellKnownSecurityTxt());
