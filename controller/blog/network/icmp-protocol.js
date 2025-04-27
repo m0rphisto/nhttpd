@@ -66,13 +66,14 @@ exports.data = () => {
       'DEFAULTCSS': 'blog',
 
       'HEADER_OG_URL': url,
-      'HEADER_OG_IMAGE': '/img/dall-e.20250420.exploring-the-icmp-protocol.1.png',
+      'HEADER_OG_IMAGE': '/img/dall-e.20250420.exploring-the-icmp-protocol.1.1098x627.png',
       'HEADER_OG_IMAGE_ALT': 'Exploring the ICMP Protocol',
       'HEADER_OG_TYPE': 'article',
 
       'TWITTER_CARD': cfg.TWITTER_CARD,
       'TWITTER_CARD_CREATOR': cfg.TWITTER_CARD_CREATOR,
-      'TWITTER_CARD_IMAGE': '/img/dall-e.20250420.exploring-the-icmp-protocol.1.png',
+      'TWITTER_CARD_SITE': cfg.TWITTER_CARD_SITE,
+      'TWITTER_CARD_IMAGE': '/img/dall-e.20250420.exploring-the-icmp-protocol.1.1098x627.png',
       'TWITTER_CARD_IMAGE_ALT': 'Exploring the ICMP Protocol',
 
       'MENUCSS': 'menu',

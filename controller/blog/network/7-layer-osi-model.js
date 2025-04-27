@@ -67,13 +67,14 @@ exports.data = () => {
       'DEFAULTCSS': 'blog',
 
       'HEADER_OG_URL': url,
-      'HEADER_OG_IMAGE': '/img/dall-e.20250422.a-guide-to-the-7-layer-osi-model.png',
+      'HEADER_OG_IMAGE': '/img/dall-e.20250422.a-guide-to-the-7-layer-osi-model.1098x627.png',
       'HEADER_OG_IMAGE_ALT': 'A Guide to the 7-Layer OSI Model',
       'HEADER_OG_TYPE': 'article',
 
       'TWITTER_CARD': cfg.TWITTER_CARD,
       'TWITTER_CARD_CREATOR': cfg.TWITTER_CARD_CREATOR,
-      'TWITTER_CARD_IMAGE': '/img/dall-e.20250422.a-guide-to-the-7-layer-osi-model.png',
+      'TWITTER_CARD_SITE': cfg.TWITTER_CARD_SITE,
+      'TWITTER_CARD_IMAGE': '/img/dall-e.20250422.a-guide-to-the-7-layer-osi-model.1098x627.png',
       'TWITTER_CARD_IMAGE_ALT': 'A Guide to the 7-Layer OSI Model',
 
       'MENUCSS': 'menu',

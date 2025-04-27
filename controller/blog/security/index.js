@@ -112,8 +112,9 @@ exports.data = () => {
 
       'TWITTER_CARD': cfg.TWITTER_CARD,
       'TWITTER_CARD_CREATOR': cfg.TWITTER_CARD_CREATOR,
-      'TWITTER_CARD_IMAGE': cfg.TWITTER_CARD_IMAGE,
-      'TWITTER_CARD_IMAGE_ALT': cfg.TWITTER_CARD_IMAGE_ALT,
+      'TWITTER_CARD_SITE': cfg.TWITTER_CARD_SITE,
+      'TWITTER_CARD_IMAGE': '/img/tux-talking.jpg',
+      'TWITTER_CARD_IMAGE_ALT': 'Excuse me, do you have a moment to talk about Linux?',
 
       'MENUCSS': 'menu',
       'NAVICSS': Load.view('meta/navi-css.html'),

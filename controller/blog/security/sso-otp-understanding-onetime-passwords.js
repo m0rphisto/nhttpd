@@ -67,13 +67,14 @@ exports.data = () => {
       'DEFAULTCSS': 'blog',
 
       'HEADER_OG_URL': url,
-      'HEADER_OG_IMAGE': '/img/dall-e.20250416.sso-otp-understanding-onetime-passwords.png',
+      'HEADER_OG_IMAGE': '/img/dall-e.20250416.sso-otp-understanding-onetime-passwords.1098x627.png',
       'HEADER_OG_IMAGE_ALT': 'SSO/OTP - Understanding One-Time Passwords',
       'HEADER_OG_TYPE': 'article',
 
       'TWITTER_CARD': cfg.TWITTER_CARD,
       'TWITTER_CARD_CREATOR': cfg.TWITTER_CARD_CREATOR,
-      'TWITTER_CARD_IMAGE': '/img/dall-e.20250416.sso-otp-understanding-onetime-passwords.png',
+      'TWITTER_CARD_SITE': cfg.TWITTER_CARD_SITE,
+      'TWITTER_CARD_IMAGE': '/img/dall-e.20250416.sso-otp-understanding-onetime-passwords.1098x627.png',
       'TWITTER_CARD_IMAGE_ALT': 'SSO/OTP - Understanding One-Time Passwords',
 
       'MENUCSS': 'menu',

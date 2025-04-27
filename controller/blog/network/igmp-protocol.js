@@ -67,13 +67,14 @@ exports.data = () => {
       'DEFAULTCSS': 'blog',
 
       'HEADER_OG_URL': url,
-      'HEADER_OG_IMAGE': '/img/dall-e.20250422.the-power-of-multicast-communication.png',
+      'HEADER_OG_IMAGE': '/img/dall-e.20250422.the-power-of-multicast-communication.1098x627.png',
       'HEADER_OG_IMAGE_ALT': 'The Power of Multicast Communication',
       'HEADER_OG_TYPE': 'article',
 
       'TWITTER_CARD': cfg.TWITTER_CARD,
       'TWITTER_CARD_CREATOR': cfg.TWITTER_CARD_CREATOR,
-      'TWITTER_CARD_IMAGE': '/img/dall-e.20250422.the-power-of-multicast-communication.png',
+      'TWITTER_CARD_SITE': cfg.TWITTER_CARD_SITE,
+      'TWITTER_CARD_IMAGE': '/img/dall-e.20250422.the-power-of-multicast-communication.1098x627.png',
       'TWITTER_CARD_IMAGE_ALT': 'The Power of Multicast Communication',
 
       'MENUCSS': 'menu',

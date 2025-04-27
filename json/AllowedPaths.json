@@ -1,8 +1,10 @@
 [
    "^\\/$",
+   "^\\/favicon\\.ico$",
    "^\\/robots\\.txt$",
    "^\\/feed\\.xml$",
    "^\\/\\.well-known\\/security\\.txt$",
+   "^\\/xml\\/.*",
    "^\\/img\\/.*",
    "^\\/css\\/.*",
    "^\\/about\\/.*",
