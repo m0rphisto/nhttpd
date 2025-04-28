@@ -23,9 +23,10 @@
    "^x-envoiexpected-rq-timeout-ms*",
    "^traceparent*",
    "^tracestate*",
-   "^from\\/bingbot*",
 
    "^cache-control",
+   "^pragma*",
+   "^from*",
    "^dnt",
    "^te"
 ]
