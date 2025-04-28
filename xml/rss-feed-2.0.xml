@@ -36,5 +36,11 @@
          <description>With countless apps, platforms, and systems requiring authentication, it's easy to get overwhelmed by the various methods used to protect our identities.</description>
          <pubDate>2025-04-20 17:43:07 +0200</pubDate>
       </item>
+      <item>
+         <title>Automated Analyzing and Blocking of Suspicious User-Agents</title>
+         <link>https://m0rphisto.net/blog/security/automated-analyzing-and-blocking-of-suspicious-user-agents</link>
+         <description>When it comes to web server security, especially protecting a system against unwanted visitors is like a battle in a never ending war. Attackers are constantly knocking on our doors, testing for weaknesses, and trying to slip through unnoticed. ...</description>
+         <pubDate>2025-04-28 05:19:46 +0200</pubDate>
+      </item>
    </channel>
 </rss>
