@@ -14,5 +14,10 @@
    "26": "/controller/",
    "27": "/geoip/",
    "28": "/node_modules/",
-   "29": "/.git/"
+   "29": "/.git/",
+   "30": "/collections",
+   "31": "/mail",
+   "32": "/payloads",
+   "33": "/pentest",
+   "34": "/services"
 }

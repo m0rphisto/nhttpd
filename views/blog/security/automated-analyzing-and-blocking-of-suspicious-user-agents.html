@@ -1,0 +1,176 @@
+<div class="box">
+
+   <h1 aria-label="header">Automated Analyzing and Blocking of suspicious User-Agents</h1>
+   <span class="section">&#9776;&nbsp;Section: {SECTION}</span>&nbsp;|
+   <span class="date">&#9856;&nbsp;Posted: {POSTED}</span>&nbsp;|
+   <span class="date">&#9856;&nbsp;Updated: {UPDATED}</span>
+{SOCIALS}
+
+
+   <div id="header-image">
+      <img src="/img/dall-e.20250427.automated-analyzing-and-blocking-of-suspicious-user-agents.png" alt="Analyzing and Blocking of suspicious User-Agents"/>
+      <span class="source">DALL-E via ChatGPT - powered by OpenAI</span>
+   </div>
+
+   <div class="div"></div>
+
+   <h3><span aria-hidden="true">👨</span> Mastering Web Server Security</h3>
+   <div class="flex">
+      <div class="col-50">
+         <p aria-label="text">When it comes to web server security, especially protecting a system against unwanted visitors is like a battle in a never ending war. Attackers are constantly knocking on our doors, testing for weaknesses, and trying to slip through unnoticed. While firewalls and security modules provide a solid first line of defense, significant advantages come from actively monitoring the behavior of clients or so called <b>bots</b> connecting to our server — especially by analyzing their User-Agent strings. Malicious bots, vulnerability scanners, and early-stage attackers often leave distinct traces in our access logs, long before they succeed in exploiting a system.</p>
+         <p>One powerful (and often underestimated) tool we have at our disposal is the set of our server's log files. Hidden within all those lines of requests are important clues about who's visiting us — and sometimes, those clues can help us catch bad actors before they even get close to causing real damage.</p>
+         </div>
+      <div class="col-50">
+         <p>If we want to stay ahead, we need to be proactive — not just reactive! In this article we'll walk through how we can automatically detect suspicious User-Agents in our server logs and immediately block the offending attacker's IP addresses by updating the system's firewall rules, all without human intervention, without to having to babysit the server manually.</p>
+         <p>In regard to a good work/life balance the goal is to minimize exposure time, harden the server proactively and having enough spare time to do these things in life that are really worth it.</p>
+         <b class="br">So let's dive in together!</b>
+      </div>
+   </div>
+
+   <div class="div"></div>
+
+   <h3><span aria-hidden="true">🔍</span> Analyzing Log Files for Suspicious Activity</h3>
+   <div class="flex">
+      <div class="col-50">
+         <div class="article-image">
+            <a href="/img/web-server-log-file.png" target="_blank">
+               <img src="/img/web-server-log-file.png" alt="Web Server Log Files in Tail-Mode"/>
+            </a>
+            <span class="source">m0rphisto.net</span>
+         </div>
+         <p>Every single request to our web server tells a story. Along with details like the requested <b>URL</b> and the <b>HTTP Status Code</b> it is typically also recording crucial information about the user's web browser, the <b>User-Agent</b> string. A piece of information that reveals what client the visitor <i>claims to be using</i>. Legitimate browsers follow predictable patterns, whereas malicious actors often use outdated, missing, or intentionally misleading User-Agents.</p>
+         <p>Most of the time, we'll see harmless, familiar names in our logs — browsers like Chrome, Firefox, Edge, or Safari, and Crawlers like Googlebot. The image shows an example of a legitimate Chrome browser installed on a MAC OS X.</p>
+      </div>
+      <div class="col-50">
+         <h5><span aria-hidden="true">❓</span> So, what will we find?</h5>
+         <p>Sometimes something weird shows up like we can see in the following box.</p>
+         <div class="example">
+            <b class"br normal">nginx example:</b>
+            203.0.113.77 - - [27/Apr/2025:10:32:07 +0000] "GET /admin HTTP/1.1" 404 512 "-" "sqlmap/1.6.2#stable (http://sqlmap.org)"
+         </div>
+         <p>The <b>nginx example</b> hints at automated vulnerability scanning and when we spot entries like this, it's a clear <span style="color: #f00">red flag</span>. sqlmap is a well-known penetration testing tool used for automatic SQL injection attacks. Legitimate visitors simply never announce themselves this way. By paying close attention to these kinds of clues, we can start building a reliable way to tell friends from foes.</p>
+         <div class="example">
+            <b class"br normal">Another legit browser:</b>
+            192.168.0.5 - - [27/Apr/2025:10:30:45 +0000] "GET /index.html HTTP/1.1" 200 1024 "https://example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+         </div>
+         <p>Note that Chrome <b>always</b> identifies as version <code>xxx.0.0.0</code>. This is a convention after that the manufacturers of web browsers <b>mask</b> their real version for a reason. Google calls this 'User-Agent Reduction' and aims to prevent tracking.</p>
+      </div>
+   </div>
+
+   <div class="div"></div>
+
+   <h3><span aria-hidden="true">🛠️</span> How We Recognize Suspicious Patterns</h3>
+   <div class="flex">
+      <div class="col-50">
+         <p>Not every odd User-Agent means trouble — but certain patterns are just too suspicious to ignore.There are several indicators and over time, we'll get a feeling for the most common signs, such as:</p>
+         <ul>
+            <li>User-Agents that directly mention hacking tools (e.g. sqlmap, nokto, dirbuster, acunetix)</li>
+            <li>It is missing entirely (empty string) or contains obviously fake data (e.g., "bot", "scanner", "h4ck3r").</li>
+            <li>It uses extremely outdated browser versions that are no longer common.</li>
+            <li>Obvious giveaways like the words "scanner", "bot" or "fuzz" in the string.</li>
+            <li>Extremely nonsensical User-Agents.</li>
+            <li>Clients immediately probing sensitive or non-public endpoints (e.g., /admin, /phpmyadmin, /login).</li>
+         </ul>
+      </div>
+      <div class="col-50">
+         <div class="article-image">
+            <a href="/img/web-server-log-file.2.png" target="_blank">
+               <img src="/img/web-server-log-file.2.png" alt="Suspicious Server Access"/>
+            </a>
+            <span class="source">m0rphisto.net</span>
+         </div>
+         <p><span aria-hidden="true">🚨</span> Here we can directly see an attacker trying to get a <b>reverse PowerShell</b>!</p>
+         <p>By filtering the log file based on such criteria, we can build a list of IP addresses exhibiting suspicious behavior.</p>
+      </div>
+   </div>
+
+   <div class="div"></div>
+
+   <h3><span aria-hidden="true">📜</span> Automating the Firewall Blocking</h3>
+   <div class="flex">
+      <div class="col-50">
+         <p>Now comes the fun part: instead of manually shifting through logs and copy-pasting IP addresses into firewall rules, we can automate everything. Once we have identified the attacking IP addresses, the next logical step is to block them. On a Linux system, this can be done using a simple script interacting with <code>iptables</code> (or <code>nftables</code>, depending on our setup).</p>
+      </div>
+      <div class="col-50">
+         <p>By writing simple rules to watch for these signs, we can automatically extract the IP addresses that deserve our attention — and our firewall’s attention too. Here’s a basic <code>Bash</code> script that will scan our logs for bad User-Agents and block the corresponding IPs:</p>
+      </div>
+   </div>
+
+   <section class="content">
+      <div class="code-box">
+         <pre><code class="bash">
+<span class="shebang">#!/bin/zsh</span>
+
+<span class="varinit">LOGFILE=</span><span class="str">"/var/log/nhttpd/user-agents.log"</span>
+<span class="varinit">BAD_AGENTS=</span>(<span class="str">"sqlmap" "nikto" "acunetix" "dirbuster" "wpscan" "fuzz" "nmap" "masscan"</span><span class="varinit">)</span>
+<span class="varinit">BLOCKLIST=</span><span class="str">"/tmp/blocklist.txt"</span>
+
+<span class="comm"># Extract suspicious IPs</span>
+<span class="cmd">for</span> <span class="varinit">agent (</span><span class="str">"</span><span class="shebang">${BAD_AGENTS[@]}<span class="str">"</span><span class="varinit">) {</span>
+    <span class="varinit">grep -i</span> <span class="str">"</span><span class="shebang">$agent</span><span class="str">" "</span><span class="shebang">$LOGFILE</span><span class="str">" </span><span class="cmd">|</span> <span class="varinit">awk</span> <span class="str">'{print $1}'</span> <span class="cmd">&gt;&gt;</span> <span class="str">"</span><span class="shebang">$BLOCKLIST</span><span class="str">"</span>
+<span class="cmd">done
+
+<span class="comm"># Remove duplicates</span>
+<span class="varinit">sort -u</span> <span class="str">"</span><span class="shebang">$BLOCKLIST<span class="str">"</span> <span class="varinit">-o</span> <span class="str">"</span><span class="shebang">$BLOCKLIST</span><span class="str">"</span>
+
+<span class="comm"># Block IPs</span>
+<span class="cmd">while read <span class="varinit">-r ip; <span class="cmd">do</span>
+    <span class="cmd">if</span><span class="vainit"> ! iptables -C INPUT -s</span> <span class="str">"<span class="shebang">$ip<span class="str">"<span> <span class="varinit">-j DROP </span><span class="cmd">2&gt;</span>/dev/null;</span> <span class="cmd">then</span>
+        <span class="varinit">iptables -A INPUT -s</span> <span class="str">"<span class="shebang">$ip<span class="str">" <span class="varinit">-j DROP</span>
+        <span class="cmd">echo</span> <span class="str">"Blocked IP: </span><span class="shebang">$ip</span><span class="str">"</span>
+    <span class="cmd">fi</span>
+<span class="cmd">done &lt;</span> <span class="str">"</span><span class="shebang">$BLOCKLIST</span><span class="str">"</span>
+         </code></pre>
+      </div>
+   </section>
+
+   <div class="div"></div>
+
+   <h3><span aria-hidden="true">📘</span> Best Practices and Tips</h3>
+   <div class="flex">
+      <div class="col-50">
+         <b class="br"><span aria-hidden="true">🛡️</span> Observation before Action</b>
+         <p>Before blocking anything, we start by watching. Whenever a suspicious User-Agent is detected, we don't immediately deny access. Instead, we record the request, the headers, and the IP address – carefully noting every move.</p>
+         </p>
+         <p>By continuously analyzing our access logs and reacting in near real-time, we can drastically reduce our attack surface. Automated blocking based on suspicious User-Agents is a lightweight yet powerful method to prevent common vulnerability scans and reduce noise in our logs, freeing up resources for detecting more sophisticated threats.</p>
+         <p>As always, we should remember that no single measure provides complete protection. Defense in depth — multiple layers of security — remains the best strategy against determined attackers.</p>
+      </div>
+      <div class="col-50">
+         <b class="br"><span aria-hidden="true">⚙️</span> This basic script could be extended to:</b>
+         <ul>
+            <li>Use more sophisticated log parsers.</li>
+            <li>Only block after multiple suspicious requests (to avoid false positives).</li>
+            <li>Log blocked attempts for auditing purposes.</li>
+            <li>Regularly clear expired blocks.</li>
+         </ul>
+         <p>By running a script like this regularly — maybe via a simple cronjob — we create a dynamic, evolving shield around our server that adapts to new threats automatically. And don't worry: this is just the beginning. As we grow more confident, we can make our detection logic smarter, add whitelisting for known good IPs, or even implement automatic expiry for blocks after a cooldown period.</p>
+      </div>
+   </div>
+
+   <div class="div"></div>
+
+   <h3><span aria-hidden="true">🔚</span> Conclusion</h3>
+   <div class="flex">
+      <div class="col-50">
+         <h5><span aria-hidden="true">😎</span> Our approach has two major benefits:</h5>
+         <ul>
+            <li>It helps us avoid unnecessary false positives.</li>
+            <li>It keeps our web server logs clean and focused on real threats.</li>
+         </ul>
+         <p>When it comes to server security, we can’t afford to be passive. Attackers are fast, but with a little automation on our side, we can be even faster. Over time, we manually build a whitelist of friendly crawlers and known bots that are allowed to roam freely. Everyone else who behaves suspiciously or tries to flood our server will eventually find themselves permanently blocked. Because in cybersecurity, it's not about reacting fast – it's about reacting right.</p>
+         <p>By working with our access logs, recognizing suspicious behavior early, and automating our responses, we stay one step ahead. It's a simple but powerful way to harden our defenses — and it feels great knowing that our servers are actively protecting themselves, even while we sleep.</p>
+      </div>
+      <div class="col-50">
+         <div class="article-image">
+            <img src="/img/dall-e.20250427.automated-defense-with-flames.png" alt="Automated Defense with Flames"/>
+            <span class="source">DALL-E via ChatGPT - powered by OpenAI</span>
+         </div>
+      </div>
+   </div>
+
+   <div class="div"></div>
+   <p>Let's keep improving our defenses together — one log file at a time.</p>
+   <p><i>Have lot of Fun ...</i></p>
+   <small>.m0rph</small>
+
+</div>

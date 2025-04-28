@@ -273,12 +273,10 @@ a#show-code:hover #geek-code {
    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 #up-link:hover {
    transform: scale(1.1);
    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
-
 #up-link svg {
    stroke: black;
 }
@@ -293,3 +291,34 @@ a#show-code:hover #geek-code {
    }
 }
 */
+
+.box .content {
+   margin: 20px;
+   padding: .5em;
+   background-color: #fff;
+   border-radius: 5px;
+   border:  1px solid #2d2d2d;
+}
+.box .content .code-box {
+   background-color: #000;
+   color: #fff;
+   padding: 20px;
+   border-radius: 5px;
+   overflow-x: auto;
+   white-space: pre-wrap;
+   word-wrap: break-word;
+}
+code.bash {
+   font-family: "Courier New", Courier, monospace;
+   color: #f8f8f2;
+}
+code.bash span { font-weight: normal; }
+code.bash .keywordx { color: #75715e; }
+code.bash .keyword { color: #a6e22e; }
+code.bash .shebang { color: #00ccff; }
+code.bash .key { color: #f92672; }
+code.bash .cmd { color: #ffff00; }
+code.bash .varinit { color: #fff; }
+code.bash .str { color: #ff69b4; }
+code.bash .comm { color: #40e0d0; }
+

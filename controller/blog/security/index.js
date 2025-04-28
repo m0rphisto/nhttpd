@@ -7,10 +7,10 @@
 const
    fs = require('node:fs'),
    path = require('node:path'),
-   {sprintf} = require('sprintf-js'),
    cfg  = require('@lib/Config'),
    Load = require('@lib/Loader'),
-   Template = require('@lib/Template');
+   Template = require('@lib/Template'),
+   {getDate} = require('@lib/Common');
 
  //Load JSON blog information (header images)
 const blogFiles = Load.json('BlogFiles.json');
@@ -59,8 +59,8 @@ const getFiles = (dir) => {
             const article_url = `/blog/${sect}/${url}`;
             files.push({
                file: post,
-               btime: stat.birthtime,
-               mtime: stat.mtime,
+               btime: getDate('birthtime', file),
+               mtime: getDate('mtime', file),
                article_url: article_url,
                section_href: `/blog/${sect}/`,
                section_txt: sect.charAt(0).toUpperCase() + sect.slice(1),
@@ -148,8 +148,8 @@ exports.data = () => {
          'IMG_ALT': files[i].img_alt,
          'IMG_SOURCE': files[i].img_source,
          'PARAGRAPH': article.text,
-         'POSTED': getDate(new Date(files[i].btime)),
-         'UPDATED': getDate(new Date(files[i].mtime))
+         'POSTED': files[i].btime,
+         'UPDATED': files[i].mtime
       });
    }
    let posting, recent_articles = '';

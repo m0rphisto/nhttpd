@@ -65,5 +65,12 @@
       "img_source": "DALL-E via ChatGPT - powered by OpenAI",
       "title": "/var/log/burp-suite-beginner-tutorial",
       "text": "&#9866; Burp-Suite Beginner Tutorial"
+   },
+   "/blog/security/automated-analyzing-and-blocking-of-suspicious-user-agents": {
+      "img_src": "/img/dall-e.20250427.automated-analyzing-and-blocking-of-suspicious-user-agents.png",
+      "img_alt": "Automated Analyzing and Blocking of suspicious User-Agents",
+      "img_source": "DALL-E via ChatGPT - powered by OpenAI",
+      "title": "/var/log/automated-analyzing-and-blocking-of-suspicious-user-agents",
+      "text": "&#9866; Automated Web Server Defense"
    }
 }

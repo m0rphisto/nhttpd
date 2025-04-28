@@ -11,6 +11,7 @@
 #
 ################################################################################
 
+ — = not a simple hypen like -
 
  🔧 Headings & Struktur
  📘 = Guide / Manual / Documentation  
@@ -65,7 +66,6 @@
  🔗 = Link / Reference  
  🔧 = Fix / Patch  
  
- ⚠️ Hinweise & Warnungen
  ⚠️ = Warning  
  🚫 = Forbidden  
  🛑 = Stop  
@@ -92,4 +92,56 @@
  🔖 = Bookmark  
  🧷 = Pin / Important  
  🔄 = Refresh / Update  
+
+################################################################################
+
+🎯 Chat-Emoji-Set für Deinen Style
+Allgemein – Motivation:
+
+ 😎– Cool bleiben
+🚀 – Abheben / Boost
+🔥 – Flow / Energie
+⚡ – Action / Geschwindigkeit
+🎯 – Fokus / Zielstrebigkeit
+🧠 – Deep Thinking
+
+Blogwriting – Kreativer Prozess:
+
+🖋️ – Schreiben
+🛠️ – Bauen / Basteln
+💬 – Kommunikation
+📚 – Lernen
+✨ – Veredelung / Feinschliff
+
+Coding – Tech Mood:
+
+💻 – Hacking Mode
+🖥️ – Terminal
+🔍 – Analysieren
+📜 – Skript
+🛡️ – Schutz / Security
+📈 – Fortschritt
+
+Musik – Dark Techno Vibes:
+
+🎵 – Musik generell
+🎶 – Soundflow
+🎧 – Headphones auf und abschalten
+🖤 – Dark Mood
+
+Stimmung – Persönlicher Touch:
+
+🤘 – Rock on!
+🧘 – Im Flow, konzentriert
+🎨 – Kreativität entfesseln
+🧹 – Aufräumen, Ordnung reinbringen
+
+Schnelle Combos, die gut zu Deinen Aktivitäten passen:
+
+Schreiben & Techno: ✍️🎧🔥
+Script hacken: 💻⚡🛠️
+Fehler jagen: 🔍🛡️🎯
+
+Erfolg feiern: 🚀🎉🤘
+
 

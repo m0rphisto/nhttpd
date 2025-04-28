@@ -7,28 +7,12 @@
 const
    cfg  = require('@lib/Config'),
    Load = require('@lib/Loader'),
-   Template = require('@lib/Template');
+   Template = require('@lib/Template'),
+   {getDate} = require('@lib/Common');
 
-const { sprintf } = require('sprintf-js');
 const path = require('node:path');
 const fs = require('node:fs');
 
-
-/**
- * Private: Gets the given timestamp for the blog article's view.
- *
- * @param   {string} mode  Timestamp mode (btime/mtime)
- * @param   {string} view  The blog view
- * @returns {string} date  The formatted timestamp
- */
-const getdate = (mode, view) => {
-   const date = fs.statSync(view)[mode];
-   return sprintf(
-      '%d-%02d-%02d %02d:%02d:%02d',
-         date.getFullYear(), date.getMonth() + 1, date.getDate(),
-         date.getHours(), date.getMinutes(), date.getSeconds()
-   );
-}
 
 /**
  * Private: Gets the blog article's title
@@ -84,8 +68,8 @@ exports.data = () => {
    const title = getTitle(view);
    const article = Template.parse(view, {
       'SECTION': `<a href="${cfg.PROTO}${cfg.HOSTNAME}/${urlpath}/">Network</a>`,
-      'POSTED': getdate('birthtime', path.join(cfg.ROOT, 'views', 'blog', 'network', 'igmp-protocol.html')),
-      'UPDATED': getdate('mtime', path.join(cfg.ROOT, 'views', 'blog', 'network', 'igmp-protocol.html')),
+      'POSTED': getDate('birthtime', path.join(cfg.ROOT, 'views', 'blog', 'network', 'igmp-protocol.html')),
+      'UPDATED': getDate('mtime', path.join(cfg.ROOT, 'views', 'blog', 'network', 'igmp-protocol.html')),
       'SOCIALS': Template.parse(Load.view('meta/box.socials.html'), {
          'SHARE_LINKEDIN': `url=${url}`,
          'SHARE_X': `url=${url}&text=${text}%20${title}`,
