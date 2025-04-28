@@ -21,7 +21,7 @@
          <p>One powerful (and often underestimated) tool we have at our disposal is the set of our server's log files. Hidden within all those lines of requests are important clues about who's visiting us — and sometimes, those clues can help us catch bad actors before they even get close to causing real damage.</p>
          </div>
       <div class="col-50">
-         <p>If we want to stay ahead, we need to be proactive — not just reactive! In this article we'll walk through how we can automatically detect suspicious User-Agents in our server logs and immediately block the offending attacker's IP addresses by updating the system's firewall rules, all without human intervention, without to having to babysit the server manually.</p>
+         <p>If we want to stay ahead, we need to be proactive — not just reactive! In this article we'll walk through how we can automatically detect suspicious User-Agents in our server logs and immediately block the offending attacker's IP addresses by updating the system's firewall rules, all without human intervention, without having to babysit the server manually.</p>
          <p>In regard to a good work/life balance the goal is to minimize exposure time, harden the server proactively and having enough spare time to do these things in life that are really worth it.</p>
          <b class="br">So let's dive in together!</b>
       </div>
@@ -64,7 +64,7 @@
       <div class="col-50">
          <p>Not every odd User-Agent means trouble — but certain patterns are just too suspicious to ignore.There are several indicators and over time, we'll get a feeling for the most common signs, such as:</p>
          <ul>
-            <li>User-Agents that directly mention hacking tools (e.g. sqlmap, nokto, dirbuster, acunetix)</li>
+            <li>User-Agents that directly mention hacking tools (e.g. sqlmap, nikto, dirbuster, acunetix)</li>
             <li>It is missing entirely (empty string) or contains obviously fake data (e.g., "bot", "scanner", "h4ck3r").</li>
             <li>It uses extremely outdated browser versions that are no longer common.</li>
             <li>Obvious giveaways like the words "scanner", "bot" or "fuzz" in the string.</li>
