@@ -1,0 +1,56 @@
+#!/usr/bin/zsh
+#################################################################################
+# $Id: nhttpd.upgrade 1 2025-04-28 07:41:46 +0200 .m0rph $
+#################################################################################
+# Description:
+#  A little server and configuration upgrade script, fired up when the server's
+#  upgraded or a new blog post goes live. Everything needs its automation. :-)
+#################################################################################
+
+me=${0##*/}
+
+[[ $(id) != 0 ]] && {
+   print -l -- '\e[31m[!] Script must be run as root. Exiting !!!'
+   exit 1
+}
+
+domain='m0rphisto.net'
+rootpath='/var/www/nhttpd'
+config='/lib/Config.js'
+ok='\e[0;32m[+]OK\e[0m'
+failed='\e[0;31mFAILED\e[0m'
+
+# Stop nhttpd service
+print $me': Stopping nhttpd.service ... '
+systemctl stop nhttpd.service && print $ok || print $failed
+
+# Upgrade server system
+print $me': Deleting old server backup  ... '
+rm -rf $rootpath.bak && print $ok || print $failed
+print $me': Creating new server backup  ... '
+mv $rootpath $rootpath.bak && print $ok || print $failed
+print $me': Cloning nhttpd repository ... '
+git clone https://github.com/m0rphisto/nhttpd.git && print $ok || print $failed
+print $me': Changing directory ... '
+cd $rootpath && print $ok || print $failed
+print $me': Changing ownership ... '
+chown -R 1000:1000 $rootpath && print $ok || print $failed
+print $me': Changing directory permissions ... '
+find . -type d -exec chmod 0750 {} \; && print $ok || print $failed
+print $me': Changing file permissions ... '
+find . -type f -exec chmod 0640 {} \; && print $ok || print $failed
+
+# Finally update key information and HTTP hostname ...
+print $me': Upgrading server configuration ... '
+sed -i "
+   s#\(/etc/ssl/private/\)nhttpd\.js\.key#\1$domain.key#
+   s#\(/etc/ssl/certs/\)nhttpd\.js\.crt#\1$domain.pem#
+   s#'nhttpd\.js'#'$domain'#
+" $rootpath$config && print $ok || print $failed
+
+# ... and restart nhttpd service
+print $me': Starting nhttpd.service ... '
+systemctl start nhttpd.service && print $ok || print $failed
+
+################################################################################
+exit 0
