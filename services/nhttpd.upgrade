@@ -9,7 +9,7 @@
 
 me=${0##*/}
 
-[[ $(id) != 0 ]] && {
+[[ $(id -u) != 0 ]] && {
    print -l -- '\e[31m[!] Script must be run as root. Exiting !!!'
    exit 1
 }
@@ -21,27 +21,27 @@ ok='\e[0;32m[+]OK\e[0m'
 failed='\e[0;31mFAILED\e[0m'
 
 # Stop nhttpd service
-print $me': Stopping nhttpd.service ... '
+print -n $me': Stopping nhttpd.service ... '
 systemctl stop nhttpd.service && print $ok || print $failed
 
 # Upgrade server system
-print $me': Deleting old server backup  ... '
+print -n $me': Deleting old server backup  ... '
 rm -rf $rootpath.bak && print $ok || print $failed
-print $me': Creating new server backup  ... '
+print -n $me': Creating new server backup  ... '
 mv $rootpath $rootpath.bak && print $ok || print $failed
-print $me': Cloning nhttpd repository ... '
+print -n $me': Cloning nhttpd repository ... '
 git clone https://github.com/m0rphisto/nhttpd.git && print $ok || print $failed
-print $me': Changing directory ... '
+print -n $me': Changing directory ... '
 cd $rootpath && print $ok || print $failed
-print $me': Changing ownership ... '
+print -n $me': Changing ownership ... '
 chown -R 1000:1000 $rootpath && print $ok || print $failed
-print $me': Changing directory permissions ... '
+print -n $me': Changing directory permissions ... '
 find . -type d -exec chmod 0750 {} \; && print $ok || print $failed
-print $me': Changing file permissions ... '
+print -n $me': Changing file permissions ... '
 find . -type f -exec chmod 0640 {} \; && print $ok || print $failed
 
 # Finally update key information and HTTP hostname ...
-print $me': Upgrading server configuration ... '
+print -n $me': Upgrading server configuration ... '
 sed -i "
    s#\(/etc/ssl/private/\)nhttpd\.js\.key#\1$domain.key#
    s#\(/etc/ssl/certs/\)nhttpd\.js\.crt#\1$domain.pem#
@@ -49,7 +49,7 @@ sed -i "
 " $rootpath$config && print $ok || print $failed
 
 # ... and restart nhttpd service
-print $me': Starting nhttpd.service ... '
+print -n $me': Starting nhttpd.service ... '
 systemctl start nhttpd.service && print $ok || print $failed
 
 ################################################################################
