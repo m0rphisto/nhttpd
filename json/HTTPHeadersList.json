@@ -13,6 +13,7 @@
    "^sec-ch-ua-*",
    "^upgrade-insecure-requests",
    "^user-agent",
+   "^x-fb-*",
    "^finagle-ctx-com*",
    "^range*",
    "^x-li-*",

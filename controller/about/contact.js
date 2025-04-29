@@ -8,9 +8,10 @@
 
 const
    cfg  = require('@lib/Config'),
-   Load = require('@lib/Loader'),
+   {CommonLib} = require('@lib/Common'),
    Template = require('@lib/Template');
 
+const cl = new CommonLib();
 
 /**
  * Public: Returns the template key/value pairs
@@ -20,7 +21,7 @@ const
 exports.data = () => {
    
    // First thing to to is building the HTML header setting the meta data
-   let view = Load.view('meta/header.html');
+   let view = cl.loadView('meta/header.html');
    const header = Template.parse(view, {
       'HEADER_TITLE': 'Wanna get in touch?',
       'HOSTNAME': cfg.HOSTNAME,
@@ -61,7 +62,7 @@ exports.data = () => {
       // Finally return replace the template variables and return the document
       'HEADER': header,
       'RESPONSE': response,
-      'FOOTER': Load.view('meta/footer.html'),
+      'FOOTER': cl.loadView('meta/footer.html'),
       'HOSTNAME': cfg.HOSTNAME,
       'FID': cfg.FID,
    }

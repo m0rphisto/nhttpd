@@ -6,9 +6,10 @@
 
 const
    cfg  = require('@lib/Config'),
-   Load = require('@lib/Loader'),
+   {CommonLib} = require('@lib/Common'),
    Template = require('@lib/Template');
 
+const cl = new CommonLib();
 
 
 /**
@@ -19,7 +20,7 @@ const
 exports.data = () => {
 
    // First thing to do is building the HTML header setting the meta data
-   let view = Load.view('meta/header.html');
+   let view = cl.loadView('meta/header.html');
    const header = Template.parse(view, {
       'HEADER_TITLE': '404 - File not found',
       'HOSTNAME': cfg.HOSTNAME,
@@ -33,9 +34,9 @@ exports.data = () => {
       'TWITTER_CARD_IMAGE_ALT': cfg.TWITTER_CARD_IMAGE_ALT,
 
       'MENUCSS': 'menu',
-      'NAVICSS': Load.view('meta/navi-css.html'),
+      'NAVICSS': cl.loadView('meta/navi-css.html'),
    });
-   view = Load.view('meta/box.error.html');
+   view = cl.loadView('meta/box.error.html');
    const errmsg = Template.parse(view, {
       'ERROR_MESSAGE': '404 - Document not found'
    });
@@ -43,9 +44,9 @@ exports.data = () => {
    return {
       // Finally replace the template variables and return the document
       'HEADER': header,
-      //'NAVIGATION': Load.view('meta/box.ip-address.html'),
+      //'NAVIGATION': cl.view('meta/box.ip-address.html'),
       'ARTICLE_BOX': errmsg,
-      'FOOTER': Load.view('meta/footer.html'),
+      'FOOTER': cl.loadView('meta/footer.html'),
       'FID': cfg.FID,
    }
 }

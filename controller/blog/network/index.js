@@ -8,88 +8,13 @@ const
    fs = require('node:fs'),
    path = require('node:path'),
    cfg  = require('@lib/Config'),
-   Load = require('@lib/Loader'),
-   Template = require('@lib/Template'),
-   {getDate} = require('@lib/Common');
+   Template = require('@lib/Template');
 
- //Load JSON blog information (header images)
-const blogFiles = Load.json('BlogFiles.json');
+// Load classes
+const {CommonLib} = require('@lib/Common');
 
-
-/**
- * Private: Controller checkup. 
- * @param   {string}  file The blogentriy view which also needs a controller.
- * @returns {boolean}      true: controller, false: no controller 
- */
-const hasController = (file) => {
-   const views = `${path.sep}views${path.sep}`
-   file = file.replace(views, `${path.sep}controller${path.sep}`);
-   file = file.replace(/html$/, 'js');
-   return (fs.existsSync(file)) ? !!1 : !!0;
-}
-
-
-/**
- * Private: Recursive blog entry search. 
- * @param {string} dir The root directory for a recursive file search
- * @returns {array} The files list
- */
-const getFiles = (dir) => {
-   let files = []; // dir should be: cfg.ROOT{DIRSEP}views{DIRSEP}blog
-   const list = fs.readdirSync(dir);
-   list.forEach(file => {
-      file = dir + path.sep + file;
-      const stat = fs.statSync(file);
-      if (stat && stat.isDirectory()) {
-         // Recurse to subdir
-         files = files.concat(getFiles(file));
-      } else if (! hasController(file)) {
-         // While writing a new blog entry, it is possible that the view doesn't
-         // have a controller yet. So we do not need to list it!
-         return;
-      } else {
-         // (?<!negative-look-behind)
-         if (file.match(/(?<!index)\.html$/)) {
-            const s = (path.sep === '\\') ? '\\\\' : '/'; // FUCKING backslash :-D
-            const regex_post = new RegExp(s+'(blog'+s+'.*?'+s+'.*?\.html)$');
-            const regex_sect = new RegExp(s+'blog'+s+'(.*?)'+s);
-            const regex_url  = new RegExp(s+'blog'+s+'.*?'+s+'(.*?)\.html$');
-            regex_post.exec(file); const post = (RegExp.$1).replaceAll('\\', '/'); // And the Node.js module loader
-            regex_sect.exec(file); const sect = RegExp.$1;                         // doesn't care for \ oder / 
-            regex_url.exec(file);  const url  = RegExp.$1;
-            const article_url = `/blog/${sect}/${url}`;
-            files.push({
-               file: post,
-               btime: getDate('birthtime', file),
-               mtime: getDate('mtime', file),
-               article_url: article_url,
-               section_href: `/blog/${sect}/`,
-               section_txt: sect.charAt(0).toUpperCase() + sect.slice(1),
-               img_src: blogFiles[article_url]['img_src'],
-               img_alt: blogFiles[article_url]['img_alt'],
-               img_source: blogFiles[article_url]['img_source']
-            });
-            if (cfg.DEBUG && cfg.BLOGINDEX) console.log(files);
-         }
-      }
-   });
-   return files;
-}
-
-/**
- * Private: Gets the blog articles title and preface.
- * @param   {string} post     The content of the blog article
- * @returns {object} snippets The title and preface
- */
-const getSnippets = (post) => {
-   const snippets = [{header: '', text: ''}];
-   /<h1 aria-label="header">(.*?)<\/h1>/.exec(post);
-   snippets.header = RegExp.$1;
-   /<p aria-label="text">(.*?)<\/p>/.exec(post);
-   snippets.text = RegExp.$1;
-   return snippets;
-}
-
+// Instantiate classes
+const cl = new CommonLib();
 
 /**
  * Public: Returns the template key/value pairs
@@ -99,7 +24,7 @@ const getSnippets = (post) => {
 exports.data = () => {
    
    // First thing to to is building the HTML header setting the meta data
-   let view = Load.view('meta/header.html');
+   let view = cl.loadView('meta/header.html');
    const header = Template.parse(view, {
       'HEADER_TITLE': '.m0rph\'s blog :: Network',
       'HOSTNAME': cfg.HOSTNAME,
@@ -119,18 +44,18 @@ exports.data = () => {
       'TWITTER_CARD_IMAGE_ALT': 'Excuse me, do you have a moment to talk about Linux?',
 
       'MENUCSS': 'menu',
-      'NAVICSS': Load.view('meta/navi-css.html'),
+      'NAVICSS': cl.loadView('meta/navi-css.html'),
    });
 
 
    let posts = [];
-   const template = Load.view('meta/box.blog-article.html');
-   const files = getFiles(path.join(cfg.ROOT, 'views', 'blog', 'network'));
+   const template = cl.loadView('meta/box.blog-article.html');
+   const files = cl.getFiles(path.join(cfg.ROOT, 'views', 'blog', 'network'));
    files.sort((a, b) => {return b.mtime - a.mtime}); // b - a := sort descending (otherwise a - b)
    const max = (files.length < cfg.BLOG_INDEX_NUM_POSTS) ? files.length : cfg.BLOG_INDEX_NUM_POSTS;
    for (let i = 0; i < max; i++) {
       let box = template;
-      const article = getSnippets(Load.view(files[i].file));
+      const article = cl.getSnippets(cl.loadView(files[i].file));
       posts[i] = Template.parse(box, {
          'ARTICLE_URL': files[i].article_url,
          'ARTICLE_HEADER': article.header,
@@ -155,7 +80,7 @@ exports.data = () => {
       // Finally return replace the template variables and return the document
       'HEADER': header,
       'INDEX_BOXES': recent_articles,
-      'FOOTER': Load.view('meta/footer.html'),
+      'FOOTER': cl.loadView('meta/footer.html'),
       'FID': cfg.FID,
    }
 }

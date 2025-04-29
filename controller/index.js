@@ -6,9 +6,10 @@
 
 const
    cfg  = require('@lib/Config'),
-   Load = require('@lib/Loader'),
+   {CommonLib} = require('@lib/Common'),
    Template = require('@lib/Template');
 
+const cl = new CommonLib();
 
 /**
  * Public: Builds the document built, loading views and returning 
@@ -19,7 +20,7 @@ const
 exports.data = () => {
    
    // First thing to to is building the HTML header setting the meta data
-   let view = Load.view('meta/header.html');
+   let view = cl.loadView('meta/header.html');
    const header = Template.parse(view, {
       'HEADER_TITLE': 'Hello Node.js World!',
       'HOSTNAME': cfg.HOSTNAME,
@@ -46,7 +47,7 @@ exports.data = () => {
    return {
       // Finally return replace the template variables and return the document
       'HEADER': header,
-      'FOOTER': Load.view('meta/footer.html'),
+      'FOOTER': cl.loadView('meta/footer.html'),
       'FID': cfg.FID,
    }
 }

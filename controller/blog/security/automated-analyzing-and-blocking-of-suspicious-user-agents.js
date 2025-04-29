@@ -6,26 +6,14 @@
 
 const
    cfg  = require('@lib/Config'),
-   Load = require('@lib/Loader'),
-   Template = require('@lib/Template'),
-   {getDate} = require('@lib/Common');
+   Template = require('@lib/Template');
 
 const path = require('node:path');
 const fs = require('node:fs');
 
+const {CommonLib} = require('@lib/Common');
 
-/**
- * Private: Gets the blog article's title
- *
- * @param   {string} post  The blog view
- * @returns {string} title The blog article's title
- */
-const getTitle = (post) => {
-   /<h1 aria-label="header">(.*?)<\/h1>/.exec(post);
-   const title = RegExp.$1;
-   const regex = /\s/g;
-   return (RegExp.$1).replaceAll(regex, '%20');
-}
+const cl = new CommonLib();
 
 /**
  * Public: Returns the template key/value pairs
@@ -41,7 +29,7 @@ exports.data = () => {
       url = `${cfg.PROTO}${cfg.HOSTNAME}/${urlpath}/${file}`;
 
    // First thing to to is building the HTML header setting the meta data
-   let view = Load.view('meta/header.html');
+   let view = cl.loadView('meta/header.html');
    const header = Template.parse(view, {
       'HEADER_TITLE': 'Automated Analyzing and Blocking of suspicious User-Agents',
       'HOSTNAME': cfg.HOSTNAME,
@@ -61,15 +49,15 @@ exports.data = () => {
       'TWITTER_CARD_IMAGE_ALT': 'Automated Analyzing and Blocking of suspicious User-Agents', 
 
       'MENUCSS': 'menu',
-      'NAVICSS': Load.view('meta/navi-css.html'),
+      'NAVICSS': cl.loadView('meta/navi-css.html'),
    });
-   view = Load.view('blog/security/automated-analyzing-and-blocking-of-suspicious-user-agents.html');
-   const title = getTitle(view);
+   view = cl.loadView('blog/security/automated-analyzing-and-blocking-of-suspicious-user-agents.html');
+   const title = cl.getTitle(view);
    const article = Template.parse(view, {
       'SECTION': `<a href="${cfg.PROTO}${cfg.HOSTNAME}/${urlpath}/">Security</a>`,
-      'POSTED': getDate('birthtime', path.join(cfg.ROOT, 'views', 'blog', 'security', 'automated-analyzing-and-blocking-of-suspicious-user-agents.html')),
-      'UPDATED': getDate('mtime', path.join(cfg.ROOT, 'views', 'blog', 'security', 'automated-analyzing-and-blocking-of-suspicious-user-agents.html')),
-      'SOCIALS': Template.parse(Load.view('meta/box.socials.html'), {
+      'POSTED': cl.getDate('birthtime', path.join(cfg.ROOT, 'views', 'blog', 'security', 'automated-analyzing-and-blocking-of-suspicious-user-agents.html')),
+      'UPDATED': cl.getDate('mtime', path.join(cfg.ROOT, 'views', 'blog', 'security', 'automated-analyzing-and-blocking-of-suspicious-user-agents.html')),
+      'SOCIALS': Template.parse(cl.loadView('meta/box.socials.html'), {
          'SHARE_LINKEDIN': `url=${url}`,
          'SHARE_X': `url=${url}&text=${text}%20${title}`,
          'SHARE_MASTODON': `text=${text}%20${title}%20${url}`,
@@ -81,7 +69,7 @@ exports.data = () => {
       // Finally return replace the template variables and return the document
       'HEADER': header,
       'ARTICLE_BOX': article,
-      'FOOTER': Load.view('meta/footer.html'),
+      'FOOTER': cl.loadView('meta/footer.html'),
       'FID': cfg.FID,
    }
 }

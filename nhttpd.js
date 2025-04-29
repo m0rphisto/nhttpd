@@ -26,25 +26,31 @@ require('module-alias/register');
 // Load nhttpd modules
 const
    cfg        = require('@lib/Config'),
-   {log}      = require('@lib/Logger'),
    {header}   = require('@lib/Headers'),
    {chkInput} = require('@lib/Sanitizer'),
-   Load       = require('@lib/Loader'),
    Controller = require('@lib/Controller'),
    Template   = require('@lib/Template'),
    Geoip      = require('@lib/GeoipLookup');
 
+// Load classes
+const {CommonLib} = require('@lib/Common');
+
+
+// Instantiate classes
+const cl = new CommonLib();
+
+
 // Load HTTP Status Codes and forbidden files list...
-const status_codes = Load.json('HTTPStatusCodes.json'); 
+const status_codes = cl.loadJson('HTTPStatusCodes.json'); 
 const favicon      = fs.readFileSync(path.join(__dirname, 'img','favicon.32x32.png'));
 
 
 // Then we handle uncaught exceptions and log them. 
 process.on('uncaughtException', (err) => {
-   log(1, cfg.ipaddr, `Uncaught Exception: ${err.stack || err.message}`); 
+   cl.log(1, cfg.ipaddr, `Uncaught Exception: ${err.stack || err.message}`); 
 });
 process.on('unhandledRejection', (err) => {
-   log(1, cfg.ipaddr, `Unhandled Rejection at: ${promise} - reason ${reason}`); 
+   cl.log(1, cfg.ipaddr, `Unhandled Rejection at: ${promise} - reason ${reason}`); 
 });
 
 
@@ -77,7 +83,7 @@ const httpd = https.createServer(options, (req, res) => {
    
       if (! status_codes) {
          // ... no HTTP Satus Codes list, then we have to quit.
-         log(1, 'ERROR', 'Could not load HTTP Status Codes.');
+         cl.log(1, 'ERROR', 'Could not load HTTP Status Codes.');
          res.writeHead(500, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
          res.end('500 - Internal Server Error');
          return;
@@ -85,7 +91,7 @@ const httpd = https.createServer(options, (req, res) => {
    
       const getRobotsTxt = () => {
          let file = '';
-         const botsjson = Load.json('RobotsTxt.json');
+         const botsjson = cl.loadJson('RobotsTxt.json');
          for (const block of Object.keys(botsjson)) {
             // Todo: work with .map(([key, value]) => { .... }
             for (const key of Object.keys(botsjson[block])) {
@@ -97,7 +103,7 @@ const httpd = https.createServer(options, (req, res) => {
       }
       const getWellKnownSecurityTxt = () => {
          let file = '';
-         Object.entries(Load.json('WellKnownSecurityTxt.json')).map(([key, value]) => {
+         Object.entries(cl.loadJson('WellKnownSecurityTxt.json')).map(([key, value]) => {
             // At the moment we have no policy and no jobs :-)
          console.log(`[DEBUG] key: ${key}, value: ${value}`);
             if (key == 'Policy' || key == 'Hiring') return;
@@ -149,21 +155,22 @@ const httpd = https.createServer(options, (req, res) => {
          // Workaround for the annoying favicon.ico loading.
          res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'png'));
          res.end(favicon);
-         log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
+         cl.log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
       } else if (req.url === '/robots.txt') {
          // OK, lets feed those crawlers.
          res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
          res.end(getRobotsTxt());
-         log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
+         cl.log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
       } else if (req.url === '/feed.xml') {
          // Here wee feed feed reader.
          res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
-         res.end(Load.xml('rss-feed-2.0.xml'));
-         log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
+         res.end(cl.loadXml('rss-feed-2.0.xml'));
+         cl.log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
       } else if (req.url === '/.well-known/security.txt') {
+         // And this is for security specialist that want to help.
          res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
          res.end(getWellKnownSecurityTxt());
-         log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
+         cl.log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
       } else {
          // OK, finally deliver the file.
          const url = path.join(__dirname, redirect(check_index(req.url)));
@@ -172,7 +179,7 @@ const httpd = https.createServer(options, (req, res) => {
                // Plain file errors
                res.writeHead(404, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
                res.end(`${status_codes['404']}`);
-               log(1, cfg.ipaddr, `${status_codes['404']} ${req.url}`);
+               cl.log(1, cfg.ipaddr, `${status_codes['404']} ${req.url}`);
             } else {
                // We need to send the correct MIME type and have to load a controller module.
                const mime = Template.mime(url);
@@ -183,7 +190,7 @@ const httpd = https.createServer(options, (req, res) => {
                   if (! Controller.check(check_index(req.url))) {
                      // If !!0 was returned, but no data, the controller doesn't exist
                      // or any other error occured. Maybe an attack attempt?
-                     log(1, cfg.ipaddr, `${status_codes['404']} ${req.url}`);
+                     cl.log(1, cfg.ipaddr, `${status_codes['404']} ${req.url}`);
                      req.url = '/error/404'
                   }
                   data = Template.parse(data,
@@ -192,9 +199,9 @@ const httpd = https.createServer(options, (req, res) => {
                   data = Template.parse(data, {
                      // Menu, breadcrumbs and footer section:
                      // These template variables have also to be replaced in EVERY view.
-                     'MENU': Template.menu(Load.view('meta/menu.html')),
-                     'BREADCRUMBS': Template.breadcrumbs(req.url, Load.view('meta/box.breadcrumbs.html')),
-                     'BOX_CONTACT_DATA': Load.view('meta/box.contact-data.html'),
+                     'MENU': Template.menu(cl.loadView('meta/menu.html')),
+                     'BREADCRUMBS': Template.breadcrumbs(req.url, cl.loadView('meta/box.breadcrumbs.html')),
+                     'BOX_CONTACT_DATA': cl.loadView('meta/box.contact-data.html'),
                      'IPADDRESS': cfg.ipaddr,
                      'USERAGENT': req.headers['user-agent'],
                      'GEOIPDATA': geoip(['city', 'countryLong'])
@@ -204,7 +211,7 @@ const httpd = https.createServer(options, (req, res) => {
                res.writeHead(200, header(`${cfg.HOSTNAME}:${cfg.PORT}`, mime));
                res.end(data);
                if (! req.url.includes('error'))
-                  log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
+                  cl.log(0, cfg.ipaddr, `${status_codes['200']} ${req.url}`);
             }
          }); // end: fs.readFile(url, (err, data) => {
       } // end: if (req.url === '/favicon.ico') {
@@ -215,13 +222,13 @@ const httpd = https.createServer(options, (req, res) => {
    }).catch(err => {
       res.writeHead(500, header(`${cfg.HOSTNAME}:${cfg.PORT}`, 'txt'));
       res.end(`${status_codes['500']}`);
-      log(1, cfg.ipaddr, `${status_codes['500']}: ${req.url} -=[${err}]=-`);
+      cl.log(1, cfg.ipaddr, `${status_codes['500']}: ${req.url} -=[${err}]=-`);
    });
 })
 .on('clientError', (err, sock) => {
    sock.end('400 - Bad Request');
    // Get ip address for logging purposes and handle client errors.
-   log(1, sock.remoteAddress, `${status_codes['400']} --{${err}}--`);
+   cl.log(1, sock.remoteAddress, `${status_codes['400']} --{${err}}--`);
 })
 .listen(cfg.PORT, cfg.HOST, () => {
    // In order to open the privilleged ports 80 or 443 we need root permissions, but
@@ -234,7 +241,10 @@ const httpd = https.createServer(options, (req, res) => {
       console.error('Error decreasing user permissions. Exiting !!!');
       process.exit(1);
    }
-   console.log(cfg.FID);
-   console.log(`Server running at ${cfg.PROTO}${cfg.HOSTNAME}:${cfg.PORT}/`);
+   console.log(
+      `${cfg.FID}\n`,
+      `Server started at: ${cl.d.date()} ${cl.d.time()}\n`,
+      `Server running at ${cfg.PROTO}${cfg.HOSTNAME}:${cfg.PORT}/`
+   );
 });
 // EOF
