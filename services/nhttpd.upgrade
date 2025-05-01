@@ -1,6 +1,6 @@
 #!/usr/bin/zsh
 #################################################################################
-# $Id: nhttpd.upgrade 1 2025-04-28 07:41:46 +0200 .m0rph $
+# $Id: nhttpd.upgrade 2 2025-04-29 02:38:17 +0200 .m0rph $
 #################################################################################
 # Description:
 #  A little server and configuration upgrade script, fired up when the server's
@@ -17,7 +17,7 @@ me=${0##*/}
 domain='m0rphisto.net'
 rootpath='/var/www/nhttpd'
 config='/lib/Config.js'
-ok='\e[0;32m[+]OK\e[0m'
+ok='\e[0;32mOK\e[0m'
 failed='\e[0;31mFAILED\e[0m'
 
 # Stop nhttpd service
